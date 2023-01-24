@@ -17,6 +17,12 @@
     --text-color: #F7EFE5;
     --padding: 1.5rem;
 }
+.btn{
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
 /*header start*/
 .header{
     background: var(--purple);
@@ -134,8 +140,112 @@
     cursor: pointer;
 }
 /*product end*/
-/**/
-/**/
+/* product pages start*/
+    .front,.back,.fullstack{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        min-height: 100vh;
+        background:no-repeat center url(https://i.postimg.cc/XYmTWzzW/louise-viallesoubranne-5-Eh-N4wbfv-Bc-unsplash.jpg);
+    }
+    .back{
+        background-image: url(https://i.postimg.cc/yd00rkw9/mohammad-rahmani-8q-EB0f-Te9-Vw-unsplash.jpg);
+    }
+    .fullstack{
+        background: url(https://i.postimg.cc/597tWxbF/stephen-phillips-hostreviews-co-uk-2k-H-6-T6x-0-I-unsplash.jpg);
+    }
+    .course-description{
+        box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.4);
+        border-radius: 25px;
+        background: var(--purple);
+        margin: 0 5%;
+        padding: 1rem;
+    }
+    .course-title{
+        transform: translateY(25px);
+        box-shadow: 0;
+    }
+    .offset1-right{
+        transform: translatey(-25px);
+        margin-right: 250px;
+        margin-left: 10px;
+    }
+    .offset2-left{
+        transform: translatey(-50px);
+        margin-left: 200px;
+        margin-right: 20px;
+    }
+    .offset2-right{
+        transform: translatey(-50px);
+        margin-right: 250px;
+        margin-left: 10px;
+    }
+    .offset1-left{
+        transform: translatey(-25px);
+        margin-left: 200px;
+        margin-right: 20px;
+    }
+/*product pages end*/
+/*purchase start*/
+.purchase{
+    min-height: 100vh;
+    background: var(--purple-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around   ;
+    align-items: center;
+}
+.purchase__form{
+    background: var(--text-color);
+    padding: var(--padding);
+    width: 350px;
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.2);
+}
+
+
+.purchase__form label{
+    color: var(--purple);
+    font-weight: bold;
+    font-style: normal;
+    width: 250px;
+    margin: 30px 0 10px 0;
+}
+.purchase__form input{
+    font-style: normal;
+    color: var(--purple-dark);
+    border: 2px var(--purple) solid;
+    border-radius: 15px;
+    padding: 8px;
+    width: 210px;
+    
+}
+.purhase__btn{
+    color: var(--purple);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    border: 2px var(--purple) solid;
+    width: 210px;
+    margin-top: 40px;
+}
+/*purchase end*/
 /**/
 /**/
 /**/
