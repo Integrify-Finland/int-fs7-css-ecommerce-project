@@ -2,7 +2,7 @@
 
 ## CSS Assignment - 10 points
 
-- Instructions (you can design an e-commerce website the you like but make sure it has the following)
+- Instructions (you can design an e-commerce website that you like but make sure it has the following)
   - products (2 points)
   - product details (2 points)
   - cart + payment details (2 points)
