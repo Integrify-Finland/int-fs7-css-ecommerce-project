@@ -1,0 +1,77 @@
+/* reset code and common starts here  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+body {
+    background-color: #222831;
+    color: #f2f5f7;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+/* reset code and common starts here  */
+
+
+nav {
+    height: 6rem;
+    width: 100vw;
+    background-color: #4C586D;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+}
+
+/*Styling Links*/
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: white;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.login {
+    padding: 5px;
+    border-style: solid;
+    border-color: #119D90;
+    border-radius: 10px;
+}
+
+.logout {
+    padding: 5px;
+    border-style: solid;
+    border-color: #F44336;
+    border-radius: 10px;
+}
+
+.login a:link {
+    color: #119D90;
+}
+
+.logout a:link {
+    color: #F44336;
+}
