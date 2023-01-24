@@ -5,5 +5,6 @@
    - product details (2 points)
    - cart + payment details (2 points)
    - registration, login functionality (2 points)
-   - Your creativity and additional functionality to the project will help you to get extra 2 points
+   - deploy the project on netlify and share the deployment link in README.md; do not forget to make a PR as well (1 point)
+   - Your creativity and additional functionality to the project will help you to get extra 1 points
   
