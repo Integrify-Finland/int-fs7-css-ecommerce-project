@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: var(--text-color);
+    list-style: none;
+}
+
+:root{
+    --purple-dark:#2D033B;
+    --purple: #810CA8;
+    --purple-light:#C147E9;
+    --pink:#E5B8F4;
+    --text-color: #F7EFE5;
+    --padding: 1.5rem;
+}
+/*header start*/
+.header{
+    background: var(--purple);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+.company-name{
+ 
+    font-size: 1.5rem;
+}
+
+/*header end*/
+/*navigation start*/
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    margin: auto 0;
+}
+.news-link{
+    position: relative;
+}
+.news-count{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    position:absolute;
+    right: -20px;
+    top: -20px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+}
+/* navigation end*/
+/*about start*/
+.about{
+    height: 100vh;
+    background: url(https://i.postimg.cc/YCZb6P2m/clement-helardot-95-YRwf6-CNw8-unsplash.jpg) no-repeat center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about__title{
+    background: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+.about__ankor{
+    position:absolute;
+    bottom: -20px;
+    left: 50%;
+    background: var(--purple);
+    border-radius: 50%;
+    padding: 0.25rem 0.75rem;
+}
+/*about end*/
+/*product start*/
+.product{
+    
+    min-height: 100vh;
+    background: var(--pink);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+}
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: var(--padding);
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background-color: var(--text-color);
+    margin: 5px;
+    border-radius: 1rem;
+    box-shadow: 4px ;
+    box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.2);}
+.card__img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card__title{
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.card__content{
+    color: var(--purple);
+}
+.card__footer{
+    padding-top: 1rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__button{
+    border: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: var(--purple-light);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*product end*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
