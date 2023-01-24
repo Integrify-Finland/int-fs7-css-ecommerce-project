@@ -1,0 +1,122 @@
+:root{
+    --color1: #39B5E0;
+    --bgcolor1: rgba(57, 181, 224, 0.6);
+    --color2: #A31ACB;
+    --bgcolor2: rgba(163, 26, 203, 0.8);
+    --color3: #D60079;
+    --bgcolor3: rgba(255, 120, 240, 0.6);
+    --color4: #F5EA5A;
+}
+
+/* Reset ans general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Comic Sans', sans-serif;
+}
+
+marquee{
+    color:var(--color2);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+a{
+    color:var(--color3);
+    cursor: pointer;
+}
+/* Header */
+
+header{
+    background-color: var(--bgcolor2);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: var(--color4);
+    font-size: 80px;
+}
+
+header a{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--color4);
+    box-shadow: 2px 5px 2px rgba(255, 255, 0, 0.741);
+    font-weight: 600;
+}
+
+/* Products */
+main{
+    text-align: center;
+}
+
+.products__title{
+    padding: 20px;
+    color: var(--color3);
+    font-size: 30px;
+}
+.products{
+background-color:var(--bgcolor1);
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.product img{
+    width: 250px
+}
+
+.product p{
+    font-size: larger;
+}
+
+.product{
+    position:relative;
+}
+.product h3{
+    border: 2px dotted var(--color3);
+    background-color: var(--color4);
+    color: var(--color3);
+    border-radius: 20px;
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.product__details{
+    display:none;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--bgcolor2);
+    text-align: center;
+}
+
+.footer__icon{
+    font-size: 30px;
+    color: var(--color4);
+    padding: 10px;
+}
+
+.footer__title{
+    color: var(--color4);
+    display: inline;
+}
+/*
+TO DO:
+button header: tirar a shadow para parecer q ta apertando
+accessibility
+responsive design
+hide details from mat and kindle
