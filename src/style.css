@@ -9,13 +9,23 @@ body {
     font-family: Helvetica, sans-serif;
     background-color:var(--background-color)
   }
-  img {
+
+img {
     font-size: 0.5rem;
 }
-  a {
+
+a {
     color: #000;
   }
-
+.background__img {
+  background-size: cover;
+  background-positio: center;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
 /* Header */
 
 header {
@@ -75,10 +85,11 @@ top: 0;
   
   .navbar li {
     display: inline;
+    padding: 0;
   }
   .navbar li a {
     display: block;
-    padding: 20px 10px;
+    padding: 0;
     border-right: 1px solid var(--background-color);
     text-decoration: none;
   }
@@ -174,22 +185,16 @@ top: 0;
   }
   .main-container__intro {
     background-image: url(./images/intro.jpg.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
   }
 
-.intro__description {
+.main-container p{
     text-align: center;
-    font-size: large;
+    font-size: 1.5em;
     color: var(--main-color);
     text-shadow:2px 2px 2px black;
+    line-height: 2em;
 }
-.intro__btn a{
+.main-container a{
     text-decoration: none;
     background-color: var(--main-color);
     font-size: 2em;
@@ -197,7 +202,9 @@ top: 0;
     border-radius: 1em;
     padding: 5px 20px;
 }
-
+.main-container__sustainable {
+    background-image: url(/src/images/sustainable.jpg.jpg);
+}
 
   /* 48em = 768px */
   
