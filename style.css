@@ -1,0 +1,176 @@
+/*------- Global style -------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    font-family: 'Merienda', cursive;
+    
+}
+button{
+    padding: var(--btn-padding);
+    width: var(--btn-width);
+    background-color: var(--primary-btn-color);
+    border-radius: var(--btn-border-radius);
+    -webkit-border-radius: var(--btn-border-radius);
+    -moz-border-radius: var(--btn-border-radius);
+    -ms-border-radius: var(--btn-border-radius);
+    -o-border-radius: var(--btn-border-radius);
+    cursor: pointer;
+}
+/*------- variables -------*/
+:root{
+    --primary-first-color:#D4668E;
+    --primary-second-color:#FFCABE;
+    --primary-body-color:#FEF4EA;
+    --primary-btn-color:#FFB8D0;
+    --primary-aside-color:#FAECBC;
+    --primary-footer-color:#CECCFD;
+    --btn-padding: 0.25rem;
+    --btn-width: 5rem;
+    --btn-border-radius:7px;
+    --heading-fnt-w:70px;
+    --subheading-fnt-w:50px;
+    --contents-fnt-w:30px;
+    --info-fnt-w:20px;
+}
+body{
+    background-color: var(--primary-body-color);
+}
+/*------------ head section-------*/
+marquee{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.logo{
+    color: darkorchid;
+    font-size: large;
+    font-weight: bold;
+}
+.header__links{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header__cart-search{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-right: 2%;
+ 
+}
+.fa-cart-shopping{
+    padding-right:10px;
+    padding-top: 5px;
+    margin-right: 5%;
+    margin-top: 5px;
+}
+.fa-cart-shopping:hover{
+    rotate: -30deg;
+    scale: 1.5;
+}
+.header__search{
+    padding: 5px;
+    border-radius: var(--btn-border-radius);
+    -webkit-border-radius: var(--btn-border-radius);
+    -moz-border-radius: var(--btn-border-radius);
+    -ms-border-radius: var(--btn-border-radius);
+    -o-border-radius: var(--btn-border-radius);
+}
+.header__search-btn{
+    margin-right: 1%;
+}
+
+
+/*--------- Mani section----------*/
+.main__msg{
+  margin-top: 8%;
+ color: var(--primary-aside-color);
+   text-align: center;
+}
+.h1{
+   font-size: var(--heading-fnt-w);
+}
+.p{
+    font-size: var(--contents-fnt-w);
+}
+
+.main__images{
+display:flex;
+width: 100%;
+height: 30rem;
+}
+
+.img1{
+   width: 33%;
+   height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/pictures/ring.jpg);
+}
+.img2{
+  width: 33%;
+  height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+    background-image: url(/pictures/joanna-kosinska-P9oOLKNhIYU-unsplash.jpg);
+}
+.img3{
+    width: 35%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+    background-image: url(/pictures/model.jpg);
+}
+
+/*------- product section-------*/
+.main__products__header{
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product{
+    width: 20%;
+    height: 250px;
+    border-radius: var(--btn-border-radius);
+    -webkit-border-radius: var(--btn-border-radius);
+    -moz-border-radius: var(--btn-border-radius);
+    -ms-border-radius: var(--btn-border-radius);
+    -o-border-radius: var(--btn-border-radius);
+}
+.ring{
+    background-image: url(/pictures/ring2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.chain{
+    background-image: url(/pictures/chain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.earings{
+    background-image: url(/pictures/earings.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.jl-set{
+    background-image: url(/pictures/set.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
