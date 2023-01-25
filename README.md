@@ -7,4 +7,7 @@
    - registration, login functionality (2 points)
    - deploy the project on netlify and share the deployment link in README.md; do not forget to make a PR as well (1 point)
    - Your creativity and additional functionality to the project will help you to get extra 1 points
+
+   - https://fluffy-dolphin-b7e26c.netlify.app
+   - not work fully on website.
   

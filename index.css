@@ -1,0 +1,214 @@
+
+*{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header__container{
+    display: flex;
+    background-color: rgb(177, 129, 121);
+    height: 4em;
+}
+.img img{
+    margin-left: -20px;
+    margin-top:-25px;
+    width: 10em;
+}
+/* start location  */
+.heder__location{
+text-align: center;
+width:500px;
+margin-left:-600px;
+display: flex;
+text-align: left;
+}
+.heder__location i{
+    width: 40px;
+    margin-top: 40px;
+    margin-left: 37px;
+    text-align: right;
+    display: block;
+}
+.location__para{
+    margin: auto;
+    padding-right: 20px;
+}
+.heder__location p{
+   font-size: 13px;
+}
+.heder__location p h4{  
+    padding-top: 4px;
+}
+.heder__location h4{ 
+    padding-bottom: 4px;
+}
+/* start search bar */
+.header__searchbar{
+    display: flex;
+    height: 40px;
+    margin: auto;
+}
+.btn__items{
+    border:0px;
+    width: 50px;
+    background-color: aliceblue;
+}
+
+.searchbar__btn select{
+    height: 30px;
+    border:0px;
+}
+.header__searchbar input[type=search]{
+width: 550px;
+
+}
+.searchitem__btn{
+    width:40px
+}
+/* end search bar */
+/* start language */
+.user__language{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+}
+.user__language a{
+    text-decoration:none;
+}
+/* end langiage */
+/* start user sign in */
+.userlogin{
+    height: 40px;
+    margin: auto;
+    width: 250px;
+}
+.userlogin p>i {
+    display: inline-block;
+    text-align: right;
+}
+/* end sign in */
+/* start return items */
+.returnitems{
+    height: 40px;
+    margin: auto;
+    width: 200px;
+    padding-left: 20px;
+}
+/* end return items */
+/* start user cart */
+.usercart{
+    height: 40px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+/* end user cart */
+/* //////// finnish header section  */
+/* start nabvar */
+.navbar{
+    height:60px;
+    background-color: rgb(208, 208, 133);
+    width: 100%;
+}
+.nabvar_items{
+     padding-top: 20px;
+}
+.nabvar_items a {
+       color: black;
+       padding-right: 8px;
+       width: 150px;
+   }
+.nabvar_items a:last-child {
+       margin-left:790px;
+       padding: 8px 40px;
+   }
+ /* end nabver */
+ /* finnish nabvar */
+ /* start first grid section */
+.gridbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    }
+    .gridbox div{
+        height:400px;
+        width: 340px;
+        margin: 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .gridbox img{
+        height:360px;
+        width: 340px;
+        border-bottom: 1px solid black;
+    }
+    .gridbox__inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 100%;
+    }
+    .gridbox__inner div{
+        height:175px;
+        width: 170px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .gridbox__inner img{
+        height:165px;
+        width: 160px;
+    }
+    .gridbox__inner a{
+        text-decoration: none;
+        color:rgb(126, 123, 26);
+        text-align: center;
+        margin-left:110px
+    }
+    .center{
+        text-decoration: none;
+        color:rgb(126, 123, 26);
+        text-align: center;
+        margin-left:140px;
+    
+    }
+    /* finnish first grid section */
+    /* start second grid section */
+    .second_section{
+        padding-top:15px;
+    }
+    /* end second grid section */
+    /* start footer */
+    .companyfooter{
+        display: flex;
+        text-align: center;
+        background-color: bisque;
+    }
+    .companyfooter div{
+       width: 100%;
+       height: 200px;
+    }
+    .company__dtls{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+       
+    }
+    .company__product{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .company__subscribe div{
+        margin-top:90px;
+    }
+    .company__subscribe>div>input{
+        height: 30px;
+        width: 250px;
+    }
+    .company__subscribe>div>button{
+        height: 30px;
+        width: 100px;
+        
+    }    
+    /* end footer */
