@@ -1,4 +1,7 @@
-# isa7-css-ecommerce-project [Netlify live link]([https://www.google.com](https://63d1ab8ecaa7b21365711ebd--merry-marshmallow-20366f.netlify.app))
+# isa7-css-ecommerce-project 
+
+ [Netlify live link]([https://www.google.com "Google's Homepage"](https://www.google.com](https://63d1ab8ecaa7b21365711ebd--merry-marshmallow-20366f.netlify.app))
+
  
 ## CSS Assignment - 15 points
 - Instructions (you can design an ecommerce website the you like but make sure it has the following features)
