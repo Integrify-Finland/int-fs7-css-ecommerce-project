@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+
+:root {
+  --primary-color: #000;
+  --font-bold: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navigation starts here */
+nav {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  padding: 1.25em;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: auto;
+  font-family: var(--font-bold);
+  font-weight: 900;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.6em;
+  gap: 10px;
+}
+
+.menu li {
+  margin-left: 0.6em;
+  font-size: 1.1rem;
+  font-family: "Zilla Slab", serif;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart__icon {
+  padding: 0.6em;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.6em 1.4em;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+/*   Navigation ends here */
+
+/* Header starts here */
+
+#header {
+  height: 100vh;
+}
+
+.banner {
+  min-height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__title {
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner__description {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 50%;
+  color: #fff;
+  line-height: 2.1rem;
+}
+
+.banner--btn {
+  background-color: #000000;
+  padding: 1.7em 3em;
+  text-transform: uppercase;
+}
+
+/* Header ends here */
+
+/* product section starts here */
+#product-section {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 4rem 0;
+}
+
+.product {
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+  padding: 2rem;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  margin-top: 1rem;
+}
+
+.product .price {
+  font-weight: bold;
+  color: #f44336;
+}
+
+.product button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+
+/* product section ends here  */
