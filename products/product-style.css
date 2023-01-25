@@ -25,6 +25,15 @@
         --contents-fnt-w:1.5rem;
         --bx-shadow:-8px 10px 5px -2px rgba(163,152,152,0.55);
     }
+    a{
+        color: black;
+    }
+    a:visited{
+        color: black
+    }
+    a:active{
+        color: black;
+    }
     button{
         padding: var(--btn-padding);
         width: var(--btn-width);

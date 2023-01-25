@@ -10,7 +10,15 @@
     font-family: 'Merienda', cursive;
     
 }
-
+a{
+    color: black;
+}
+a:visited{
+    color: black
+}
+a:active{
+    color: black;
+}
 button{
     padding: var(--btn-padding);
     width: var(--btn-width);
