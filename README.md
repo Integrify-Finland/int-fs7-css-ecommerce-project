@@ -1,4 +1,7 @@
 # isa7-css-ecommerce-project
+
+Here is my netlify link: https://splendid-brioche-c53e30.netlify.app/index.html
+
 ## CSS Assignment - 10 points
 - Instructions (you can design an ecommerce website the you like but make sure it has the following)
    - products (2 points) 

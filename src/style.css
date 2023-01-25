@@ -295,7 +295,7 @@ grid-area: h;
     text-decoration: none;
 }
 
-.filter__btn , .apply__filter-btn , .reset__filter-btn , .sorting__btn , .buy__btn{
+.filter__btn , .apply__filter-btn , .reset__filter-btn , .sorting__btn , .buy__btn , .payment-sign-in__btn{
   font-weight:700 ;
     font-size: 1.2em;
     margin: 20px 1px 0px 1px;
@@ -305,7 +305,7 @@ grid-area: h;
     transition: all 0.15s;
 }
 
-.buy__btn:hover , .reset__filter-btn:hover , .apply__filter-btn:hover {
+.buy__btn:hover , .reset__filter-btn:hover , .apply__filter-btn:hover ,.payment-sign-in__btn:hover {
   box-shadow: 0 1px 4px black;
   transform: scale(1.05);
   cursor: pointer;
@@ -368,7 +368,7 @@ grid-area: h;
   display: inline;
 }
 
-.apply__filter-btn , .reset__filter-btn , .buy__btn {
+.apply__filter-btn , .reset__filter-btn , .buy__btn , .payment-sign-in__btn {
   background-color: var(--main-color);
 }
 .apply__filter {
@@ -446,7 +446,7 @@ line-height: 1.5em;
 .login-header{
   background-color: var(--background-color);
 }
-.login-main {
+.login-main , .payment-main {
   background-color: var(--background-color);
   padding: 0.2em;
   margin: 0;
@@ -455,8 +455,9 @@ line-height: 1.5em;
 .login__logo {
   padding-top: 10px;
   padding-left: 10px;
-  max-width: 20%;
+  max-width: 15%;
 }
+
 .login-form {
   color: rgba(0,0,0,0.6);
 }
@@ -615,6 +616,37 @@ transition: all 0.1s;
 .item-details__section {
   padding:1.5em;
 }
+
+/* Payment page*/
+.payment-main h1 , .payment-main h2 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.form-container , .card-container {
+  font-size: 0.8em;
+}
+
+.payment-main input , .payment-main label {
+  display: block;
+}
+
+.card-container {
+  margin-top: 20px;
+}
+
+.checkout__btn {
+  margin: 20px 0;
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+  border: 0;
+}
+
+
+
+
 @media (max-width: 400px) {
   .search-container {
     display: none;
@@ -624,17 +656,22 @@ transition: all 0.1s;
 
 
 @media (min-width: 700px) {
-.login-main {
+.login-main , .payment-main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-.sign-in {
+.sign-in , .form-container {
   grid-column: 2 / 4;
 }
-.register {
+.register , .card-container{
   padding-left: 30px;
   grid-column: 4 / 6;
 }
+.checkout__btn {
+  width: 180px;
+}
+
+
 }
 
 @media (min-width: 1000px) {

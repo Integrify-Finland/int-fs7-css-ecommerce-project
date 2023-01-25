@@ -18,33 +18,60 @@
                 <a href="/index.html" class="logo-container__logo"><img src="/src/images/logo.png" alt="Company logo" class="login__logo"></a>
             </div>
         </div>
-        <main class="login-main">
-            <div class="sign-in">
-             <h1 class="sign-in__h1">Sign in</h1>
-                <form class="login-form">
-                    <label for="user-id">E-Mail or user name</label><br>
-                    <input type="text" name="user-id" id="user-id"><br>
-                    <label for="password">Password</label><br>
-                    <input type="password" name="password" id="password"><br>
-                    <a href="http://">Forgot your password?</a><br>
-                    <button type="submit" class="btn sign-in__btn">Sign in</button>
+        <main class="payment-main">
+            <div class="form-container">
+             <form>
+                <div class="billing-container">
+                  <h1>Billing Address</h1> or <button class="payment-sign-in__btn"><a href="/src/login.html">Sign in</a></button> <br>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+                  <div class="last-address-info__container">
+                      <div class="state-container">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="zip-container">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <form name="paymnet">
+                <h1>Payment information</h1>
+                <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                  <div class="cvv-year">
+                    <div class="year-container">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2026">
+                    </div>
+                    <div class="cvv-container">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
                 </form>
-                <div class="external__signing">
-                    <a href="http://google.com" class="sign-in__external"><i class="fa fa-google" aria-hidden="true"></i> Sign in with Google</a>
-                    <a href="http://facebook.com" class="sign-in__external"><i class="fa fa-facebook" aria-hidden="true"></i> Sign in with Facebook</a>
-                    <a href="http://apple.com" class="sign-in__external"><i class="fa fa-apple" aria-hidden="true"></i> Sign in with Apple</a>
-                </div>
+                <button type="submit" class="checkout__btn">Checkout</button>
             </div>
-            <div class="register">
-                <div class="register__content">
-                    <h1 class="sign-in__h1 register__h1">Register</h1>
-                    <p>Register now and benefit from:</p>
-                    <i class="fa fa-truck" aria-hidden="true"></i><span>  Free shipping for 1 month</span> <br>
-                    <i class="fa fa-briefcase" aria-hidden="true"></i><span>  Return policy up to 30 days</span><br>
-                    <div class="register__link"><a href="#">Register as a private</a></div>
-                    <div class="register__link register__last"><a href="#">Register as a business</a></div>
-                </div>
-            </div>
+
         </main>  
     </div>
 </body>
