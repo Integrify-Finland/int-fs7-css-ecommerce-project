@@ -1,0 +1,110 @@
+body{
+    
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    padding: var(--padding);
+    flex-grow: 1;
+    background: url(https://i.postimg.cc/D0mtgykL/luke-chesser-e-ICUFSeirc0-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    width: 80%;
+    height: 80%;
+    
+    display: flex;
+
+}
+.cart__right{
+    flex-grow: 1;
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: var(--purple);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.cart__left{
+    border-right: 2px solid var(--text-color);
+}
+.cart__title-list{
+    display: flex;
+    flex-direction: column;
+}
+.cart__title{
+    
+    border: 2px solid var(--text-color);
+    border-radius: 25px;
+    padding: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.cart__title:hover{
+    text-decoration: underline;
+}
+.cart__title-active{
+    background: var(--purple);
+    border-right: 0;
+    transform: translateX(3.5px);
+    padding-right: 19px;
+}
+.cart__card{
+    width: 150px;
+    height: 200px;
+    border: 2px solid var(--text-color);
+    
+}
+.card__img{
+    width: 100%;
+    border-bottom: 2px solid var(--text-color);
+}
+.card__footer{
+    padding: 5px;
+}
+.card__title{
+    font-weight: bold;
+}
+.card__price{
+    text-align: right;
+}
+.cart__right select, .cart__right option{
+    color: black;
+}
+#CVV{
+    width: 60px;
+}
+.flex{
+    margin: 15px;
+    display: flex;
+
+    gap: 8px;
+}
+.total{
+    color: var(--purple);
+    margin-bottom: 50px;
+}
+.cart-payment{
+    margin: auto;
+    
+}
+@media (max-width:768px){
+    form{
+        width: 250px;
+        text-align: center;
+    }
+    .cart{
+        width: 90%;
+    }
+    #card-number{
+        width: 170px;
+    }
+}

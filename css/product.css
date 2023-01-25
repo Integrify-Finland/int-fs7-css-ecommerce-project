@@ -1,0 +1,77 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    background: url(https://i.postimg.cc/7YmpKcmV/gradienta-W75no7r-GSLk-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0rem;
+    justify-content: center;
+  
+}
+main li{
+    list-style:disc;
+    list-style-position: inside;
+}
+.product-left,.product-right{
+    width: 45%;
+}
+.product-left{
+    background: url(https://i.postimg.cc/prdHsHbD/jackson-sophat-w-Ub-Nv-DTs-OIc-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+    border: 2px solid var(--text-color);
+    border-right: 0;
+}
+.product-right{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 5px;
+    border: 2px solid var(--text-color);
+    border-left: 0;
+}
+.price{
+    text-align: center;
+    margin: 10px;
+}
+.product__btn{
+    align-self: center;
+    border: 3px white solid;
+    
+    margin: 20px;
+    padding: 1rem 5rem;
+    font-size: larger;
+
+    animation: button 5s ease-in-out infinite;
+}
+.product__btn:hover{
+    animation-name: none;
+    background-color: var(--purple);
+}
+@keyframes button {
+    0%{
+        
+    }
+    66%{
+        background-color: var(--purple);
+        
+    }
+    100%{
+
+    }
+}
+@media(max-width: 768px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-left{
+        height:200px;
+    }
+    .product-left,.product-right{
+        width: 80%;
+    }
+}

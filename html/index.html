@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/8aad6d85c7.js" crossorigin="anonymous"></script>
     <script>
         function srcollToClass(classname){
@@ -25,17 +26,17 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <h1 class="company-name">theRomeo`s <i class="fa-solid fa-laptop-code"></i> studio </h1>
+            <h1 class="company-name"><a href="index.html">theRomeo`s <i class="fa-solid fa-laptop-code"></i> studio </a></h1>
 
         </div>
         <div class="header-right">
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">About</a></li>
-                    <li><a href="#" class="nav-link">Login</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>
                     <li class="news-link">
-                        <a href="#" class="nav-link">News</a>
+                        <a href="cart.html" class="nav-link">Cart</a>
                         <div class="news-count">3</div>
                     </li>
                 </ul>
@@ -98,18 +99,23 @@
         <p class="course-description">This is one of the best courses to learn Front-end web development as it covers some of the most useful programming languages ad technologies you will need as a front-end web developer like HTML, CSS, JavaScript, jQuery, and Bootstrap! </p>
         <p class="course-description offset1-right">Created by theRomeo this course is also very hands-on, and you will start from creating a simple web page using HTML to write a chrome extension using JavaScript.</p>
         <p class="course-description offset2-left">Talking about social proof, more than 119,530 students have already benefitted from this course, and it also has, on average, 4.3 ratings from close to 3,468 participants, which is phenomenal.</p>
+        <a href="product.html" class="btn course-btn course-description">Full info</a>
     </section>
     <section class="back">
         <h2 class="course-title course-description">Back-end</h2>
         <p class="course-description">In this course, you'll explore the basic structure of a web application, and how a web browser interacts with a web server. You'll be introduced to the request/response cycle, including GET/POST/Redirect. </p>
         <p class="course-description offset1-left">You'll also gain an introductory understanding of Hypertext Markup Language (HTML), as well as the basic syntax and data structures of the PHP language, variables, logic, iteration, arrays, error handling, and superglobal variables, among other elements.</p>
         <p class="course-description offset2-right"> An introduction to Cascading Style Sheets (CSS) will allow you to style markup for webpages. Lastly, you'll gain the skills and knowledge to install and use an integrated PHP/MySQL environment like XAMPP or MAMP.</p>
+        <a href="product.html" class="btn course-btn course-description">Full info</a>
+
     </section>
     <section class="fullstack">
         <h2 class="course-title course-description">Full-stack</h2>
         <p class="course-description">Develop with front-end development languages and tools such as HTML, CSS, JavaScript, React and Bootstrap </p>
         <p class="course-description offset1-right">Deploy and scale applications using Cloud Native methodologies and tools like Containers, Kubernetes, Microservices and Serverless Functions</p>
         <p class="course-description offset2-left"> Build your GitHub portfolio by applying your Full Stack Cloud Development skills with multiple labs and hands-on projects, including a capstone</p>
+        <a href="product.html" class="btn course-btn course-description">Full info</a>
+
     </section>
     <section class="purchase">
         <h2>If you are willing to enroll in any course, please fill the form and we will contact you the same day.</h2>
@@ -121,7 +127,7 @@
             <input type="email" placeholder="Your email" name="email" id="email">
             <label for="phone">Please enter your phone:</label>
             <input type="phone" placeholder="Your phone" name="phone" id="phone">
-            <button type="submit" class="btn purhase__btn">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </section>
     <footer class="footer">
