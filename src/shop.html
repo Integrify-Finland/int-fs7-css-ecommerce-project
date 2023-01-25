@@ -11,7 +11,8 @@
 </head>
 <body>
     <header class="header">
-        <div class="top-border"></div>
+        <div class="top-border">
+        </div>
     <nav class="navbar">
         <div class="logo-container">
             <a href="/index.html" class="logo-container__logo"><img src="#" alt="Company logo"></a>
@@ -22,14 +23,16 @@
               <button type="submit" class="btn search__btn"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#">Shop</a></li>
-          <li><a href="src/sustainability.html">Sustainability</a></li>
-          <li><a href="src/login.html">Login</a></li>
-          <li><a href="src/cart.html"> <i class="fa fa-cart-plus"></i></a></li>
-        </ul>
+        <div class="navbar__menu-container">
+            <ul class="navbar__menu-list">
+              <li><a href="#">Shop</a></li>
+              <li><a href="src/sustainability.html">Sustainability</a></li>
+              <li><a href="src/login.html">Login</a></li>
+              <li><a href="src/cart.html"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a></li>
+            </ul>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        </div>
     </nav>
     </header>
     <main>
@@ -113,7 +116,7 @@
             <div class="shop-items-container">
                 <div class="sorting">
                     <h3 class="items__heading"><span class="larger">27</span> items found</h3>
-                    <button class="btn sorting__btn"> Sort by "arrow"</button>
+                    <button class="btn sorting__btn"> Sort by <i class="fa fa-arrow-down"></i></button>
                 </div>        
                 <div class="shop-items">
                     <div class="shop-item">
@@ -123,15 +126,239 @@
                                 <span class="item__price">1999.90 $</span><br>
                                 <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
                                 <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
-                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
                             </div>
-                            <div class="item__shopped"><i class="fa fa-cart-plus"></i>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 15</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <div class="item__img"></div>
+                        <div class="shop__description-container">
+                            <div class="item__description">
+                                <span class="item__price">1999.90 $</span><br>
+                                <span class="item__title"><span class="heavy">Modern</span> CSS</span><br>
+                                <span class="item__details">Man-made Cashmere Wool, custom fit, 300 grams </span>
+                                <div class="small__rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 29</div>
+                            </div>
+                            <div class="item__cart"><a href="/index.html" alt="Add to cart"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

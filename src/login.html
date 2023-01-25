@@ -9,14 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Shop ecommerce CSS projekt Adriano Valsangiacomo</title>
 </head>
-<body>
+<body class="login-body">
     <div class="login-header">
-        <div class="top-border"></div>
-        <div class="logo-container">
-            <a href="#" class="logo-container__logo"><img src="#" alt="Company logo"></a>
+        <div class="top-border">
         </div>
-        <div></div>
+        <div class="logo-container">
+            <a href="/index.html" class="logo-container__logo"><img src="#" alt="Company logo"></a>
+        </div>
     </div>
+    <main class="login-main">
+        <div class="sign-in">
+            <h1 class="sign-in__h1">Sign in</h1>
+            <form class="login-form">
+                <label for="user-id">E-Mail or user name</label><br>
+                <input type="password" name="user-id" id="user-id"><br>
+                <label for="password">Password</label><br>
+                <input type="text" name="password" id="password"><br>
+                <a href="http://">Forgot your password?</a><br>
+                <button type="submit">Sign in</button>
+            </form>
+
+        </div>
+        <div class="register">
+            <h1 class="sign-in__h1 register__h1">Register</h1>
+            <p>Register now and benefit from:</p>
+            <i class="fa fa-truck" aria-hidden="true"></i>Free shipping for 1 month. <br>
+            <i class="fa fa-briefcase" aria-hidden="true"></i> Return policy up to 30 days<br>
+            <a href="">Register as a private</a><br>
+            <a href="">Register as a retailer</a>
+        </div>
+    </main>  
 
 </body>
 </html>
