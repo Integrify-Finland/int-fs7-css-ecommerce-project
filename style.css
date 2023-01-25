@@ -1,6 +1,6 @@
 :root{
     --color1: #39B5E0;
-    --bgcolor1: rgba(57, 181, 224, 0.6);
+    --bgcolor1: rgba(57, 181, 224, 0.4);
     --color2: #A31ACB;
     --bgcolor2: rgba(163, 26, 203, 0.8);
     --color3: #D60079;
@@ -8,7 +8,7 @@
     --color4: #F5EA5A;
 }
 
-/* Reset ans general*/
+/* Reset and general*/
 *{
     margin: 0;
     padding: 0;
@@ -24,10 +24,27 @@ marquee{
     font-size: 30px;
 }
 
-a{
+a, button{
     color:var(--color3);
     cursor: pointer;
 }
+
+/*Nav */
+
+.nav{
+    background-color: var(--bgcolor1);
+}
+.nav a{
+    color:black;
+    font-weight: 600;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
 /* Header */
 
 header{
@@ -43,6 +60,18 @@ h1{
     font-family: 'Pacifico', cursive;
     color: var(--color4);
     font-size: 80px;
+    animation-name: anim-h1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-h1 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
 }
 
 header a{
@@ -53,12 +82,13 @@ header a{
     font-weight: 600;
 }
 
+
 /* Products */
 main{
     text-align: center;
 }
 
-.products__title{
+.products__title, .buy__title{
     padding: 20px;
     color: var(--color3);
     font-size: 30px;
@@ -93,9 +123,64 @@ gap: 30px;
     left: 50px;
 }
 
+.product__show-details{
+    color: var(--color3);
+}
+
 .product__details{
     display:none;
 }
+
+.product__show-details:hover + .product__details{
+    display: block;
+    font-size: smaller;
+}
+
+/* Form */
+.buy{
+    background-color: var(--bgcolor3);
+    padding: 10px;
+}
+
+.buy__info-client label, .buy__submit, .buy__p-address{
+    display: block;
+    padding: 5px;
+}
+
+textarea{
+    padding: 10px;
+}
+
+.buy__img{
+    width: 100px;
+}
+
+#buy__payment-option{
+    display: inline;
+}
+.buy__redirect{
+    display: none;
+}
+.buy__submit:hover + .buy__redirect{
+    display: block
+}
+
+.buy__address{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.buy__submit{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: solid 2px var(--color2);
+    background-color: var(--color4);
+    font-weight: 600;
+    width: 100px
+}
+
 
 /* Footer */
 
@@ -114,9 +199,23 @@ footer{
     color: var(--color4);
     display: inline;
 }
-/*
-TO DO:
-button header: tirar a shadow para parecer q ta apertando
-accessibility
-responsive design
-hide details from mat and kindle
+
+/* Medias */
+
+@media screen and (max-width:600px) {
+    header{
+        height: 80vh;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .buy__address{
+        display: block;
+    }
+}
