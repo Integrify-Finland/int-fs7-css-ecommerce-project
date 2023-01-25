@@ -1,6 +1,7 @@
 :root {
     --main-color: rgb(252, 208, 155);
     --background-color:#f4f4f4;
+    --blue: #10668f;
 }
 
 body {
@@ -17,6 +18,17 @@ img {
 a {
     color: #000;
   }
+li {
+    list-style: none;
+}
+.larger {
+  font-size: larger;
+  font-weight: 700;
+}
+.heavy {
+  font-weight: 600;
+}
+
 .background__img {
   background-size: cover;
   background-position: center;
@@ -207,11 +219,14 @@ top: 0;
     background-image: url(/src/images/sustainable.jpg.jpg);
 }
 
-  /* 48em = 768px */
 
 /* Shop */
+.discover {
+    border-bottom: 1px solid var(--blue);
+    box-shadow: 0 2px 4px var(--blue);
+}
 .discover__grid {
-    margin-top: 70px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -224,7 +239,7 @@ top: 0;
 
 .suit {
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -239,7 +254,120 @@ top: 0;
     background-image: url(/src/images/suit3.jpg.jpg);
 }
 
+.discover__description p {
+    text-align: center;
+    font-weight: 700;
+}
+.discover__new-collection{
+    font-size: 1.2em;
+    text-shadow: 0px 0px 1px var(--blue);
+    color:var(--blue);
+}
+.discover a {
+    text-decoration: none;
+}
 
+.filter__btn , .apply__filter-btn , .reset__filter-btn , .sorting__btn{
+    font-size: 1em;
+    margin: 20px 5px 0px 5px;
+    padding: 8px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    transition: all 0.15s;
+}
+.shop__filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shop__filter {
+    margin:auto;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--main-color);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all 1s ;
+    }
+
+.filters-text {
+  font-size: 1.5em;
+  font-size: medium;
+  line-height: 2em;
+}
+
+.shop__filter:hover .dropdown {
+    display: block;
+}
+
+.filter__btn:hover , .sorting__btn:hover{
+  background-color: var(--main-color)
+}
+
+.items__heading {
+  display: inline;
+  padding-left: 15px;
+}
+
+.sorting__btn {
+  margin-left: 30px;
+  padding-right: 15px;
+  display: inline;
+}
+
+.items__heading {
+  text-indent: 1rem;
+}
+.apply__filter-btn , .reset__filter-btn {
+  background-color: var(--main-color);
+}
+.apply__filter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shop-item {
+  margin: 20px;
+  height: 70vh;
+}
+.item__img {
+  background-image: url(/src/images/item.jpg.jpg);
+  height: 70%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.item__description {
+  margin-top: 20px;
+}
+.item__price {
+  font-weight: 900;
+}
+.item__details {
+  font-size: 0.9em;
+  opacity: 0.5;
+}
+.item__shopped {
+  display: inline;
+  font-size: 3em;
+}
+.shop__description-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  /* 48em = 768px */
 
   @media (min-width: 780px) {
     .navbar li {
