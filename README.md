@@ -3,7 +3,7 @@
  Also in cart there is no "history tab", although there is such button
  Animated button is in Product tab. Also all buttons\links with hover effect
  
- Accesibility: 
+ ##Accesibility: 
  -Main - 94 . I have skipped h3 and used h4 (its ok, right?). Not contrasting colors, but it doesnt see the box-shadow which makes the contrast
  -Login - 93 . Same
  -Register - 93 . Same
