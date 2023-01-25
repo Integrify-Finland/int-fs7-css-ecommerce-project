@@ -127,7 +127,7 @@ main {
 .welcome{
     width: 100%;
     min-height: 80vh;
-    background-image: url("./images/coffeeBeans.jpg");
+    background-image: url("../images/coffeeBeans.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.6);
