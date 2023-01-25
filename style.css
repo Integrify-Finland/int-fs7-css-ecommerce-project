@@ -1,0 +1,230 @@
+:root {
+    --main-color1: #c66845;
+    --main-color2: #4F322E;
+    --main-color3: #688D80;
+    --padding: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+*::selection{
+    background-color: #899a94;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.page-wrapper {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    /* background-color: beige; */
+}
+
+/* header styling starts */
+header {
+    width: 100%;
+    min-height: 15vh;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--padding) 0 var(--padding);
+}
+
+.header__logo {
+    width: 10%;
+    transition: filter 0.3s ease-in;
+}
+
+.header__logo:hover, .header__logo-text:hover {
+    filter: saturate(0.5);
+    cursor: pointer;
+}
+
+.header__logo-text {
+    width: 20%;
+    height: 100%;
+    transition: filter 0.3s ease-in;
+}
+
+.header__cart {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+.cart-icon {
+    color: #4f322ed7;
+    font-size: 3.5rem;
+    transition: all 300ms linear;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+    /* transform: scale(1.1); */
+    transform: scale(1.1);
+}
+
+/* header styling ends */
+
+
+/* nav styling starts */
+nav {
+    width: 100%;
+    height: 7vh;
+    background-color: var(--main-color3);
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+nav>ul>li {
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 200ms;
+    display: inline-block;
+}
+
+nav>ul>li>a:hover {
+    color: var(--main-color2);
+    transform: scale(1.1);
+}
+
+/* nav styling ends */
+
+
+
+/* main styling starts */
+main {
+    width: 100%;
+    min-height: 75vh;
+}
+
+.welcome{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("./images/coffeeBeans.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.7);
+    transition: filter 1s linear;
+    /* opacity(0.9) */
+}
+
+.welcome:hover{
+    filter: grayscale(0)
+    /* opacity(0.9) */
+}
+
+/* main styling ends */
+
+
+
+/* footer styling starts */
+footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: var(--padding) 0 var(--padding) 0;
+}
+
+.footer__header{
+    color: var(--main-color1);
+}
+
+.footer__contacts{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer__contacts i{
+    font-size: 2rem;
+    color: var(--main-color2);
+    transition: color 0.5s ease-in;
+}
+
+.footer__contacts i:hover{
+    color: var(--main-color3);
+}
+
+/* footer styling ends */
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .page-wrapper {
+        width: 95vw;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .header__logo {
+        width: 20%;
+    }
+
+    .header__logo-text {
+        width: 30%;
+    }
+
+    .header__cart {
+        width: 10%;
+    }
+
+    .cart-icon {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-wrapper {
+        width: 100vw;
+        /* background-color: rgba(255, 0, 0, 0.196); */
+    }
+
+    header {
+        justify-content: space-evenly;
+    }
+
+    .header__logo {
+        width: 20%;
+    }
+
+    .header__cart {
+        width: 15%;
+    }
+
+    .header__logo-text {
+        width: 40%;
+    }
+
+    .cart-icon {
+        font-size: 2.8rem;
+    }
+}
