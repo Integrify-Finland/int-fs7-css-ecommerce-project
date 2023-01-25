@@ -7,5 +7,6 @@
    - registration page, login page (2 points)
    - deploy the project on netlify and share the deployment link in README.md; do not forget to make a PR as well (1 point)
    - apply any relevant animation in the project (1 point)
-   - Your creativity and additional functionality to the project will help you to get extra 2 points
+   - make sure the website is 100% accessibile (1 point)
+   - Your creativity and additional functionality to the project will help you to get extra 1 point
   
