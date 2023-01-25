@@ -9,3 +9,6 @@
    - apply any relevant animation in the project (1 point)
    - Your creativity and additional functionality to the project will help you to get extra 2 points
   
+
+Netlify link:  
+https://cottonete.netlify.app/
