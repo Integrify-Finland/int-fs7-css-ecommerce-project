@@ -502,7 +502,7 @@ border: none;
 }
 
 @media (min-width: 1000px) {
-.top-border {
+.login__page .top-border {
   background-color: var(--background-color);
 }
 .login__page {
