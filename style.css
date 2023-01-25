@@ -16,8 +16,19 @@ body {
 
 }
 
+img {
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
 
 /* reset code and common starts here  */
+
+
+/* header styling starts here */
 
 header {
     background-color: #4C586D;
@@ -83,7 +94,7 @@ header {
 }
 
 main {
-    background-color: green;
+    background-color: rgb(74, 95, 74);
     height: 600px;
 }
 
@@ -94,3 +105,28 @@ footer {
 .bx-shopping-bag {
     font-size: 30px;
 }
+
+/* header styling ends here */
+
+/* main styling starts here */
+
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+.product {
+    width: 30%;
+    height: 30%;
+    display: block;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+
+
+
+/* main styling ends here */
