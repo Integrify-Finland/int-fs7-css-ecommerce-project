@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', 'Times New Roman', serif;
+    border: none;
 }
 *::selection{
     background-color: #899a94;
@@ -23,7 +24,7 @@ a{
     text-decoration: none;
 }
 
-i:hover{
+i:hover, a:hover, button:hover{
     cursor: pointer;
 }
 
@@ -129,16 +130,43 @@ main {
     background-image: url("./images/coffeeBeans.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(0.7);
+    filter: grayscale(0.6);
     transition: filter 1s linear;
-    /* opacity(0.9) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .welcome:hover{
     filter: grayscale(0)
-    /* opacity(0.9) */
+    
 }
 
+.welcome__header{
+    color: white;
+    font-size: 4rem;
+    max-width: 90%;
+    font-weight: 500;
+    background-color: #688d804f;
+    text-align: center;
+}
+
+.welcome__btn{
+    width: 20%;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--main-color1);
+    color: white;
+    transition: box-shadow 0.3s linear;
+    transition: transform 0.5s linear;
+}
+
+.welcome__btn:hover{
+    box-shadow: 1px 3px 3px 5px rgba(255, 255, 255, 0.2);
+    transform: translate(0, .3rem);
+}
 /* main styling ends */
 
 
@@ -200,6 +228,16 @@ footer {
     .cart-icon {
         font-size: 3rem;
     }
+
+    .welcome__header{
+        font-size: 3rem;
+    }
+    
+    .welcome__btn{
+        width: 30%;
+        /* height: 3rem;
+        font-size: 1.5rem; */
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -226,5 +264,15 @@ footer {
 
     .cart-icon {
         font-size: 2.8rem;
+    }
+
+    .welcome__header{
+        font-size: 2rem;
+    }
+    
+    .welcome__btn{
+        width: 40%;
+        /* height: 3rem;
+        font-size: 1.5rem; */
     }
 }
