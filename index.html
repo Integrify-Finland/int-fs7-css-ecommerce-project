@@ -11,10 +11,11 @@
 </head>
 <body class="index__body">
     <header class="header">
-        <div class="top-border"></div>
+        <div class="top-border">
+        </div>
     <nav class="navbar">
         <div class="logo-container">
-            <a href="#" class="logo-container__logo"><img src="#" alt="Company logo"></a>
+            <a href="#" class="logo-container__logo"><img src="/src/images/logo.png" alt="Company logo" class="logo-img"></a>
         </div>
         <div class="search-container">
             <form class="search-container__form">
@@ -22,14 +23,18 @@
               <button type="submit" class="btn search__btn"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="src/shop.html">Shop</a></li>
-          <li><a href="src/sustainability.html">Sustainability</a></li>
-          <li><a href="src/login.html">Login</a></li>
-          <li><a href="src/cart.html"> <i class="fa fa-cart-plus"></i></a></li>
-        </ul>
+        <div class="navbar__menu-container">
+            <div class="navbar__menu-list">
+               <a href="/src/shop.html">Shop</a></li>
+                <a href="src/about.html">About</a>
+                <a href="/src/login.html">Login</a>
+                <a href="src/cart.html"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a>
+            </div>
+            <div>    
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            </div>
+        </div>
     </nav>
     </header>
     <main class="main-container">

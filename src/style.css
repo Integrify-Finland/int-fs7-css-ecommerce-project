@@ -97,6 +97,7 @@ grid-area: h;
     z-index: 1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
   }
 
@@ -124,10 +125,7 @@ grid-area: h;
 
 .navbar__menu-container {
   overflow: hidden;
-}
-
-.navbar__menu-container a {
-  background-color: var(--main-color);
+  padding-left: 1.5em;
 }
 
 .navbar__menu-list {
@@ -137,13 +135,15 @@ grid-area: h;
   top: 60px;
   z-index: 90;
   min-width: 300px;
-  font-size: 1.5em;
-  text-indent: 1em;
+  font-size: 1.2em;
+  text-indent: 0.5em;
+  transition: all 0.2s;
   }
 
-  .navbar__m
 .navbar__menu-list a {
+  line-height: 2em;
   text-decoration: none;
+  background-color: rgba(252, 208, 155, 0.9)
 }
 
   .navbar .menu-icon {
@@ -163,11 +163,15 @@ grid-area: h;
     width: 18px;
   }
 
+
   .navbar__menu-container:hover .navbar__menu-list {
     display: block;
     display: flex;
     flex-direction: column;
+  }
 
+  .navbar__menu-container:hover , .navbar__menu-list:hover .navbar__menu-container {
+  background-color: var(--main-color);
   }
 
   .navbar .menu-icon .navicon:before,
@@ -190,10 +194,6 @@ grid-area: h;
   }
   
   /* menu btn */
-  
-  .navbar .menu-btn {
-    display: ;
-  }
   
   .navbar .menu-btn:checked ~ .navbar__menu-list {
     display: block;
@@ -501,6 +501,14 @@ border: none;
   margin-bottom: 40px;
 }
 
+@media (max-width: 400px) {
+  .search-container {
+    display: none;
+  }
+}
+
+
+
 @media (min-width: 700px) {
 .login-main {
   display: grid;
@@ -552,23 +560,31 @@ border: none;
       "h h h h h h h"
       ". m m m m m ."
       "f f f f f f f";
-  }
-    .navbar li {
-      float: left;
-    }
+}
 
-    .navbar li a {
-      padding: 10px 15px;
+    .navbar__menu-container {
+      display: contents ;
+      display: block;
     }
     .navbar__menu-list {
+      display: contents;
+      position: static;
       display: flex;
       justify-content: end;
       align-items: baseline;
+      background-color: white;
     }
-    .navbar .menu {
-      clear: none;
-      float: left;
-      max-height: none;
+     .navbar__menu-list a {
+        line-height: 1em;
+        text-decoration: none;
+        background-color: white ;
+      }
+      .navbar__menu-list a:not(.last-child) {
+        border-right: 1px solid rgb(199, 199, 199);
+        padding-right: 10px;
+      }
+    .menu-btn {
+      display: none;
     }
 
     .navbar .menu-icon {

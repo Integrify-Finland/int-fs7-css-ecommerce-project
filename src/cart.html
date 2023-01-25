@@ -10,12 +10,12 @@
     <title>Cart ecommerce CSS projekt Adriano Valsangiacomo</title>
 </head>
 <body class="cart__body">
-    <header class="cart__header">
+    <header class="header">
         <div class="top-border">
         </div>
     <nav class="navbar">
         <div class="logo-container">
-            <a href="/index.html" class="logo-container__logo"><img src="#" alt="Company logo"></a>
+            <a href="/index.html" class="logo-container__logo"><img src="/src/images/logo.png" alt="Company logo" class="logo-img"></a>
         </div>
         <div class="search-container">
             <form class="search-container__form">
@@ -24,14 +24,16 @@
             </form>
         </div>
         <div class="navbar__menu-container">
-            <ul class="navbar__menu-list">
-              <li><a href="#">Shop</a></li>
-              <li><a href="src/sustainability.html">Sustainability</a></li>
-              <li><a href="src/login.html">Login</a></li>
-              <li><a href="src/cart.html"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a></li>
-            </ul>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <div class="navbar__menu-list">
+               <a href="/src/shop.html">Shop</a></li>
+                <a href="src/about.html">About</a>
+                <a href="/src/login.html">Login</a>
+                <a href="#"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a>
+            </div>
+            <div>    
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            </div>
         </div>
     </nav>
     </header>
