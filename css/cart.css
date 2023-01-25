@@ -54,7 +54,7 @@ main{
 .cart__title-active{
     background: var(--purple);
     border-right: 0;
-    transform: translateX(3.5px);
+    transform: translateX(4px);
     padding-right: 19px;
 }
 .cart__card{
@@ -98,7 +98,7 @@ main{
 }
 @media (max-width:768px){
     form{
-        width: 250px;
+        width: 230px;
         text-align: center;
     }
     .cart{
@@ -106,5 +106,11 @@ main{
     }
     #card-number{
         width: 170px;
+    }
+    .cart-pay{
+        padding: 0;
+    }
+    .cart__title{
+        padding-right: 3px;
     }
 }
