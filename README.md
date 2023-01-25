@@ -1,6 +1,6 @@
 # isa7-css-ecommerce-project 
 
- [Netlify live link]([https://www.google.com "Google's Homepage"](https://www.google.com](https://63d1ab8ecaa7b21365711ebd--merry-marshmallow-20366f.netlify.app))
+ [Netlify live link](https://63d1ab8ecaa7b21365711ebd--merry-marshmallow-20366f.netlify.app)
 
  
 ## CSS Assignment - 15 points
