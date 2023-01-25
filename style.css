@@ -63,7 +63,8 @@
 /*about start*/
 .about{
     height: 100vh;
-    background: url(https://i.postimg.cc/YCZb6P2m/clement-helardot-95-YRwf6-CNw8-unsplash.jpg) no-repeat center ;
+    background: url(https://i.postimg.cc/YCZb6P2m/clement-helardot-95-YRwf6-CNw8-unsplash.jpg) no-repeat center center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
