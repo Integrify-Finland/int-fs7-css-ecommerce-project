@@ -7,10 +7,10 @@
     <meta name="description" content="Picture selling website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Shop ecommerce CSS projekt Adriano Valsangiacomo</title>
+    <title>Cart ecommerce CSS projekt Adriano Valsangiacomo</title>
 </head>
-<body>
-    <header class="header">
+<body class="cart__body">
+    <header class="cart__header">
         <div class="top-border">
         </div>
     <nav class="navbar">
@@ -23,15 +23,19 @@
               <button type="submit" class="btn search__btn"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#">Shop</a></li>
-          <li><a href="src/sustainability.html">Sustainability</a></li>
-          <li><a href="src/login.html">Login</a></li>
-          <li><a href="src/cart.html"> <i class="fa fa-cart-plus"></i></a></li>
-        </ul>
+        <div class="navbar__menu-container">
+            <ul class="navbar__menu-list">
+              <li><a href="#">Shop</a></li>
+              <li><a href="src/sustainability.html">Sustainability</a></li>
+              <li><a href="src/login.html">Login</a></li>
+              <li><a href="src/cart.html"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a></li>
+            </ul>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        </div>
     </nav>
     </header>
+    <main>
+    </main>
 </body>
 </html>
