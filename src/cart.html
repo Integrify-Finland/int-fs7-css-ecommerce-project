@@ -26,7 +26,7 @@
         <div class="navbar__menu-container">
             <div class="navbar__menu-list">
                <a href="/src/shop.html">Shop</a></li>
-                <a href="src/about.html">About</a>
+                <a href="/src/about.html">About</a>
                 <a href="/src/login.html">Login</a>
                 <a href="#"><span class="cart__menu"><i class="fa fa-cart-plus"></i></span></a>
             </div>
@@ -37,7 +37,29 @@
         </div>
     </nav>
     </header>
-    <main>
+    <main class="cart__main">
+        <h1>
+            Shopping List
+        </h1>
+        <div class="cart-items">
+            <div class="cart-item"><img src="/src/images/suit1.jpg.jpg" alt="A suit" class="cart-item__img">Modern CSS, 300 grams     
+                <input id="number" type="number" value="1" class="item__amount"/>
+                <span class="total-item__price">990</span>$
+            </div>
+            <div class="cart-item"><img src="/src/images/suit1.jpg.jpg" alt="A suit" class="cart-item__img">Modern CSS, 300 grams     
+                <input id="number" type="number" value="1" class="item__amount"/>
+                <span class="total-item__price">990</span>$
+            </div>
+            <div class="cart-item"><img src="/src/images/suit1.jpg.jpg" alt="A suit" class="cart-item__img">Modern CSS, 300 grams     
+                <input id="number" type="number" value="1" class="item__amount"/>
+                <span class="total-item__price">990</span>$
+            </div>
+            <div class="total-price__container">
+                Total: <span class="total-price">2970</span>$ <br>
+                <button type="submit" class="btn buy__btn"><a href="/src/payment.html"> Buy now </a></button>
+            </div>
+
+        </div>
     </main>
 </body>
 </html>
