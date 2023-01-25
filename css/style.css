@@ -21,6 +21,7 @@
 .about__ankor{
     position:absolute;
     bottom: -20px;
+    cursor: pointer;
     left: 50%;
     background: var(--purple);
     border-radius: 50%;
