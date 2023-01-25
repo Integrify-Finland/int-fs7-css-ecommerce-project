@@ -26,18 +26,22 @@
       <div class="header__links">
         <div class="header__logo logo">Lovely Minimal</div>
         <div class="header__btns">
-          <a href="/signIn.html" target="main__frame"><button type="button">Sign In</button></a>
-          <a href="/signUp.html" target="main__frame"><button type="button">Sign up</button></a>
+          <a  href="/products/signIn.html" target="main-frame"><button onClick="document.getElementById('main__iframe').scrollIntoView();" type="button">Sign In</button></a>
+          <a class="header__signup-link link" href="/products/signUp.html" target="main-frame"><button type="button" onClick="document.getElementById('main__iframe').scrollIntoView();">Sign up</button></a>
         </div>
       </div>
 
       <div class="header__cart-search">
-        <a href="/cart.html" target="main-frame"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="/user-acount.html" target="main__frame"><i class="fa-solid fa-user"></i></a>
+
+        <a class="link" href="/products/cart.html" target="main-frame"><i id="cart" class="fa-solid fa-cart-shopping"></i></a>
+
+        <a class="link" href="/products/user-acount.html" target="main-frame"><i id="user" class="fa-solid fa-user"></i></a>
+
         <button class="header__search-btn">Search</button>
         <label  for="searchbar"
-          ><input class="header__search" placeholder="Search" name="searchbar" type="search" />
+          ><input class="header__search" placeholder="Search" name="searchbar" type="search"/>
         </label>
+
       </div>
 
     </header>
@@ -59,14 +63,14 @@
      <h1 class="main__products-header">Products</h1>
 
      <section class="products">
-<a href="ring.html" target="main-frame" onclick=""><img class="product ring"width="300px" height="250px" src="/pictures/ring2.jpg" alt="diamond ring">Diamond Ring</a>
+<a href="products/ring.html" target="main-frame" onclick=""><img class="product ring"width="300px" height="250px" src="/pictures/ring2.jpg" alt="diamond ring">Diamond Ring</a>
 
 
-<a href="earings.html" target="main-frame"><img class="product earings" width="300px" height="250px" src="/pictures/earings.jpg" alt="diamond earings">Diamond Earings</a>
+<a href="products/earings.html" target="main-frame"><img class="product earings" width="300px" height="250px" src="/pictures/earings.jpg" alt="diamond earings">Diamond Earings</a>
 
-<a href="chain.html" target="main-frame"><img class="product chain" width="300px" height="250px" src="/pictures/chain.jpg" alt="gold chain">18 Karat gold chain</a>
+<a href="products/chain.html" target="main-frame"><img class="product chain" width="300px" height="250px" src="/pictures/chain.jpg" alt="gold chain">18 Karat gold chain</a>
 
-<a href="jwelerySet.html" target="main-frame"><img class="product jl-set" width="300px" height="250px" src="/pictures/set.jpg" alt="jewlery set">
+<a href="products/jwelerySet.html" target="main-frame"><img class="product jl-set" width="300px" height="250px" src="/pictures/set.jpg" alt="jewlery set">
   Minimalist gold set</a>
      
      <!--<div class="aside__btns">
@@ -92,5 +96,18 @@
 </div>
 <div class="footer__col3"></div>
     </footer>
+<script>
+
+document.getElementById("cart").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("main__iframe").scrollIntoView;
+}
+
+   
+    
+    
+  
+</script>
   </body>
 </html>

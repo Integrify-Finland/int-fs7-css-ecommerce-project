@@ -1,0 +1,75 @@
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        border: none;
+        font-family: 'Merienda', cursive;
+        
+    }
+       :root{
+        --primary-first-color:#D4668E;
+        --primary-second-color:#FFCABE;
+        --primary-body-color:#FEF4EA;
+        --primary-btn-color:#FFB8D0;
+        --primary-aside-color:#FAECBC;
+        --primary-footer-color:#CECCFD;
+        --btn-padding: 0.5rem;
+        --btn-width: 7rem;
+        --btn-border-radius:7px;
+        --heading-fnt-w:1.5rem;
+        --subheading-fnt-w:1rem;
+        --contents-fnt-w:1.5rem;
+        --bx-shadow:-8px 10px 5px -2px rgba(163,152,152,0.55);
+    }
+    button{
+        padding: var(--btn-padding);
+        width: var(--btn-width);
+        background-color: var(--primary-btn-color);
+        border-radius: var(--btn-border-radius);
+        -webkit-border-radius: var(--btn-border-radius);
+        -moz-border-radius: var(--btn-border-radius);
+        -ms-border-radius: var(--btn-border-radius);
+        -o-border-radius: var(--btn-border-radius);
+        cursor: pointer;
+        box-shadow: var(--bx-shadow);
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+    }
+    button:hover{
+        background-color: var(--primary-first-color);
+    }
+ 
+.p__img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow:var(--bx-shadow) ;
+    width:70%;
+}
+
+h1{
+    font-size: var(--heading-fnt-w);
+}
+del{
+    text-decoration: line-through;
+}
+.flex__container{
+    display: flex;
+    align-items: center;
+    margin: 8%;
+}
+.p__dsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 7%;
+}
