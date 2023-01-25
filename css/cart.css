@@ -113,4 +113,7 @@ main{
     .cart__title{
         padding-right: 3px;
     }
+    .cart-pay,.cart-pay main{
+        padding: 0;
+    }
 }
