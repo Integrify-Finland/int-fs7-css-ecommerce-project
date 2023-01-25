@@ -203,6 +203,11 @@ iframe{
     background-color: var(--primary-second-color);
    box-shadow: var(--bx-shadow);
 }
+.arrow{
+    display: flex;
+   justify-content: flex-end;
+   margin-right: 5%;
+}
 
 /*--------footer-------*/
 footer{
