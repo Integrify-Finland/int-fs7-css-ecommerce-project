@@ -49,10 +49,6 @@ main {
 }
 .product img {
     max-width: 100%;
-   /* height:30%;*/
-}
-.product h2 {
-    margin: 0;
 }
 .product p {
     margin: 10px 0;

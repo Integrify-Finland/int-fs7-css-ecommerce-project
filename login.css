@@ -23,14 +23,14 @@ label {
     margin-bottom: 10px;
 }
 input[type="text"], input[type="password"] {
-    width: 70%;
+    width: 80%;
     padding: 12px 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #181918;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -39,5 +39,5 @@ input[type="submit"] {
     margin-top: 10px;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #393a39;
 }
