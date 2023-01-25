@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>❤️Minimalist Jwelery</title>
+    <title>❤️Minimalist Jewellery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,13 +26,14 @@
       <div class="header__links">
         <div class="header__logo logo">Lovely Minimal</div>
         <div class="header__btns">
-          <button>Sign In</button>
-          <button>Sign up</button>
+          <a href="/signIn.html" target="main__frame"><button type="button">Sign In</button></a>
+          <a href="/signUp.html" target="main__frame"><button type="button">Sign up</button></a>
         </div>
       </div>
 
       <div class="header__cart-search">
-        <i class="fa-solid fa-cart-shopping"> </i>
+        <a href="/cart.html" target="main-frame"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/user-acount.html" target="main__frame"><i class="fa-solid fa-user"></i></a>
         <button class="header__search-btn">Search</button>
         <label  for="searchbar"
           ><input class="header__search" placeholder="Search" name="searchbar" type="search" />
@@ -50,32 +51,41 @@
            <div class="main__top-img img2">
     
            <h1 class="main__msg h1"> Valentine's day offer</h1>
-           <p class="main__msg p">Only High quality Jwelery</p></div>
+           <p class="main__msg p">Only High quality Jewellery</p></div>
            <div class="main__top-img img3"></div>
         </div>
       </section>
       <section class="main__products">
+     <h1 class="main__products-header">Products</h1>
 
-     <h1 class="main__products__header">Products</h1>
-
-     <div class="products">
-
-        <div class="product ring"></div>
-
-        <div class="product chain"></div>
-
-        <div class="product earings"></div>
-
-        <div class="product jl-set"></div>
-
+     <section class="products">
+<a href="ring.html" target="main-frame" onclick=""><img class="product ring"width="300px" height="250px" src="/pictures/ring2.jpg" alt="diamond ring"></a>
+<a href="earings.html" target="main-frame"><img class="product earings" width="300px" height="250px" src="/pictures/earings.jpg" alt="diamond earings"></a>
+<a href="chain.html" target="main-frame"><img class="product chain" width="300px" height="250px" src="/pictures/chain.jpg" alt="gold chain"></a></class=>
+<a href="jwelerySet.html" target="main-frame"><img class="product jl-set" width="300px" height="250px" src="/pictures/set.jpg" alt="jewlery set"></a>
      </div>
+     <!--<div class="aside__btns">
+      <span><button class="chat__btn">Chat with us</button>
+      </span>
+      <span><button class="fdback__btn">Give us a feedback</button>
+      </span>
+    </div>-->
       </section>
+      <section class="main__iframe">
+        <iframe scrolling="no" id="main__iframe" src="iframe.html" frameborder="0" name="main-frame"></iframe>
+      </section>
+     
     </main>
 
-    <aside>
-      <span>Chat with us</span>
-    </aside>
+    <footer>
+<div class="footer__col1">
 
-    <footer></footer>
+</div>
+<div class="footer__col2">
+  <address>Sundsvall, Sweden</address>
+  <tel>0046123456025</tel>
+</div>
+<div class="footer__col3"></div>
+    </footer>
   </body>
 </html>
