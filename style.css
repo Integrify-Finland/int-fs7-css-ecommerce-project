@@ -26,7 +26,7 @@
 /*header start*/
 .header{
     background: var(--purple);
-    padding: var(--padding);
+    padding: var(--padding) var(--padding) 0.5rem var(--padding);
     display: flex;
     justify-content: space-between;
 }
@@ -34,7 +34,10 @@
  
     font-size: 1.5rem;
 }
-
+.header-right,nav{
+    display: flex;
+    justify-content: center;
+}
 /*header end*/
 /*navigation start*/
 .nav-list{
@@ -71,6 +74,7 @@
     border: 2px solid var(--purple);
     border-radius: 2rem;
     padding: 1rem 1.5rem;
+    margin: 1rem;
     position: relative;
 }
 .about__ankor{
@@ -103,7 +107,7 @@
     width: 250px;
     height: 350px;
     background-color: var(--text-color);
-    margin: 5px;
+    margin: 15px;
     border-radius: 1rem;
     box-shadow: 4px ;
     box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.2);}
@@ -170,22 +174,23 @@
     }
     .offset1-right{
         transform: translatey(-25px);
-        margin-right: 250px;
+        
+        margin-right: 20%;
         margin-left: 10px;
     }
     .offset2-left{
         transform: translatey(-50px);
-        margin-left: 200px;
+        margin-left: 15%;
         margin-right: 20px;
     }
     .offset2-right{
         transform: translatey(-50px);
-        margin-right: 250px;
+        margin-right: 20%;
         margin-left: 10px;
     }
     .offset1-left{
         transform: translatey(-25px);
-        margin-left: 200px;
+        margin-left: 15%;
         margin-right: 20px;
     }
 /*product pages end*/
@@ -246,7 +251,35 @@
     margin-top: 40px;
 }
 /*purchase end*/
+/*footer start*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background: var(--text-color);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.footer h4,.footer a,.footer i{
+    color: var(--purple-light);
+}
+.footer__right ul{
+    display: flex;gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/*footer end*/
 /**/
-/**/
-/**/
+
+@media (max-width:480px){
+     .header{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .purchase__form{
+        width: 250px;
+    }
+    
+}
 /**/
