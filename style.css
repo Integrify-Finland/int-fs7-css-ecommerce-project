@@ -154,6 +154,7 @@
         gap: 1rem;
         min-height: 100vh;
         background:no-repeat center url(https://i.postimg.cc/XYmTWzzW/louise-viallesoubranne-5-Eh-N4wbfv-Bc-unsplash.jpg);
+        background-size: cover;
     }
     .back{
         background-image: url(https://i.postimg.cc/yd00rkw9/mohammad-rahmani-8q-EB0f-Te9-Vw-unsplash.jpg);
