@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/ecommerce.html"
-to = "/cart.html"
+from = "/*"
+to = "/ecommerce.html"
 status = 200
 
