@@ -1,5 +1,6 @@
 [[redirects]]
 from = "/*"
 to = "/ecommerce.html"
+from = "/ecommerce.html"
 to = "/cart.html"
 status = 200
