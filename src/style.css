@@ -412,16 +412,110 @@ footer {
 /* Login */
 
 .login-body{
-  display: grid;
-  grid-template-areas: 
-    "h"
-    "m";
+margin: 0;
+background-color: var(--main-color-background);
+font-size: 1.2em;
+line-height: 1.5em;
+}
+.login__page {
+  max-width: 1000px;
 }
 .login-header{
-  grid-area: h;
+  background-color: var(--background-color);
 }
 .login-main {
-  grid-area: m;
+  background-color: var(--background-color);
+  padding: 0.2em;
+  margin: 0;
+  text-decoration: none;
+}
+.login-form {
+  color: rgba(0,0,0,0.6);
+}
+.login-form a {
+  margin: 20px 0;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+.login-form input {
+  width: 100%;
+  height: 1.5em;
+  margin-bottom: 15px;
+}
+
+.sign-in__h1 {
+  font-size: larger;
+}
+.sign-in__btn {
+font-size: 1rem;
+width: 100%;
+height: 2em;
+margin-bottom: 10px;
+background-color: var(--main-color);
+border: none;
+}
+
+.external__signing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.external__signing a {
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 0;
+  font-size: 0.8em;
+  border: 2px solid var(--main-color);
+}
+
+.register__content a , .register__content p , .register__content i , .register__content span {
+  font-size: 0.9em;
+}
+.register__content a {
+  text-decoration: none;
+  text-align: center;
+}
+.register__link {
+  margin-top: 10px;
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+}
+.register__last {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+.login-main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.sign-in {
+  grid-column: 2 / 4;
+}
+.register {
+  padding-left: 30px;
+  grid-column: 4 / 6;
+}
+}
+
+@media (min-width: 1000px) {
+.top-border {
+  background-color: var(--background-color);
+}
+.login__page {
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+}
+.login-body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
   /* 48em = 768px */
@@ -431,16 +525,7 @@ footer {
     main {
       margin-top: 0px
     }
-
-    body {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      grid-template-areas: 
-          "h h h h h h h"
-          ". m m m m m ."
-          "f f f f f f f";
-    }
-
+  
     .shop-items {
       display: flex;
       justify-content: center;
@@ -451,14 +536,17 @@ footer {
     .navbar li {
       float: left;
     }
+
     .navbar li a {
       padding: 20px 30px;
     }
+
     .navbar .menu {
       clear: none;
       float: left;
       max-height: none;
     }
+
     .navbar .menu-icon {
       display: none;
     }
