@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+h1, h2, h3{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body {
+    background-color: #333;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    margin:0
+}
+
+html, body {
+    height: 100%;
+}
+.big {
+    min-height: 100%;
+    margin-bottom: 30px;
+}
+p{
+ 
+    font-size: 0.7rem;
+}
+.header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: tomato; 
+    min-height: 60px;
+    border-bottom: 2px solid white;
+}
+
+.products {
+    margin-top: 50px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    height: 60px;
+}
+.navbar .container{
+    max-width: 1100px;
+    margin: 0 auto;   
+    overflow: hidden; 
+    padding: 0 20px; 
+}
+.products__container{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 22px;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+
+
+}
+.navbar .container ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.navbar a:hover, a:focus {
+    color: #333;
+    opacity: 0.8;
+}
+i {
+    font-size: 20px;
+}
+figcaption .p{
+    width: 100%;
+}
+.product {
+    text-align: center;
+    width: fit-content;
+    background-color: tomato;
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: tomato;
+    border-top: 2px solid white;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+.footer-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: steelblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }    
+   /* Style inputs with type="text", select elements and textareas */
+  input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+  }
+  h2{
+    margin-top: 100px;
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  nav h1:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+  .products h2:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+  }
+
+  
+  fieldset{
+    padding: 5px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+  }
+  .product__container {
+    text-align: center;
+    width: fit-content;
+    background-color: tomato;
+    border: 1px solid tomato;
+}
+  section{
+    min-height: 100vh;
+  }
+.products h2{
+    animation-name: color-change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes color-change{
+    from{color: rgb(240, 22, 215);}
+    to {color:rgb(10, 230, 222);}
+}
+
+
+
+ @media (max-width: 880px){
+    .products{
+        padding: 0 10px;
+    }
+   .products .products__container{
+   
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-gap: 22px;
+        overflow: hidden;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+   
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+    }
+}
+
+    @media (max-width: 480px){
+       .navbar .container{
+            display: none;
+        }
+        
+        .products .products__container{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+
+    
+
+  
