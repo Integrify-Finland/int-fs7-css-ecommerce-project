@@ -9,7 +9,7 @@
 
 
 body {
-    background-color: #222831;
+    background-color: white;
     color: #f2f5f7;
     font-family: 'Roboto', sans-serif;
 
@@ -19,19 +19,25 @@ body {
 
 /* reset code and common starts here  */
 
-
-nav {
+header {
+    background-color: #4C586D;
     height: 6rem;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* nav {
     background-color: #4C586D;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     position: absolute;
     z-index: 10;
-}
+} */
 
-/*Styling Links*/
 .nav-links {
     display: flex;
     list-style: none;
@@ -61,7 +67,7 @@ nav {
     border-radius: 10px;
 }
 
-.logout {
+.signup {
     padding: 5px;
     border-style: solid;
     border-color: #F44336;
@@ -72,6 +78,19 @@ nav {
     color: #119D90;
 }
 
-.logout a:link {
+.signup a:link {
     color: #F44336;
+}
+
+main {
+    background-color: green;
+    height: 600px;
+}
+
+footer {
+    background-color: purple;
+}
+
+.bx-shopping-bag {
+    font-size: 30px;
 }
