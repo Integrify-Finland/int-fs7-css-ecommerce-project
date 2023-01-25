@@ -22,9 +22,9 @@
 
 html{
     scroll-behavior: smooth;
-    background-image:
     
 }
+
 body{
     background-image: url("/images/photo1.jpg");
     background-repeat: no-repeat;
@@ -60,7 +60,19 @@ body{
 .btn:hover{
     background-color: rgb(172, 10, 37);
 }
+
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,1)
     
+}
+
 
 /* reset code and common code ends here  */
 
@@ -126,9 +138,8 @@ nav{
 /* navbar ends here  */
 
 /* header starts here  */
-.header{
+
     
-}
 .banner {
     width: 100%;
     height: 100%;
@@ -198,8 +209,55 @@ nav{
 
 /* header ends here  */
 
+/* main section starts here */
+main{
+    flex: 3;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,  minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+
+}
+.product{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: black;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    z-index: 10;
+}
+.product__img{
+    width: 100%;
+    height: 15rem;
+    filter: saturate(0);
+    transition: var(--transition);
+
+}
+.product__img:hover{
+    filter: saturate(1);
+}
+.product__body{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 
+
+/* main section ends here
+
+
+ 
 
 
 
