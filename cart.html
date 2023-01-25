@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Ecommerce site with HTML and CSS</title>
+    <meta name="description" content="An Ecommerce site made with HTML and CSS as part of Integrify's ISA 7 bootcamp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+
+<body>
+
+<header class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Product details</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+            <img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" />
+        </a>
+
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+</header>
+
+<main id="cart-page">
+
+    <h1>Shopping Cart</h1>
+
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="Picture of a shirt">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Red Printed T-shirt</div>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam asperiores aut consectetur delectus, deserunt doloremque et ex impedit magni officiis possimus quisquam ratione tempore totam? Alias laudantium quis rem.</p>
+            </div>
+            <div class="product-price">200</div>
+            <div class="product-quantity">
+                <label>
+                    <input type="number" value="2" min="1">
+                </label>
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">200</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="Picture of a shoe">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Red Printed T-shirt</div>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam asperiores aut consectetur delectus, deserunt doloremque et ex impedit magni officiis possimus quisquam ratione tempore totam? Alias laudantium quis rem.</p>
+            </div>
+            <div class="product-price">200</div>
+            <div class="product-quantity">
+                <label>
+                    <input type="number" value="1" min="1">
+                </label>
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">200</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+
+        <button class="checkout">Checkout</button>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iso mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                    <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="" />
+                <p>
+                    Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                    Sports Accessible to the Many.
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2023 - Red Store</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    let MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight = '0px';
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === '0px') {
+            MenuItems.style.maxHeight = '200px';
+        } else {
+            MenuItems.style.maxHeight = '0px';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Ecommerce site with HTML and CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/details.css">
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+
+<body>
+<header class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Product details</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+            <img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" />
+        </a>
+
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+</header>
+
+
+<main id="product-details-page" class="cards">
+
+    <article class="card">
+        <picture class="thumbnail">
+            <img class="responsiveImg" src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="A banana that looks like a bird">
+        </picture>
+    </article>
+
+    <article class="card">
+        <div class="product_details">
+                <h2>Red Printed T-shirt</h2>
+                <h3>$499.00</h3>
+
+                <div class="about">
+                    <p>Availability :<span>In stock</span></p>
+                    <p>Product Code : <span>#4657</span></p>
+                    <p>Tags : <span>Fashion, Hood, Classic</span> </p>
+                </div>
+
+                <p>Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but-
+                    ton Lazio suit features a notch lapel, flap pockets, and accompanying flat
+                    front trousers—all in pure wool by Vitale Barberis Canonico.</p>
+                <ul>
+                    <li>Dark blue suit for a tone-on-tone look</li>
+                    <li>Regular fit</li>
+                    <li>100% Cotton</li>
+                    <li>Free shipping with 4 days delivery</li>
+                </ul>
+
+                <a href="" class="btn_outline">Clear Selection</a>
+
+                <div class="cta">
+                    <div class="btn btn_primary">add to cart</div>
+                    <div class="btn btn_primary">add to wishlist</div>
+                </div>
+            </div>
+    </article>
+</main>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iso mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                    <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="" />
+                <p>
+                    Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                    Sports Accessible to the Many.
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2023 - Red Store</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    let MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight = '0px';
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === '0px') {
+            MenuItems.style.maxHeight = '200px';
+        } else {
+            MenuItems.style.maxHeight = '0px';
+        }
+    }
+</script>
+</body>
+</html>

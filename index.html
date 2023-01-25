@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Ecommerce site with HTML and CSS</title>
+    <meta name="description" content="An Ecommerce site made with HTML and CSS as part of Integrify's ISA 7 bootcamp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/main-styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+
+<body>
+<header class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><span class="sr-only">Logo</span>
+                <img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="details.html">Product details</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><span class="sr-only">cart</span>
+            <img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" />
+        </a>
+
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+</header>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h1>All Products</h1>
+        <label>
+            <select>
+                <option value="">Default Shorting</option>
+                <option value="">Short by price</option>
+                <option value="">Short by popularity</option>
+                <option value="">Short by rating</option>
+                <option value="">Short by sale</option>
+            </select>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/47Sk9QL/product-1.jpg"  width="300" height="250" alt="Product 1" />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" width="300" height="250"  alt="Product 2"  />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/KsMVr26/product-3.jpg"  width="300" height="250" alt="Product 3" />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+                <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" width="300" height="250"  alt="Product 4"  />
+                <h2>Red Printed T-shirt</h2>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$200.00</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" width="300" height="250"  alt="Product 5"  />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" width="300" height="250"  alt="Product 6"  />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/hR5FGwH/product-7.jpg" width="300" height="250"  alt="Product 7"  />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+
+        <div class="col-4">
+            <a href="details.html">
+            <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" width="300" height="250"  alt="Product 8"  />
+            <h2>Red Printed T-shirt</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$200.00</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iso mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+                    <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="Footer Logo" />
+                <p>
+                    Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+                    Sports Accessible to the Many.
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2023 - Red Store</p>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    let MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight = '0px';
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === '0px') {
+            MenuItems.style.maxHeight = '200px';
+        } else {
+            MenuItems.style.maxHeight = '0px';
+        }
+    }
+</script>
+</body>
+</html>
