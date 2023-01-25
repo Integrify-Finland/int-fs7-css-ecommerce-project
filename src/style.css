@@ -218,8 +218,8 @@ grid-area: h;
     top: 0;
   }
   
+  /* main index */
 
-  /* main */
   main {
     margin-top: 60px;
     grid-area: m;
@@ -242,6 +242,12 @@ grid-area: h;
     text-align: center;
     border-radius: 1em;
     padding: 5px 20px;
+}   
+.intro__link {
+  transition: all 0.15s;
+}
+.main-container .intro__link:hover{
+  transform: scale(1.3);
 }
 .main-container__sustainable {
     background-image: url(/src/images/sustainable.jpg.jpg);
@@ -675,7 +681,9 @@ transition: all 0.1s;
 }
 
 @media (min-width: 1000px) {
-
+  .discover {
+    margin-top: 110px;
+  }
   .search__field{
     width: 400px;
   }
