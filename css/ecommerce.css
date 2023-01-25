@@ -470,7 +470,7 @@ h3{
 @media screen and (max-width:600px) {
 
     .nav{
-        height: 12vh;
+        height: 15vh;
 
     }
     .nav__bar{
@@ -480,23 +480,34 @@ h3{
         align-items: center;
         gap: 1rem;
         padding: 1rem;
+        font-size: 14px;
+    }
+    .nav__SALE{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 40px;
+     
+    }
+
+    .header__cart{
+        font-size: 40px;
     }
     .header__cartbtn{
-        top:7rem;
-
+        top:9rem;
+    
     }
-    h1{
-        font-size: 50px;
-    }
+    
     .search{
         width: 400px;
-        
+       
     }
 
     .header__searchbtn{
         width: 22%;
         height: 40px;
-        
-    
+   
     }
+    
 }
