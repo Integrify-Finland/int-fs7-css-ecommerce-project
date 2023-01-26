@@ -1,22 +1,29 @@
 // add remove and cart total calc ########################
 const cartCount = document.querySelector(".cart-shopping-count");
 const cartIcon = document.querySelector(".fa-cart-shopping");
-// .fa-cart-shopping 
 const cartProductContainer = document.querySelector(".cart__product-container");
 const cartTotal = document.getElementById("cart__total");
 const cartPayBtn = document.querySelector(".cart__pay-btn");
+const productDetail = document.querySelector(".product-detail");
 
 let shoppingCart = [];
+
+const showDetail = (productId) => {
+    let detailProduct = productsData.find(
+        (product) => product.id === productId
+    );
+    productDetailPopulate(detailProduct);
+};
 
 const updateCart = () => {
     cartProductContainer.innerHTML = cartPopulate();
     cartCount.innerHTML = `${shoppingCart.length}`;
-    cartIcon.classList.add("cart-count-changed")
+    cartIcon.classList.add("cart-count-changed");
     cartTotal.innerHTML = `Total: $${cartTotalCalc(shoppingCart)}`;
     cartPayBtn.disabled = !shoppingCart.length;
-    setTimeout(()=>{
-        cartIcon.classList.remove("cart-count-changed")
-    }, 500)
+    setTimeout(() => {
+        cartIcon.classList.remove("cart-count-changed");
+    }, 500);
 };
 
 const cartTotalCalc = (allProducts) => {
@@ -47,7 +54,6 @@ const changeProductInCart = (event, productId) => {
     productInCart.count = event.target.value;
     cartTotal.innerHTML = `Total: $${cartTotalCalc(shoppingCart)}`;
     cartPayBtn.disabled = !shoppingCart.length;
-    console.log("changeProductInCart")
 };
 
 const cartPopulate = () => {
@@ -90,4 +96,37 @@ const cartPopulate = () => {
         .join("");
 };
 
+const productDetailPopulate = (detailProduct = null) => {
+    productDetail.innerHTML = detailProduct
+        ? `<img src="img/car2.webp" alt="product image" />
+                            <div
+                                class="product-detail__info flex flex-col flex-gap-sml"
+                            >
+                                <h3 class="product-detail__name">${detailProduct.title}</h3>
+                                <p class="product-detail__price">Price: ${detailProduct.price}</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ducimus, ullam? Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Velit quod assumenda quam, accusantium ratione
+                                    nostrum voluptatem ab, doloremque ipsa
+                                    excepturi, aspernatur recusandae! Libero
+                                    obcaecati soluta beatae ipsa debitis cupiditate
+                                    autem. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ducimus, ullam? Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.
+                                    Velit quod assumenda quam, accusantium ratione
+                                    nostrum voluptatem ab, doloremque ipsa
+                                    excepturi, aspernatur recusandae! Libero
+                                    obcaecati soluta beatae ipsa debitis cupiditate
+                                    autem.
+                                </p>
+                                <button class="btn btn-aqua product-detail__btn">
+                                    Add to cart
+                                </button>
+                            </div>`
+        : `<h3 class="product-detail__name">No Product Selected</h3>`;
+};
+
 updateCart();
+productDetailPopulate();

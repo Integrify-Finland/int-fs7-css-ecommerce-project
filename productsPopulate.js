@@ -13,7 +13,7 @@ const productsPopulate = productsData
         return `<div class="product-card">
                 <img src="img/car2.webp" alt="product image" />
                 <div class="product-card-info">
-                    <h3>${product.title}</h3>
+                    <h3 onclick="showDetail(${product.id})"><a onclick="selectPage(event, 'detail')">${product.title}</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Ducimus, ullam?
