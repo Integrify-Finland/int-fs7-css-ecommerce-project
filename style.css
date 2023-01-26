@@ -1,0 +1,261 @@
+:root {
+    --font-family-cursive: 'Amatic SC', arial;
+    --nav-color: #293241;
+    --font-family-main: 'Roboto Mono', monospace;
+    --background-color-1: #393c43d7;
+    --font-color-dark: #1a1f2a;
+}
+
+
+body {
+    margin: 0;
+}
+
+* {
+    text-decoration: none;
+    font-size: 62.5%;
+}
+
+/* nav bar start */
+
+.nav-bar {
+    font-family: var(--font-family-cursive);
+    font-size: 8rem;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*position: sticky;*/
+
+    margin: 0;  
+    padding: 2vh 0;
+    box-sizing: border-box;
+
+    background-color: var(--nav-color); 
+    box-shadow: inset -1px -1px 10px 1px rgba(115, 106, 92, 0.431);
+}
+
+.nav__link {
+    list-style: none;
+    
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    text-shadow: 0.05rem 0.05rem rgb(255, 255, 255);
+}
+
+.cart__icon {
+    color: antiquewhite;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+/* nav bar end */
+
+/* header start */
+
+.header {
+    background-image: url(./images/shop-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__title {
+    box-sizing: border-box;
+    margin: 0;
+    
+    color: antiquewhite;
+
+    font-family: var(--font-family-cursive);
+    font-size: 9rem;
+
+    padding: 0rem 5rem;
+
+    max-width: 100rem;
+    height: min-content;
+
+    background-color: #293241e9;
+
+    box-shadow: 0.1rem 0.1rem rgb(106, 99, 91);
+    text-align: center;
+
+    /*text-decoration: underline;
+    text-decoration-thickness: 0.4rem;*/
+}
+
+.header__logo {
+    font-size: 8rem;
+    padding: 0rem 5rem;
+}
+
+
+/* header end */
+
+
+/* about start */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    font-family: var(--font-family-main);
+
+    color: #293241;;
+
+    border: 0.5rem solid var(--font-color-dark);
+    border-right: 0;
+
+}
+
+.about__title {
+    font-size: 5rem;
+    width: 10vw;
+    
+    border-bottom: 0.3rem solid antiquewhite;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-left: 2vw;
+}
+
+.about__title a {
+    color: antiquewhite;
+}
+
+.about__title a:hover {
+    text-shadow: 0.05rem 0.05rem antiquewhite;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    background-color: var(--nav-color); 
+}
+
+.about__img {
+    width: 30vw;
+    height: 35vh;
+    float: right;
+    object-fit: cover;
+    border: 0.5rem solid var(--font-color-dark);
+    border-left: 0;
+}
+
+.about__para {
+    width: 60vw;
+    
+    text-align: left;
+    color: antiquewhite;
+    font-size: 1.7rem;
+    padding-left: 2vw;
+    padding-bottom: 3rem;
+}
+
+.about__para a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+/* about end */
+
+
+
+/* Shop Start */
+
+.shop {
+    text-align: center;
+    background-color: var();
+    padding-bottom: 2rem;
+    background-color: var(--background-color-1);
+}
+
+.shop__title {
+    font-family: var(--font-family-main);
+    font-size: 7rem;
+    /* text-transform: uppercase; */
+    margin-top: 0;
+}
+
+.shop__title a {
+    color: antiquewhite;
+}
+
+.shop__layout {
+    width: 80vw;
+    height: 60vh;
+    overflow-x: scroll;
+}
+
+.shop__layout::-webkit-scrollbar {
+    height: 1.5rem;
+}
+
+.shop__layout::-webkit-scrollbar-button:single-button {
+    background-color: var(--nav-color);
+    display: block;
+    border-style: solid 0.5rem var(--background-color-1);
+}
+
+.shop__layout::-webkit-scrollbar-track {
+    background: var(--background-color-1);
+}
+
+.shop__layout::-webkit-scrollbar-thumb {
+    background: var(--font-color-dark); 
+    background-clip: padding-box;
+}
+
+.shop-flex {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.item__box {
+    object-fit: contain;
+    height: 50vh;
+    width: 30rem;
+    display: inline-block;
+    padding: 0 5rem;
+}
+
+.item__box:hover {
+    box-shadow: 10rem var(--font-color-dark);
+}
+
+.shop__art {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.2rem solid var(--font-color-dark);
+}
+
+.grid__art > .full {
+    grid-column: 1 / -1;
+}
+
+.artist__name {
+    font-family: var(--font-family-main);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+/* Shop End */

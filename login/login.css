@@ -1,0 +1,140 @@
+:root {
+    --font-family-cursive: 'Amatic SC', arial;
+    --nav-color: #293241;
+    --font-family-main: 'Roboto Mono', monospace;
+    --background-color-1: #393c43d7;
+    --font-color-dark: #1a1f2a;
+}
+
+
+body {
+    margin: 0;
+}
+
+* {
+    text-decoration: none;
+    font-size: 62.5%;
+}
+
+/* nav bar start */
+
+.nav-bar {
+    font-family: var(--font-family-cursive);
+    font-size: 8rem;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;  
+    padding: 2vh 0;
+    box-sizing: border-box;
+
+    background-color: var(--nav-color); 
+    box-shadow: inset -1px -1px 10px 1px rgba(115, 106, 92, 0.431);
+}
+
+.nav__link {
+    list-style: none;
+    
+}
+
+.nav__link a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    text-shadow: 0.05rem 0.05rem rgb(255, 255, 255);
+}
+
+.cart__icon {
+    color: antiquewhite;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+}
+
+/* nav bar end */
+
+/* login start */
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../images/angels.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    max-width: 1920px; 
+    max-height: 1080px; 
+    z-index: -999999; 
+    background-size:100% 100%;
+
+    font-family: var(--font-family-main);
+    
+}
+
+
+.login-details {
+    font-size: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+
+    padding: 10rem;
+
+    border-radius: 3rem;
+}
+
+.login-details h3 {
+    margin-top: 0;
+    color: var(--font-color-dark);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input__details {
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.remember-checkbox {
+    display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 0.1rem;
+}
+
+.remember {
+    height: 50%;
+    width: 50%;
+    margin: 25% 25%;
+    font-size: 0.1rem; 
+    accent-color: #5f3324f4;
+}
+
+.submit {
+    border-radius: 1rem;
+    color: antiquewhite;
+    background-color: #1a1f2a;
+    width: 10rem;
+    padding: 0.5rem;
+}
+
+/*login end */
