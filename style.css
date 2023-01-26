@@ -145,8 +145,6 @@ a {
 }
 
 #welcome {
-  -moz-background-clip: text; /* Firefox */
-  -webkit-background-clip: text; /* Chrome, Safari */
   font-size: 12vmin;
   padding-left: 8rem;
   padding-top: 4rem;
@@ -280,13 +278,13 @@ text {
 
 .sidemenu-item {
   color: #000000;
-  padding-left: 40px;
+  padding-right: 5px;
 }
 
 #topButton {
   position: flex;
   display: none;
-  opacity: 0.5;
+  opacity: 0.8;
   color: #ffffff;
   bottom: 20px;
   right: 30px;
