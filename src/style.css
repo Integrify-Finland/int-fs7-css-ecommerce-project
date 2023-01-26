@@ -415,7 +415,7 @@ grid-area: h;
 }
 .item__details {
   font-size: 0.8em;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .item__cart {
   display: inline;
