@@ -82,7 +82,10 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-
+.text-center{
+    text-align: center;
+    color: #fff;
+}
 
 /* reset code and common code ends here  */
 
@@ -331,6 +334,52 @@ main{
     cursor: pointer;
 }
 /* cart section ends here */
+
+/* resarvation starts here */
+.form-control label{
+    flex: 0.1;
+    text-align: left;
+    
+}
+.form-control input, textarea{
+   flex: 0.9;
+   padding: var(--padding);
+   border: 1px solid;
+ 
+   
+} 
+.form-control textarea{
+    resize: none;
+    height: 12vh;
+   
+}
+.form-control{
+    color: #fff;
+    font-size: 1.6rem;
+    
+}
+.form-btn-field{
+    border-radius: var(--border-radius);
+}
+.resarvation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+.resarvation .card{
+   width: 45rem;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* resarvation ends here */
+
 
 
 
