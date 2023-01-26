@@ -10,11 +10,13 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+    /* transition: .2s linear; */
 }
 
 body{
     background-color: rgb(103, 46, 34);
+    margin: 8px auto;
+    width: 100%;
 }
 
 html{
@@ -112,4 +114,14 @@ main{
     color: black;
     padding: 1rem;
     text-transform: none;
+  }
+
+  .site_header.cart_item_container{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 600px;
+    width: 700px;
+    background: #fff;
+    padding: 0 1.5rem;
   }
