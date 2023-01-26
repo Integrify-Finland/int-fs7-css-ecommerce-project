@@ -26,8 +26,9 @@ html{
     scroll-behavior: smooth;
 }
 
-/* html::-webkit-scrollbar{
+html::-webkit-scrollbar{
     width: auto;
+    height: auto;
 }
 
 html::-webkit-scrollbar-track{
@@ -36,7 +37,7 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
     background: #fff;
-} */
+}
 
 
 .site_header{
@@ -65,7 +66,21 @@ html::-webkit-scrollbar-thumb{
 
 main{
     width: 50%;
-    margin: 50px auto;
+    /* height: 30px; */
+    margin: 100px auto;
+}
+
+.middle{
+  margin: 100px;
+  /* padding-left: 100pc; */
+  width: 50%;
+}
+
+.middle.fika{
+  font-size: large;
+  font-family: cursive;
+  position: static;
+  justify-content: center;
 }
 
 .navbar {
