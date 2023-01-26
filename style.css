@@ -97,20 +97,134 @@ button {
 
 button:hover {
     color: white;
-    width: ;
     box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
     background-color: rgba(104, 85, 224, 1);
 }
 
-footer {
-    background-color: purple;
-}
+
 
 .bx-shopping-bag,
 .bx-search-alt-2 {
     font-size: 30px;
 }
 
+@media(max-width: 1400px) {
+    .nav-links__items {
+        display: none;
+    }
+
+    .container {
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+
+/*Styling Hamburger Icon*/
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 1400px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: black;
+        height: 50vh;
+        width: 110%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
 
 
 /* header styling ends here */
@@ -119,26 +233,30 @@ footer {
 
 main {
     background-color: white;
-    height: 800px;
+    height: 1200px;
 }
 
 .container {
+    padding: 50px;
     display: flex;
     gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 
 }
 
 .product {
-    width: 25%;
-    height: 30%;
-    display: block;
     background-color: black;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 60px;
     transition: box-shadow .3s;
     border: 1px solid #ccc;
     float: left;
+
+
 
 }
 
@@ -148,14 +266,12 @@ main {
 
 
 img {
-    max-width: 100%;
-    height: 100%;
+    max-width: 400px;
+    height: 400px;
     border-radius: 10px;
 }
 
 .shop-button {
-    display: flex;
-    justify-content: flex-end;
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
@@ -184,6 +300,7 @@ img {
 .product__name,
 .product__price,
 .product__discount {
+    margin-top: 1%;
     margin-left: 5%;
     padding: 1%;
 }
@@ -195,6 +312,7 @@ img {
     text-decoration: line-through;
     font-weight: bold;
     font-size: 1.5rem;
+    margin-bottom: 1%;
 }
 
 .product__name {
@@ -202,8 +320,132 @@ img {
     font-weight: bold;
 }
 
+footer {
+    background-color: white;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: black;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer-col-1 ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-col-2 ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul a {
+    color: black;
+}
+
+footer ul li {
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+footer p {
+    max-width: 300px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons a {
+    color: #f2f5f7;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+.about-company p {
+    font-size: small;
+}
+
+.about-company h2 {
+    font-size: 20px;
+}
+
+.break {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+
+    .footer-col-1 ul {
+        display: block;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+
+    }
+
+}
+
+
+@media(max-width: 660px) {
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .footer-col-1,
+    .footer-col-2 ul,
+    .about-company {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .about-company {
+        padding: 15px;
+    }
+
+
+}
 
 
 
 
-/* main styling ends here */
+
+/* footer styling ends here */
