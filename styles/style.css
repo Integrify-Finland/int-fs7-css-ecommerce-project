@@ -76,8 +76,6 @@ header {
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: white;
-    border-radius: 50%;
-    /* background-color: var(--main-color1); */
     position: absolute;
     top: 5%;
     left: 43%;
@@ -89,12 +87,15 @@ header {
     transition: all 300ms linear;
 }
 
-.cart-icon:hover {
-    cursor: pointer;
-    /* transform: scale(1.1); */
-    transform: scale(1.1);
+#cart-link{
+    display: block;
+    transition: all 300ms linear;
 }
 
+#cart-link:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 /* header styling ends */
 
 
@@ -152,6 +153,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    position: relative;
 }
 
 .welcome:hover{
@@ -182,6 +184,39 @@ main {
     box-shadow: 1px 3px 3px 5px rgba(255, 255, 255, 0.2);
     transform: translate(0, .3rem);
 }
+
+#login-link{
+    position: absolute;
+    bottom: 5%;
+   
+}
+
+.welcome__icon{
+    color: var(--main-color3);
+    font-size: 6rem;
+    transition: all 0.3s linear;
+}
+
+.welcome__login{
+    display: block;
+    font-size: 2rem;
+    color: white;
+    margin-top: 5px;
+    border-radius: .2rem;
+    background-color: var(--main-color3);
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+#login-link:hover .welcome__icon{
+    color: white;
+}
+
+#login-link:hover .welcome__login{
+    color: var(--main-color3);
+    background-color: white;
+}
+
 /* main styling ends */
 
 
@@ -244,6 +279,14 @@ footer {
         font-size: 3rem;
     }
 
+    #cart-counter{
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 1.6rem;
+        line-height: 1rem;
+        left: 42%;
+    }
+
     nav{
         padding: 0 1rem;
     }
@@ -254,8 +297,6 @@ footer {
     
     .welcome__btn{
         width: 30%;
-        /* height: 3rem;
-        font-size: 1.5rem; */
     }
 }
 
@@ -284,6 +325,15 @@ footer {
     .cart-icon {
         font-size: 2.8rem;
     }
+
+    #cart-counter{
+        width: 1rem;
+        height: 1rem;
+        font-size: 1.3rem;
+        line-height: 1rem;
+        left: 45%;
+    }
+
     nav{
         padding: 0 1rem;
     }

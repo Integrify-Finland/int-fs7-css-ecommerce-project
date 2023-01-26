@@ -27,12 +27,12 @@
             <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo">
             <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text">
             <div class="header__cart">
-                <a href="../html/cart.html">
-                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <a href="../html/cart.html" id="cart-link">
+                    <i class="fa-solid fa-cart-shopping cart-icon"><div id="cart-counter">2</div></i>
+                    <!-- <div id="cart-counter">2</div> -->
                 </a>
-                <div id="cart-counter">2</div>
             </div>
-            </header>
+        </header>
         <nav>
             <ul>
                 <li><a href="#" area-label="Visit home page">Home</a></li>
@@ -45,7 +45,20 @@
             <section class="welcome">
                 <h1 class="welcome__header">Welcome to the coziest coffee shop!</h1>
                 <button class="welcome__btn">To The Shop</button>
+                <a href="../html/login.html" id="login-link">
+                    <i class="fa-solid fa-house-user welcome__icon"></i>
+                    <span area-label="Login or register here" class="welcome__login">Login</span>
+                </a>
             </section>
+            <section class="welcome">
+                <h1 class="welcome__header">Welcome to the coziest coffee shop!</h1>
+                <button class="welcome__btn">To The Shop</button>
+                <a href="../html/login.html" id="login-link">
+                    <i class="fa-solid fa-house-user welcome__icon"></i>
+                    <span area-label="Login or register here" class="welcome__login">Login</span>
+                </a>
+            </section>
+            
         </main>
         <footer>
             <h2 class="footer__header">Stay In Touch With Us</h2>
