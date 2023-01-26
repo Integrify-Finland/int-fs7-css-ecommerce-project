@@ -8,3 +8,5 @@
    - deploy the project on netlify and share the deployment link in README.md; do not forget to make a PR as well (1 point)
    - Your creativity and additional functionality to the project will help you to get extra 1 points
   
+
+  NETLIFY link: https://superb-faun-b5ebd7.netlify.app/index.html
