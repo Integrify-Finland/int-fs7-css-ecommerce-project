@@ -50,7 +50,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color:#C27664;
+    /* color:#C27664; */
     font-size: var(--font-size);
 }
 
