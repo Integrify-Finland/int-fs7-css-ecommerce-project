@@ -1,0 +1,280 @@
+/*------- Global style -------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    font-family: 'Merienda', cursive;
+    
+}
+/*------- variables -------*/
+:root{
+    --primary-first-color:#D4668E;
+    --primary-second-color:#FFCABE;
+    --primary-body-color:#FEF4EA;
+    --primary-btn-color:#FFB8D0;
+    --primary-aside-color:#FAECBC;
+    --primary-footer-color:#CECCFD;
+    --btn-padding: 0.25rem;
+    --btn-width: 5rem;
+    --btn-border-radius:7px;
+    --heading-fnt-w:2.5rem;
+    --subheading-fnt-w:50px;
+    --contents-fnt-w:2rem;
+    --info-fnt-w:20px;
+    --bx-shadow:-8px 10px 5px -2px rgba(163,152,152,0.55);
+}
+a{
+    color: black;
+}
+a:visited{
+    color: black
+}
+a:active{
+    color: black;
+}
+button{
+    padding: var(--btn-padding);
+    width: var(--btn-width);
+    background-color: var(--primary-btn-color);
+    border-radius: var(--btn-border-radius);
+    -webkit-border-radius: var(--btn-border-radius);
+    -moz-border-radius: var(--btn-border-radius);
+    -ms-border-radius: var(--btn-border-radius);
+    -o-border-radius: var(--btn-border-radius);
+    cursor: pointer;
+    box-shadow: var(--bx-shadow);
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+button:hover{
+    background-color: var(--primary-first-color);
+}
+
+body{
+    background-color: var(--primary-body-color);
+}
+/*------------ head section-------*/
+marquee{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.logo{
+    color: darkorchid;
+    font-size: large;
+    font-weight: bold;
+}
+.header__links{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header__cart-user{
+   margin-left: 80%;
+    box-shadow: var(--bx-shadow);
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.header__cart-user:hover{
+    height: 40px;
+}
+
+.header__search{
+    padding: 5px;
+    border-radius: var(--btn-border-radius);
+    -webkit-border-radius: var(--btn-border-radius);
+    -moz-border-radius: var(--btn-border-radius);
+    -ms-border-radius: var(--btn-border-radius);
+    -o-border-radius: var(--btn-border-radius);
+    box-shadow: var(--bx-shadow);
+}
+
+
+
+/*--------- Mani section----------*/
+.main__msg{
+  margin-top: 8%;
+ color: var(--primary-aside-color);
+   text-align: center;
+   z-index: 1000;
+}
+.h1{
+   font-size: var(--heading-fnt-w);
+}
+.p{
+    font-size: var(--contents-fnt-w);
+}
+
+.main__images{
+display:flex;
+width: 100%;
+height: 30rem;
+box-shadow: var(--bx-shadow);
+}
+
+.img1{
+   width: 33%;
+   height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/pictures/ring.jpg);
+}
+.img2{
+  width: 33%;
+  height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+    background-image: url(/pictures/joanna-kosinska-P9oOLKNhIYU-unsplash.jpg);
+}
+.img3{
+    width: 35%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+    background-image: url(/pictures/model.jpg);
+}
+
+/*------- product section-------*/
+.main__products-header{
+    margin-top: 1%;
+    text-align: center;
+    margin-bottom: 1%;
+    border-bottom: 1px solid gray;
+}
+.products{
+  display: flex;
+  justify-content: space-evenly;
+   width: 100%;
+  height: 20rem;
+}
+.product{
+margin-top: 4%;
+display: block;
+ border-radius:7px ;
+ -webkit-border-radius:7px ;
+ -moz-border-radius:7px ;
+ -ms-border-radius:7px ;
+ -o-border-radius:7px ;
+  box-shadow: var(--bx-shadow); transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.product:hover{
+    transform: translate(-10px, -12px);
+    -webkit-transform: translate(-10px, -12px);
+    -moz-transform: translate(-10px, -12px);
+    -ms-transform: translate(-10px, -12px);
+    -o-transform: translate(-10px, -12px);
+}
+
+.main__iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 80vh;
+    height: 80vh;
+    text-align: center;
+    background-color: var(--primary-second-color);
+   box-shadow: var(--bx-shadow);
+}
+.arrow{
+    display: flex;
+   justify-content: flex-end;
+   margin-right: 5%;
+}
+
+/*--------footer-------*/
+footer{
+    margin-top: 1%;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 20vh;
+   grid-gap: 0px 0px;
+    background-color:var(--primary-second-color);
+    font-family:var(--contents-fnt-w);
+    width: 100%; 
+    height: auto;
+   text-align: center;
+   padding-left: 3%;
+   padding-right: 3%;
+   
+}
+.footer-menue{
+   display: flex;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+vertical-align: middle;
+}
+.footer-list-item{
+    border-right: 1px solid; 
+    padding-left: 8%;  
+}
+.footer-list-item:last-child{
+    border: none;
+}
+.footer-address-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*---------responsivness -----------*/
+@media only screen and (max-width: 750px) {
+  .img1,.img3{
+    display: none;
+  } 
+.img2{
+    width: 100%;
+}
+.main__products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main__iframe{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding-top: 2%;
+}
+.footer-menue{
+    padding: 2%;
+}
+}

@@ -1,3 +1,5 @@
+link to the website on Netllify https://lucky-bombolone-3e6315.netlify.app/
+
 # isa7-css-ecommerce-project
 ## CSS Assignment - 15 points
 - Instructions (you can design an ecommerce website the you like but make sure it has the following features)
