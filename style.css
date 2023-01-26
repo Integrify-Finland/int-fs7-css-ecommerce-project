@@ -31,13 +31,14 @@ body{
     width: 100%;
     max-width: 100%; 
     margin: auto; 
+    
 
-    background-size: cover;
+   
 
 }
 .img{
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     
@@ -157,21 +158,29 @@ nav{
     width: 100%;
     height: 100%;
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center;
-    justify-content: space-around; */
-}
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-around;
+} 
 .container{
     position: relative;
     color: rgb(213, 24, 24);
     text-align: center;
     font-size: 4rem;
     font-weight: 800;
-    
-    
-    
+    position: sticky;
 }
+    
+    
+    
 
+/* .banner .container{
+    display: flex;
+    width: 100%;
+    padding: var(--padding);
+    margin-bottom: 3rem;
+    
+} */
 /* img resposiveness */
 
 
@@ -210,11 +219,15 @@ nav{
   }
   .banner__title{
     position: absolute;
-    transform: translate(-50%, -50%);
-    margin-top: 10rem;
+    width: 100%;
+    margin-top: -25rem;
     font-size: 4rem;
     border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+
    
+    
     
   }
   
