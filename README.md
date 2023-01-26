@@ -11,3 +11,4 @@
    - make sure the website is 100% responsive (2 points)
    - Your creativity and additional functionality to the project will help you to get extra 1 point
   
+netlify link: https://precious-shortbread-8c3a51.netlify.app/index.html
