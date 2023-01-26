@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="pages flex-main">
+        <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
+        <a href="/index.html">Back to the Shop</a>
+        <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
+    </header>
+
+    <div class="view"></div>
+    
+    <fieldset class="container">
+        <legend>SignUp Here</legend>
+        <form action="#" method="post">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <br>
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"required>
+            </div>
+            <br>
+            <div>
+                <label for="dateOfBirth">Date Of Birth</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <span>Gender : &nbsp;</span>
+                <input type="radio" id="male" name="gender">
+                <label for="male"> &nbsp; Male &nbsp; </label>
+                <input type="radio" id="female" name="gender">
+                <label for="female"> &nbsp; Female</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message" cols="30" rows="5"></textarea>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
