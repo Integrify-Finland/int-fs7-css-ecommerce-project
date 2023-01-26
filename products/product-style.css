@@ -111,3 +111,45 @@ input{
     -ms-border-radius: var(--btn-border-radius);
     -o-border-radius: var(--btn-border-radius);
 }
+.user__acnt{
+    margin: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.user__acnt-hd{
+
+    border-bottom: 2px solid;
+    margin-bottom: 3%;
+}
+.user__acnt-lnk{
+    border-bottom: 2px solid;
+}
+.link1{
+    width: 280px;
+}
+.link2{
+    width: 270px;
+}
+.link3{
+    width: 260px;
+}
+.link4{
+    width: 250px;
+}
+.tr__border{
+    border-top: 2px dotted;
+}
+
+.cart__hd{
+    border-bottom: 2px solid;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.cart__container{
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+}
+.checkout__btn{
+    margin-top:5% ;
+}

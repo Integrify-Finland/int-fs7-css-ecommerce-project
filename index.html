@@ -19,6 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+  integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="theTop">
@@ -27,15 +31,17 @@
         <div class="header__logo logo">Lovely Minimal</div>
         <div class="header__btns">
           <a  href="/products/signIn.html" target="main-frame"><button onClick="document.getElementById('main__iframe').scrollIntoView();" type="button">Sign In</button></a>
+
           <a class="header__signup-link link" href="/products/signUp.html" target="main-frame"><button type="button" onClick="document.getElementById('main__iframe').scrollIntoView();">Sign up</button></a>
         </div>
       </div>
 
       <div class="header__cart-search">
 
-        <a class="link" href="/products/cart.html" target="main-frame"><i id="cart" class="fa-solid fa-cart-shopping"></i></a>
+        <a class="link" href="/products/cart.html" target="main-frame"><button class="btn__i"
+          onClick="document.getElementById('main__iframe').scrollIntoView();"><i id="cart" class="fa-solid fa-cart-shopping"></i></button> </a>
 
-        <a class="link" href="/products/user-acount.html" target="main-frame"><i id="user" class="fa-solid fa-user"></i></a>
+        <a class="link" href="/products/user-acount.html" target="main-frame"><button class="btn__i" onClick="document.getElementById('main__iframe').scrollIntoView();"><i id="user" class="fa-solid fa-user"></i></button></a>
 
         <button class="header__search-btn">Search</button>
         <label  for="searchbar"
@@ -97,14 +103,5 @@
 </div>
 <div class="footer__col3"></div>
     </footer>
-<script>
-
-document.getElementById("cart").addEventListener("click", myFunction);
-
-function myFunction() {
-  document.getElementById("main__iframe").scrollIntoView;
-}
- 
-</script>
   </body>
 </html>

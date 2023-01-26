@@ -39,6 +39,15 @@ button{
 button:hover{
     background-color: var(--primary-first-color);
 }
+.btn__i{
+   width: 2.1rem;
+   height: 2.1rem;
+   border-radius: 50% ;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
 /*------- variables -------*/
 :root{
     --primary-first-color:#D4668E;
