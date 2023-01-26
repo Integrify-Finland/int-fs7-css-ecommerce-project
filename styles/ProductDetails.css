@@ -1,45 +1,114 @@
 .product-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem auto;
-    max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1000px;
+}
+
+.product-image {
+  background-color: rgb(158, 209, 209);
+  padding: 4em;
+  margin: 4rem;
+}
+
+.product-info {
+  width: 100%;
+}
+
+.product__title {
+  margin-top: 0;
+}
+
+.product__description {
+  margin: 2rem 0;
+  text-align: justify;
+}
+
+.product__price {
+  padding: 1rem 0;
+  font-size: 2.3rem;
+}
+
+.product__btn--details {
+  background-color: #000;
+  color: #fff;
+  padding: 1.2em 3em;
+  margin: 1rem 0;
+  cursor: pointer;
+  border: 0px solid;
+}
+
+.product__btn--details:hover {
+  background-color: #4caf50;
+}
+
+/*  responsiveness starts here */
+
+@media (max-width: 900px) {
+  .product-details {
+    flex-wrap: wrap;
+    margin: 2rem;
   }
 
   .product-image {
-    background-color: rgb(158, 209, 209);
-    padding: 4em;
-    margin: 4rem;
+    width: 100%;
+    padding: 2em;
+    margin: 2rem 0;
   }
 
   .product-info {
     width: 100%;
+    text-align: center;
   }
 
   .product__title {
-    margin-top: 0;
+    margin: 0;
   }
-  
+
   .product__description {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
     text-align: justify;
   }
 
   .product__price {
-    padding: 1rem 0;
-    font-size: 2.3rem;
-  }
-  
-  .product__btn--details {
-    background-color: #000;
-    color: #fff;
-    padding: 1.2em 3em;
-    margin: 1rem 0;
-    cursor: pointer;
-    border: 0px solid
+    font-size: 1.8rem;
   }
 
-  .product__btn--details:hover {
-    background-color: #4caf50;
+  .product__btn--details {
+    margin: 0.5rem 0;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+
+  .product-image {
+    width: 100%;
+    padding: 2em;
+    margin: 2rem 0;
+  }
+
+  .product-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product__title {
+    margin: 0;
+  }
+
+  .product__price {
+    font-size: 1.8rem;
+  }
+
+  .product__btn--details {
+    margin: 0.5rem 0;
+  }
+}
+
+/*  responsiveness ends here */
