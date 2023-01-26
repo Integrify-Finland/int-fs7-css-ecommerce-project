@@ -139,7 +139,8 @@ input[type=number] {
   }
 .btn {
     background-color:#C27664;
-    color: white;
+    color:black;
+    font-weight: 600;
     padding: 8px;
     margin: 10px 0;
     border: none;

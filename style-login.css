@@ -67,7 +67,8 @@ margin-bottom: 1rem;
   }
 .sign-btn{
     background-color:#C27664;
-    color: white;
+    color: black;
+    font-weight: 600;
     padding: 12px;
     border: none;
     width: 100%;
@@ -80,7 +81,8 @@ margin-bottom: 1rem;
     justify-content:space-evenly;
     align-items: center;
     background-color:#C27664;
-    color: white;
+    color:white;
+    font-weight: 600;
     padding: 6px;
     border: none;
     width: 100%;

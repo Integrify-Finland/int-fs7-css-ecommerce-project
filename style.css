@@ -33,6 +33,9 @@ body{
 a{
     color: black;
 }
+.list__item{
+    color: black;
+}
 /* reset and commons ends here  */
 
 /* nav section starts here  */

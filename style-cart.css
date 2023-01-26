@@ -58,7 +58,8 @@ body{
 
   .btn {
     background-color:#C27664;
-    color: white;
+    color:black;
+    font-weight: 600;
     padding: 12px;
     margin: 10px 0;
     border: none;
@@ -69,12 +70,12 @@ body{
   }
 
   .container {
-    background-color: #E4C988;
+    background-color: white;
     padding: 5px 20px 15px 20px;
     border:lightgray 1px solid ;
     border-radius: 3px;
   }
-  h3{
+  h2{
     margin-bottom: 1rem;
     font-size: var(--font-size);
     font-weight: 600;
