@@ -1,0 +1,29 @@
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    width: 700px;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+
+  .product__title {
+    margin-top: 0;
+  }
+  
+  .product__description {
+    margin: 2rem 0;
+  }
+
+  
+  .add-to-bag {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
