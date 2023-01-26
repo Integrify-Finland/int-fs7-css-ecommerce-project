@@ -97,11 +97,11 @@ li>a:hover{
 }
 /*Products */
 .products{
-	margin-top: 2rem;
+	margin: 2rem 0rem;
 	display: grid;
 	grid-template-areas: 
 	"r l";
-	height: 80vh;
+	min-height: 80vh;
 	grid-gap: 1rem;
 	padding: var(--padding);
 }
@@ -116,6 +116,9 @@ li>a:hover{
 	justify-content: space-around;
 	align-content: center;
 	padding: 3rem;
+}
+.product:hover{
+	
 }
 .product__info{
 	color: #E6E5A3;
@@ -138,24 +141,30 @@ li>a:hover{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	justify-content: space-around;
+	justify-content: center;
 	background-color:  #E1D7C6;
 	color: #354259;
-	height: 100vh;
+	min-height: 100vh;
 }
 .register__title{
 	font-size: 3rem;
+}
+label{
+	display: none;
 }
 .register__form{
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	text-align: left;
-	padding: 0 30rem;
+	padding:var(--padding);
 }
 .form__input{
 	height: 2rem;
-	min-width: 15rem;
+	max-width: 30rem;
+	width: 20rem;
+	margin-top: 2rem;
+	align-self: center;
 	background-color: transparent;
 	border:1px solid black;
 	border-radius: 10px;
@@ -171,7 +180,7 @@ li>a:hover{
 	color: white;
 }
 /*footer*/
-footer{
+#about{
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
