@@ -1,7 +1,8 @@
 :root {
     --main-color1: #c66845;
     --main-color2: #4F322E;
-    --main-color3: #688D80;
+    /* --main-color3: #5c8879d8; */
+    --main-color3: #345B54;
     --padding: 1rem;
 }
 
@@ -281,7 +282,8 @@ main > section{
 
 .coffee-card{
     padding: var(--padding);
-    background-color: #b98775c0;
+    /* background-color: #b98775c0; */
+    background-color: #664033;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,6 +305,7 @@ main > section{
 
 .coffee-card__content p{
     text-align: justify;
+    color: white;
 }
 
 .coffee-card__content img{
