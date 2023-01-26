@@ -56,6 +56,31 @@ a{
     color:#C27664;
     font-size: var(--font-size);
 }
+.serch-bar{
+    width: 100%;
+    background-color: rgba(176, 90, 122, 0.2);
+    display: flex;
+    border-radius: 60px;
+    padding: 0.3rem 1rem;
+}
+.serch-bar input{
+    background: transparent;
+    flex:1;
+    border:none;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.1rem;
+    color:black;
+}
+.serch-icon{
+    font-size: 1.3rem;
+}
+.serch-bar button{
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor:pointer;
+}
 .nav-left{
     width: 30%;
 }
@@ -79,6 +104,12 @@ a{
 
 /* main section starts here  */
 
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 .banner-noimg{
     display: flex;
     flex-direction: column;
@@ -123,7 +154,7 @@ a{
     font-weight: 500;
 }
 
-.goods-banners{
+.conteiner-row{
     display: flex;
     }
 .goods-banner{
@@ -150,10 +181,11 @@ a{
     display: grid;
     grid-template-columns: repeat(3, minmax(0,1fr));
     gap:2rem;
+    width: 90%;
 }
 .card img{
    height: 40rem;
-   width: auto;
+   width: 100%;
    margin-bottom: 1rem;
    object-fit: cover;
 }
@@ -198,6 +230,29 @@ a{
     border-radius: 5px;
     font-size: 1rem;
 }
+.subscribtion-bar{
+    width: 30%;
+    background-color: rgba(176, 90, 122, 0.2);
+    display: flex;
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0;
+}
+.subscribtion-bar input{
+    background: transparent;
+    flex:1;
+    border:none;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.1rem;
+    color:black;
+}
+.subscribtion-bar button{
+    border: none;
+    border-radius: 20px;
+    width: 6rem;
+    height: 2rem;
+    cursor:pointer;
+}
 
 /* main section ends here  */
 
@@ -210,6 +265,36 @@ a{
     justify-content: center;
     align-items: center;
 }
-
-
 /* footer section ends here  */
+
+/* resposiveness section starts here  */
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:760px) {
+    .items-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+
+@media screen and (max-width:600px) {
+    .items-list{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        width: 80%;
+    }
+    .conteiner-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+    .goods-banner img{
+        width: 80rem;
+        height: 40rem;
+        object-fit: cover;
+    }
+
+/* resposiveness section ends here  */
