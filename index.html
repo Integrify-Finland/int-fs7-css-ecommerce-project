@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Decoration website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="style.css">
+    <title>Home Decoration</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <nav class="header__nav-bar">
+            <img src="images/logo.jpg" alt="logo" class="logo">
+            <h1>Welcome to Dream Home</h1>  
+            <div class="header__login-area">
+                <a href="cart.html" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping header__icon"></i></a>
+
+                <!-- login button -->
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+                <div id="id01" class="modal">
+                    <form class="modal__content1" action="">
+                    
+                        <div class="container1">
+                            <label for="uname">Username</label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                            <label for="psw">Password</label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                            <button type="submit">Login</button>
+                            <br/>
+                            <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                    
+                        <div class="container">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        
+                        </div>
+                    </form>
+                </div>
+
+                <!-- register button -->
+                <button onclick="document.getElementById('id02').style.display='block'">Register</button>
+                <div id="id02" class="modal">
+                    <form class="modal__content2" action="">
+                    
+                    <div class="container2">
+                        <h4>Please fill in this form to create an account</h4>
+                        <br/>
+                        <label for="uname">Username</label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                        <label for="psw">Password</label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                        <button type="submit">Register</button>
+                    </div>
+                
+                    <div class="container">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        
+                    </div>
+                    </form>
+                </div>
+
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- home-decor section -->
+        <section class="home-decor">
+            <article>
+                <img src="images/home.jpg" alt="home" class="home-decor__img">
+            </article>
+            <article class="home-decor__about">
+                <h2>Home Decor</h2>
+                <p>Decoration is all about heart – and it helps makes a home welcoming, comfortable and personal. Cosy candles. 
+                    Memorable photos. Delightful plants. With our wide range of home accessories, 
+                    you’ll find plenty of ways to express yourself and spread some joy. Just let what you like lead the way.
+                </p>
+                <a href="#products" alt="discover more"><button>Discover more</button></a>
+                
+            </article>
+        </section>
+
+
+        <!-- product gallery section -->
+        <section class="gallery" id="products">
+            <h3 id="gallery-title">Products Gallery</h3>
+            <div class="product-gallery">
+                <div class="grid-item">
+                    <img src="images/image1.jpg" alt="image1" class="image image-hover">
+                    <div class="gallery__desc"><b>€250</b> Solid wood has a natural feel. Large drawers make it easy to keep your things organised.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image2.jpg" alt="image2" class="image image-hover">
+                    <div class="gallery__desc"><b>€229</b> Clean lines and supportive comfort, regardless if you’re reading, 
+                        socialising with friends or just relaxing for a moment.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image3.jpg" alt="image3" class="image image-hover">
+                    <div class="gallery__desc"><b>€70</b> Showcase your personality by adding wall décor to your home – after all, 
+                        blank walls are just a canvas to express yourself. 
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image4.jpg" alt="image4" class="image image-hover">
+                    <div class="gallery__desc"><b>€265</b> Of course your home should be a safe place for the entire family. 
+                        That’s why a safety fitting is included so that you can attach the chest of drawers to the wall.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image5.jpg" alt="image5" class="image image-hover">
+                    <div class="gallery__desc"><b>€40</b> This moss-green vase in matte frosted glass has a calm expression and goes nice with something 
+                        like a simple twig.Each vase is unique since they are mouth-blown by skilled artisans.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image6.jpg" alt="image6" class="image image-hover">
+                    <div class="gallery__desc"><b>€700</b> This sofa has an effortless stylishness and straightforward exterior with a well-tailored soft 
+                        cover and comfortable inner pocket springs. 
+                        The slim legs reinforce the tranquil and airy look.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image7.jpg" alt="image7" class="image image-hover">
+                    <div class="gallery__desc"><b>€899</b> Seat cushions filled with high resilience foam and polyester fibre wadding give comfortable support for your body,
+                         and easily regain their shape when you get up.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image8.jpg" alt="image8" class="image image-hover">
+                    <div class="gallery__desc"><b>€1300</b> GRÖNLID sofa is soft, comfy and inviting to sink into. Deep pocket spring seat cushions, 
+                        foam and a top layer of polyester fibres takes your comfort to a new level.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image9.jpg" alt="image9" class="image image-hover">
+                    <div class="gallery__desc"><b>€550</b> This cover is made from Vissle fabric in polyester, which is dope-dyed. 
+                        It’s a durable material with a smooth weave and a nice two-tone effect.
+                    </div>
+                </div>
+                <div class="grid-item"><img src="images/image10.jpg" alt="image10" class="image image-hover">
+                    <div class="gallery__desc"><b>€70</b> LINNEBÄCK easy chair has a light, airy look and a low weight, which makes it simple to move around. 
+                        Combine with other furniture and use in different situations and places at home.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image11.jpg" alt="image11" class="image image-hover">
+                    <div class="gallery__desc"><b>€149</b> There is always something new to notice and cherish thanks to the detailed pattern.
+                        The pattern and colors are easy to coordinate with many different styles.
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/image12.jpg" alt="image12" class="image image-hover">
+                    <div class="gallery__desc"><b>€99</b> Wear-resistant, stain-resistant and easy to maintain because the rug is made of synthetic fibers.
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">  
+            <div class="footer-icons">
+                <div>
+					<i class="fa-solid fa-location-dot"></i>
+					<p>Den Haag, Netherlands</p>
+				</div>
+                <div>
+					<i class="fa-solid fa-phone"></i>
+					<p>+31456789435</p>
+				</div>
+                <div>
+					<i class="fa-sharp fa-solid fa-envelope"></i>
+					<p>+31458742066</p>
+				</div>
+            </div>
+            <div class="about">
+                <h3>About Dream Home</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Impedit aliquid voluptates natus similique et sint exercitationem 
+                   laborum totam minus quis.</p>
+                   <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                   <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>    
+    </footer>
+  
+</body>
+</html>

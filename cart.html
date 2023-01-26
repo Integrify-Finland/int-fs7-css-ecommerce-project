@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Decoration website - add to cart page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <nav class="header__nav-bar">
+        <img src="images/logo.jpg" alt="" class="logo">
+        <h1>Welcome to Dream Home</h1>
+        <div>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <div id="id01" class="modal">
+                <form class="modal__content1" action="">
+                
+                <div class="container1">
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <button type="submit">Login</button>
+                    <br/>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    
+                </div>
+                </form>
+            </div>
+
+
+            <button onclick="document.getElementById('id02').style.display='block'">Register</button>
+            <div id="id02" class="modal">
+                <form class="modal__content2" action="">
+                
+                <div class="container2">
+                    <h4>Please fill in this form to create an account</h4>
+                    <br/>
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <button type="submit">Register</button>
+                </div>
+            
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    
+                </div>
+                </form>
+            </div>
+
+            
+        </div>
+
+    </nav>
+    <section class="cart-payment">
+       <div>
+            <h1>Shopping basket:</h1>
+            <div class="cart">
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="payment-details">
+            <h1>Payment Details:</h1>
+            <div class="payment">
+                <h2>Payment</h2>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-ideal"></i>
+                 </div>
+                 <form action="">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber">
+                    <label for="expmonth">Expiry Month</label>
+                    <input type="text" id="expmonth" name="expmonth">
+                    <label for="expyear">Expiry Year</label>
+                    <input type="text" id="expyear" name="expyear">
+                    <input type="submit" value="Continue to checkout" class="checkout">
+                 </form>
+            </div>
+        </div>
+        <div class="button back">
+            <a href="index.html"><button>Back to shopping</button></a>
+        </div>
+    </section>
+    
+</body>
+</html>

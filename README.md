@@ -11,3 +11,4 @@
    - make sure the website is 100% responsive (2 points)
    - Your creativity and additional functionality to the project will help you to get extra 1 point
   
+Netlify link : https://ecommerce-project-home-decor.netlify.app/index.html
