@@ -379,6 +379,27 @@ main{
     gap: 1rem;
 }
 /* resarvation ends here */
+/* contact staarts here  */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+.contact .card{
+    width: 45rem;
+}
+.contact h2{
+    color: rgb(237, 138, 16);
+    text-decoration: solid;
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight: 800;
+}
+/* contact staarts here  */
 
 
 
