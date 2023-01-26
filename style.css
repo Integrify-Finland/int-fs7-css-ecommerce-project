@@ -14,8 +14,22 @@ h1 {
   text-align: justify;
 }
 
-h3 {
-  text-align: justify;
+input,
+input::placeholder {
+  font: 10px/3 sans-serif;
+}
+
+input:hover {
+  transform: scale(1.1);
+}
+
+.standart-label {
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.form {
+  padding-top: 5rem;
 }
 
 #section {
@@ -46,6 +60,8 @@ a {
 }
 .page-header {
   background-image: url(images/shop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0 10px;
   height: 100vh;
 }
@@ -97,12 +113,15 @@ a {
   min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .placeholder {
   border-radius: 6px;
   box-shadow: 2px 2px 2px black;
   gap: 12px;
+  text-align: center;
 }
 
 .placeholder:hover {
@@ -282,9 +301,13 @@ text {
   opacity: 1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .product-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .page-header {
+    height: 30vh;
   }
 }
 
@@ -303,5 +326,12 @@ text {
 
   .page-header__item_wide {
     display: none;
+  }
+
+  .button .login .placeholder {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
