@@ -252,15 +252,19 @@ grid-area: h;
 .main-container__sustainable {
     background-image: url(/src/images/sustainable.jpg.jpg);
 }
-
+.sheep-container {
+  display: none;
+}
 
 /* Shop */
 .discover {
     border-bottom: 1px solid var(--blue);
     box-shadow: 0 2px 4px var(--blue);
+    margin-top: 80px;
 }
 .discover__grid {
-    margin-top: 80px;
+    margin-top: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -300,6 +304,7 @@ grid-area: h;
 .discover a {
     text-decoration: none;
 }
+
 
 .filter__btn , .apply__filter-btn , .reset__filter-btn , .sorting__btn , .buy__btn , .payment-sign-in__btn{
   font-weight:700 ;
@@ -366,6 +371,7 @@ grid-area: h;
 .sorting {
   display: flex;
   align-items: baseline;
+  padding-left: 2em;
 }
 
 .sorting__btn {
@@ -391,7 +397,6 @@ grid-area: h;
   padding: 1em;
   margin: 20px;
   height: 60vh;
-  border-bottom:2px solid rgba(100, 100, 100, 0.5);
   max-width: 400px;
   transition: all 0.1s;
 }
@@ -402,7 +407,7 @@ grid-area: h;
 
 .item__img {
   background-image: url(/src/images/item.jpg.jpg);
-  height: 75%;
+  height: 60%;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -429,6 +434,9 @@ grid-area: h;
 }
 .small__rating {
   font-weight: 600;
+  width:100%;
+  padding-bottom: 20px;
+  border-bottom:2px solid rgba(100, 100, 100, 0.5);
 }
 
 footer {
@@ -683,8 +691,16 @@ transition: all 0.1s;
   .discover {
     margin-top: 110px;
   }
+  .filter-selection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .search__field{
     width: 400px;
+    font-size: 1.1em;
   }
 
 .login__page .top-border {
@@ -700,8 +716,21 @@ transition: all 0.1s;
   justify-content: center;
   align-items: center;
 }
+.main-container__sustainable {
+  position: relative;
+}
+
+.sheep-container {
+  display: contents;
+  display: inline-block;
+  position: absolute;
+  animation: sheep 10s linear ;
+  animation-iteration-count: infinite;
+}
 
 }
+
+
 
   @media (min-width: 800px) {
 
@@ -822,3 +851,20 @@ transition: all 0.1s;
       display: none;
     }
   }
+  /* Animation */
+
+@keyframes sheep {
+  0%   {transform: scaleX(-1); left:-5%; top:70%;}
+  1%   {transform: scaleX(-1); left:0%; top:70%;}
+  10%  {transform: scaleX(-1); left:15%; top:80%;}
+  20%  {transform: scaleX(-1); left:36%; top:72%;}
+  30%  {transform: scaleX(-1); left:60%; top:90%;}
+  40% {transform: scaleX(-1); left:80%; top:75%;}
+  50%   {transform: scaleX(-1); left:105%; top:70%;}
+  51%   {transform: scaleX(1); left:105%; top:70%;}
+  60%  {left:80%; top:84%;}
+  70%  {left:58%; top:71%;}
+  80%  {left:36%; top:62%;}
+  90% {left:14%; top:68%;}
+  100% {left:-10%; top:70%;}
+}
