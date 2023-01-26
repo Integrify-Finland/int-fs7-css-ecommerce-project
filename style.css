@@ -1,0 +1,371 @@
+/* reset code starts here */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+/* reset code ends here */
+
+/* header and navbar code starts here */
+.logo{
+    height:80px;
+    width:80px;
+  }
+
+.header{
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+.header__nav-bar{
+    background-color:#144272;
+    /* margin-bottom: 1rem; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    color:aliceblue;
+    font-family: 'Dancing Script', cursive;
+}
+.header__icon{
+  margin: 0 5px;
+  color:white;
+}
+/* header and navbar code ends here */
+
+/* login and registration forms code starts */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+/* login and registration forms code ends here */  
+
+/* Set a style for all buttons */
+  button {
+    background-color: #1d1733;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    width:auto;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  /*button style code ends here  */
+
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    /* width: auto; */
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  .container {
+    padding: 16px;
+    background-color:#f1f1f1;
+  }
+  
+   /* cancel button style ends here */
+
+  /* The Modal (background) code starts here */
+  .modal {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 100px;
+   
+  }
+  /* The Modal (background) code ends here */
+  
+  /* Modal Content code starts here */
+  .modal__content1, .modal__content2{
+    
+    background-color: #fefefe;
+    width:40%;
+    margin:auto;
+    border: 1px solid #888;
+    color:black;
+    padding:15px;
+  
+  }
+  
+/* Modal Content code ends here */
+
+
+/* image animation code starts here */
+article img{
+    height:40rem;
+    animation: animate 3.2s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+  
+}
+/* image animation code ends here */
+
+/* home-decor section starts here */
+
+.home-decor{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin-bottom: 60px;
+   
+}
+.home-decor__about{
+    text-align: justify;
+    font-style: italic;
+    width: 40rem;
+}
+
+/* home-decor section ends here */
+
+/* products gallery section starts here */
+.image{
+    height:10rem;
+    width:100%;
+
+}
+.product-gallery{
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap:40px;
+    width:80%;
+    margin:auto;
+}
+
+.grid-item{
+  box-shadow: 0px 8px 16px 0px rgba(73, 102, 244, 0.5); 
+  border-radius: 30%;
+  transition:transform 1s;
+
+} 
+.grid-item:hover{
+  transform: scale(1.2);
+
+  
+}
+#gallery-title
+{
+    text-align: center;
+    margin:2rem;
+}
+
+.gallery__desc{
+  
+    width:10rem;
+    text-align: center;
+    margin:auto;
+    padding:5px 0px;
+}
+/* products gallery section ends here */
+
+/* footer section starts here*/
+
+.footer{
+
+    background-color: #2C74B3;
+    height:170px;
+    width:100%;
+    margin-top:80px;
+    padding:2rem;
+    display:flex;
+    justify-content:space-around;
+    color:white;
+}
+
+.footer-icons p{
+  display: inline-block;
+  }
+.footer-icons i{
+  margin: 5px 10px;
+  }
+.about{
+ text-align: center;
+ width:400px;
+ margin-right:20px;
+ }
+.about p{
+  text-align: justify;
+  margin: 8px;
+  }  
+/* footer section ends here*/
+
+/* styling for shopping cart starts here */
+
+.cart-header{
+  margin:30px;
+}
+
+.cart ,.payment{
+  border: 1px solid black;
+  height: 30rem;
+  width: 30rem;
+  padding:1rem;
+  margin-top: 2rem;
+  text-align: center;
+  background:rgba(0,0,0,0.1);
+  color:black;
+}
+.cart-payment{
+  margin-top:2rem;
+  display: flex;
+  justify-content:space-evenly;
+  min-height: 100vh;
+}
+ .icon-container{
+  font-size:2rem;
+  margin-bottom: 2rem;
+  color:#130a36;
+ } 
+ .checkout{
+  margin: 10px;
+  padding:7px;
+  background-color:rgba(0,0,0,0.4);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+ }
+
+/* styling for shopping cart ends here */
+
+/* code for responsiveness starts here */
+@media (max-width:1320px){
+  .home-decor__about{
+    margin-right:20px;
+  }
+
+  .cart ,.payment{
+   
+    height: 30rem;
+    width: 20rem;
+}
+}
+@media (max-width:1270px){
+  .product-gallery{
+  grid-template-columns: repeat(3 , 1fr);
+  }
+  
+ 
+}
+
+@media (max-width:1020px){
+  .home-decor{
+    flex-direction: column;
+  }
+  .product-gallery{
+    grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .grid-item{
+  
+      width:20rem;
+    }
+    
+    /* .cart-payment{
+      flex-direction: column;
+      align-items: center;
+      gap:2rem;
+
+} */
+
+}
+
+@media (max-width:860px){
+  .home-decor{
+    flex-direction: column;
+  }
+  .product-gallery{
+    
+    grid-template-columns: auto;
+    /* width:80%; */
+    margin:auto;
+    }
+
+    .grid-item{
+  
+      width:60%;
+      margin:auto;
+    }
+
+    .cart-payment{
+      flex-direction: column;
+      align-items: center;
+      gap:2rem;
+
+} 
+    
+}
+
+@media (max-width:700px){
+  .home-decor__img{
+    max-width:100%;
+    height: auto;
+    margin:auto;
+  }
+  .home-decor__about{
+    
+    
+    max-width: 80%;
+}
+.footer{
+flex-direction: column;
+justify-content:center;
+align-items: center;
+height:250px;
+gap:2rem;
+}
+.grid-item{
+  
+  max-width:70%;
+  /* margin-left:0; */
+  /* margin-right:50px; */
+  }
+}
+
+@media (max-width:600px){
+  .header__login-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+  }
+  .logo{
+    display:none;
+  }
+  .cart ,.payment{
+   
+    height: 30rem;
+    width: 20rem;
+    margin-bottom: 20px;
+ 
+}
+}
+/* code for responsiveness ends here */
+
+
