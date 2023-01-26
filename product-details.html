@@ -1,198 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width,initial-scale=1.0" name="viewport">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="All Products RedStore">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="All Products RedStore" />
     <title>All Products RedStore</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Mouse+Memoirs&family=Poppins:ital,wght@0,200;0,300;0,600;1,500;1,600;1,700&family=Roboto+Slab:wght@600&family=Roboto:wght@300&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Mouse+Memoirs&family=Poppins:ital,wght@0,200;0,300;0,600;1,500;1,600;1,700&family=Roboto+Slab:wght@600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-<div class="container">
-    <div class="navbar">
+  <body>
+    <div class="container">
+      <div class="navbar">
         <div class="navbar__logo">
-            <a href="index.html"><img alt="logo" src="img/logo.png"></a>
+          <a href="index.html"><img alt="logo" src="img/logo.png" /></a>
         </div>
         <nav>
-            <ul id="menu__items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
+          <ul id="menu__items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
         </nav>
-        <a href="cart.html"><img alt="cart" height="30px" src="img/cart.png" width="30px "></a>
-        <img alt="menu" class="menu-icon" onclick="menutoggle()" src="img/menu.png">
+        <a href="cart.html"
+          ><img alt="cart" height="30px" src="img/cart.png" width="30px "
+        /></a>
+        <img
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+          src="img/menu.png"
+        />
+      </div>
     </div>
 
-</div>
-
-<div class="small-container  single-product">
-    <div class="row">
+    <div class="small-container single-product">
+      <div class="row">
         <div class="col-2">
-            <img alt="gallery-1" id="ProductImg" src="img/gallery-1.jpg">
+          <img alt="gallery-1" id="ProductImg" src="img/gallery-1.jpg" />
 
-
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img alt="gallery-1" class="small-img" src="img/gallery-1.jpg" width="100%">
-                </div>
-                <div class="small-img-col">
-                    <img alt="gallery-2" class="small-img" src="img/gallery-2.jpg" width="100%">
-                </div>
-                <div class="small-img-col">
-                    <img alt="gallery-3" class="small-img" src="img/gallery-3.jpg" width="100%">
-                </div>
-                <div class="small-img-col">
-                    <img alt="gallery-4" class="small-img" src="img/gallery-4.jpg" width="100%">
-                </div>
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img
+                alt="gallery-1"
+                class="small-img"
+                src="img/gallery-1.jpg"
+                width="100%"
+              />
             </div>
+            <div class="small-img-col">
+              <img
+                alt="gallery-2"
+                class="small-img"
+                src="img/gallery-2.jpg"
+                width="100%"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                alt="gallery-3"
+                class="small-img"
+                src="img/gallery-3.jpg"
+                width="100%"
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                alt="gallery-4"
+                class="small-img"
+                src="img/gallery-4.jpg"
+                width="100%"
+              />
+            </div>
+          </div>
         </div>
         <div class="col-2">
-            <p>Home/ T-shirt</p>
-            <h1>Red printed T-Shirt by HRX</h1>
-            <p>$50.00</p>
-            <select>
-                <option value="">Select size</option>
-                <option value="">XXL</option>
-                <option value="">XL</option>
-                <option value="">Large</option>
-                <option value="">Small</option>
-            </select>
-            <input type="number" value="1">
-            <a class="btn" href="#">Add to Cart</a>
-            <h3>Product Details <i class="fa fa-indent"></i></h3>
-            <br>
-            <p>Lorem ipsum dolor sit amet adipisi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe enim
-                accusamus incidunt, sit nam quas ullam laboriosam repellat amet fuga!</p>
+          <p>Home/ T-shirt</p>
+          <h1>Red printed T-Shirt by HRX</h1>
+          <p>$50.00</p>
+          <select>
+            <option value="">Select size</option>
+            <option value="">XXL</option>
+            <option value="">XL</option>
+            <option value="">Large</option>
+            <option value="">Small</option>
+          </select>
+          <input aria-label="Buying amount" type="number" value="1" />
+          <a class="btn" href="#">Add to Cart</a>
+          <h2>Product Details <i class="fa fa-indent"></i></h2>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet adipisi Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Saepe enim accusamus incidunt, sit nam
+            quas ullam laboriosam repellat amet fuga!
+          </p>
         </div>
+      </div>
     </div>
-</div>
-<!-- title -->
-<div class="small-container">
-    <div class="row  row-2">
-        <h2>Related Products</h2>
+    <!-- title -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h3>Related Products</h3>
         <p>View More</p>
-    </div>
-</div>
-
-<!-- products -->
-
-
-<div class="small-container">
-
-
-    <div class="row">
-        <div class="col-4">
-            <img alt="product-1" src="img/product-1.jpg">
-            <p>Red Printed T-shirt</p>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img alt="product-2" src="img/product-2.jpg">
-            <p>Red Printed T-shirt</p>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <i class="fa fa-star-o"></i>
-
-            </div>
-            <p>$50.00</p>
-        </div>
-
-        <div class="col-4">
-            <img alt="product-3" src="img/product-3.jpg">
-            <p>Red Printed T-shirt</p>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <i class="fa fa-star-o"></i>
-
-            </div>
-            <p>$50.00</p>
-        </div>
-
-        <div class="col-4">
-            <img alt="product-4" src="img/product-4.jpg">
-            <p>Red Printed T-shirt</p>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-
-            </div>
-            <p>$50.00</p>
-        </div>
-
-
+      </div>
     </div>
 
+    <!-- products -->
 
-</div>
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img alt="product-1" src="img/product-1.jpg" />
+          <p>Red Printed T-shirt</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img alt="product-2" src="img/product-2.jpg" />
+          <p>Red Printed T-shirt</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
 
-<!-- footer-->
-<div class="footer">
-    <div class="container">
+        <div class="col-4">
+          <img alt="product-3" src="img/product-3.jpg" />
+          <p>Red Printed T-shirt</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+          <img alt="product-4" src="img/product-4.jpg" />
+          <p>Red Printed T-shirt</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer-->
+    <div class="footer">
+      <div class="container">
         <div class="row">
-            <div class="footer__col-1">
-                <h3>Download Our App</h3>
-                <p>Download our app for Android and ios phone</p>
-                <div class="app-logo">
-                    <img alt="app-store" src="img/app-store.png">
-                    <img alt="play-store" src="img/play-store.png">
-                </div>
+          <div class="footer__col-1">
+            <h3>Download Our App</h3>
+            <p>Download our app for Android and ios phone</p>
+            <div class="app-logo">
+              <img alt="app-store" src="img/app-store.png" />
+              <img alt="play-store" src="img/play-store.png" />
             </div>
-            <div class="footer__col-2">
-                <img alt="RedStore logo white" src="img/logo-white.png">
-                <p>Our purpose is to Sustainably Make The Pleasure and benefits of sports Accessible to the Many</p>
-            </div>
-            <div class="footer__col-3">
-                <h3>useful links </h3>
-                <ul>
-                    <li>Coupons</li>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Affiliates</li>
-                </ul>
-            </div>
-            <div class="footer__col-4">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>You Tube</li>
-                </ul>
-            </div>
+          </div>
+          <div class="footer__col-2">
+            <img alt="RedStore logo white" src="img/logo-white.png" />
+            <p>
+              Our purpose is to Sustainably Make The Pleasure and benefits of
+              sports Accessible to the Many
+            </p>
+          </div>
+          <div class="footer__col-3">
+            <h3>useful links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliates</li>
+            </ul>
+          </div>
+          <div class="footer__col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>You Tube</li>
+            </ul>
+          </div>
         </div>
-        <hr>
-        <p class="copyright">&copy; 2022 RedStore </p>
+        <hr />
+        <p class="copyright">&copy; 2022 RedStore</p>
+      </div>
     </div>
-</div>
-<!-- js -->
-<script src="js/main.js"></script>
-</body>
-
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
