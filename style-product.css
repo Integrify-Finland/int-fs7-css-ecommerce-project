@@ -29,7 +29,9 @@ body{
 .nav-link{
     font-weight: 500;
     color: black;
-
+}
+a{
+    color: black;
 }
 /* reset and commons ends here  */
 
@@ -67,6 +69,11 @@ body{
 .serch{
     width: 80%;
 }
+#main-nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 /* nav section ends here  */
 
 /* main section starts here  */
@@ -75,6 +82,7 @@ body{
     display: flex;
     background-color: #fff;
     margin-bottom: 2rem;
+    gap:2rem;
 }
 .product-heading{
     padding: 0.5rem 0;
@@ -87,6 +95,7 @@ body{
 }
 .product-features{
     width: 25%;
+    margin-right: 2rem;
 }
 .product-main-image img{
     width: 100%;
@@ -103,12 +112,12 @@ body{
     grid-template-columns: repeat(10, minmax(0,1fr));
     gap:1rem;
 }
-.product-features{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .card__price{
     display: flex;
@@ -118,20 +127,38 @@ body{
     font-size: var(--font-size);
     font-weight: 500;
 }
+.price__reduced{
+    text-decoration:line-through;
+}
+input[type=number] {
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+.btn {
+    background-color:#C27664;
+    color: white;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
 .buy-form{
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:2rem;
 }
 .chekbox{
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 100;
-}
-.cart-add{
-    justify-self: flex-end;
-    align-self: flex-end;
 }
 .table__info{
     width: 80%;

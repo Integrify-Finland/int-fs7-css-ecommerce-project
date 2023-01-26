@@ -29,7 +29,9 @@ body{
 .nav-link{
     font-weight: 500;
     color: black;
-
+}
+a{
+    color: black;
 }
 /* reset and commons ends here  */
 
@@ -61,10 +63,14 @@ body{
     display: flex;
     justify-content: center;
     width: 40%;
-
 }
 .serch{
     width: 80%;
+}
+#main-nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 /* nav section ends here  */
 
@@ -73,7 +79,7 @@ body{
 .banner-noimg{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     height: 20vh;
     background-color: #fff;
@@ -146,6 +152,7 @@ body{
    height: 40rem;
    width: auto;
    margin-bottom: 1rem;
+   object-fit: cover;
 }
 .card{
     display: flex;
@@ -173,6 +180,22 @@ body{
     text-align: center;
     font-size: 5rem;
 }
+.row{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin:1rem 0;
+}
+.btn{
+    width:8rem;
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.2rem;
+    background-color: #C27664;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
 /* main section ends here  */
 
 
@@ -184,5 +207,6 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 /* footer section ends here  */
