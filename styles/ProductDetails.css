@@ -1,9 +1,15 @@
 .product-details {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 5rem auto;
-    width: 700px;
+    max-width: 1000px;
+  }
+
+  .product-image {
+    background-color: rgb(158, 209, 209);
+    padding: 4em;
+    margin: 4rem;
   }
 
   .product-info {
@@ -16,14 +22,24 @@
   
   .product__description {
     margin: 2rem 0;
+    text-align: justify;
   }
 
+  .product__price {
+    padding: 1rem 0;
+    font-size: 2.3rem;
+  }
   
-  .add-to-bag {
-    background-color: #ff9900;
+  .product__btn--details {
+    background-color: #000;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1.2em 3em;
+    margin: 1rem 0;
     cursor: pointer;
+    border: 0px solid
+  }
+
+  .product__btn--details:hover {
+    background-color: #4caf50;
   }
   

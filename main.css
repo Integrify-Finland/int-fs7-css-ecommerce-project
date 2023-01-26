@@ -15,6 +15,7 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  text-decoration: none;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -69,6 +70,10 @@ nav {
   cursor: pointer;
   font-family: var(font-family);
   font-weight: 700;
+}
+
+.btn a {
+  color: #fff
 }
 
 /*   Navigation ends here */
