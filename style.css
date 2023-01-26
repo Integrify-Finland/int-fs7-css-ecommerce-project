@@ -12,16 +12,9 @@ body {
     background-color: white;
     color: #f2f5f7;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
 
 
-}
-
-img {
-    width: 50%;
-    height: 50%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10%;
 }
 
 
@@ -31,39 +24,46 @@ img {
 /* header styling starts here */
 
 header {
-    background-color: #4C586D;
-    height: 6rem;
+    position: fixed;
+    background-color: #FFFFFF;
+    height: 4.5rem;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
+    border-color: black;
 }
-
-
-/* nav {
-    background-color: #4C586D;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 10;
-} */
 
 .nav-links {
     display: flex;
     list-style: none;
     width: 88vw;
     padding: 0 0.7vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
 .nav-links li a {
     text-decoration: none;
     margin: 0 0.7vw;
-    color: white;
+    color: black;
+}
+
+.nav-links li h1 {
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: black;
+    font-weight: bold;
 }
 
 .nav-links li:hover {
@@ -71,58 +71,135 @@ header {
     transition: 0.3s;
 }
 
-.login {
-    padding: 5px;
-    border-style: solid;
-    border-color: #119D90;
-    border-radius: 10px;
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
 }
 
-.signup {
-    padding: 5px;
-    border-style: solid;
-    border-color: #F44336;
-    border-radius: 10px;
+.reg {
+    color: white;
+    background-color: rgba(104, 85, 224, 1);
 }
 
-.login a:link {
-    color: #119D90;
+.log {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
 }
 
-.signup a:link {
-    color: #F44336;
-}
-
-main {
-    background-color: rgb(74, 95, 74);
-    height: 600px;
+button:hover {
+    color: white;
+    width: ;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
 }
 
 footer {
     background-color: purple;
 }
 
-.bx-shopping-bag {
+.bx-shopping-bag,
+.bx-search-alt-2 {
     font-size: 30px;
 }
+
+
 
 /* header styling ends here */
 
 /* main styling starts here */
 
+main {
+    background-color: white;
+    height: 800px;
+}
+
 .container {
     display: flex;
     gap: 1rem;
+    justify-content: space-evenly;
+
 }
 
 .product {
-    width: 30%;
+    width: 25%;
     height: 30%;
     display: block;
     background-color: black;
     border-radius: 10px;
-    padding: 10px;
+    margin-top: 100px;
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+    float: left;
 
+}
+
+.product:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.shop-button {
+    display: flex;
+    justify-content: flex-end;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin: 8px;
+    opacity: 90%;
+    cursor: pointer;
+
+
+}
+
+.shop-button:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.shop-button i {
+
+    color: black;
+    margin: 25px;
+
+}
+
+.product__name,
+.product__price,
+.product__discount {
+    margin-left: 5%;
+    padding: 1%;
+}
+
+.product__discount-price {
+    text-align: right;
+    padding-right: 5%;
+    color: #F5665C;
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.product__name {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
