@@ -1,0 +1,107 @@
+/* reset code and common starts here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* reset code and common ends here */
+
+html {
+  scroll-behavior: smooth;
+}
+/* container starts here */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "m"
+    "o"
+    "t"
+    "f";
+}
+
+/* container ends here */
+
+/* header starts here */
+.header > .header__left {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  grid-area: h;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(204, 189, 170);
+  box-shadow: 0px 0px 10px 0px rgb(15, 15, 15);
+}
+
+header .header__right {
+  padding: 1rem;
+}
+/*.banner {
+ 
+}
+*/
+
+/* header ends here */
+
+/* main starts here */
+
+main {
+  grid-area: m;
+  height: 100vh;
+}
+
+.banner {
+  background-color: brown;
+  height: 100%;
+  color: white;
+  background-image: url(./images/fashion.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .main__slide {
+  /* background-color: rgb(236, 236, 236);*/
+  margin-top: 20px;
+  color: black;
+}
+
+/* main starts here */
+
+/* section-one starts here */
+
+.products-one > h2 {
+  background-color: blue;
+  grid-area: o;
+}
+
+/* section-one ends here */
+
+/* section-two starts here */
+
+.products-two > h2 {
+  background-color: yellow;
+  color: black;
+  grid-area: t;
+}
+
+/* section-two ends here */
+
+/* footer starts here */
+
+footer {
+  background-color: green;
+  grid-area: f;
+}
+
+/* footer ends here */
