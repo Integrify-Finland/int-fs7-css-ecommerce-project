@@ -45,13 +45,13 @@ html::-webkit-scrollbar-thumb{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    padding: 1.5rem;
+    /* border-bottom: var(--border); */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .site_header.logo{
@@ -143,5 +143,5 @@ main{
 
   .product{
     justify-content: center;
-    margin: 290px;
+    margin: 200px;
   }
