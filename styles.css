@@ -8,6 +8,9 @@
   text-decoration: none;
 }
 
+:root {
+  --padding: 1rem;
+}
 /* reset code and common ends here */
 
 html {
@@ -18,7 +21,6 @@ html {
 .container {
   display: grid;
   grid-template-areas:
-    "h"
     "m"
     "o"
     "t"
@@ -32,23 +34,22 @@ html {
   display: flex;
   gap: 1rem;
   padding: 2rem;
-  grid-area: h;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(204, 189, 170);
-  box-shadow: 0px 0px 10px 0px rgb(15, 15, 15);
+  box-shadow: 0px 0px 15px 0px rgba(15, 15, 15, 0.9);
+  grid-area: h;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
 }
 
 header .header__right {
-  padding: 1rem;
+  padding: var(--padding);
 }
-/*.banner {
- 
-}
-*/
 
 /* header ends here */
 
@@ -59,21 +60,26 @@ main {
   height: 100vh;
 }
 
-.banner {
-  background-color: brown;
-  height: 100%;
+main {
+  height: 100vh;
   color: white;
   background-image: url(./images/fashion.jpg);
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.banner .main__slide {
-  /* background-color: rgb(236, 236, 236);*/
+.banner {
+  position: relative;
+  top: 15rem;
+  color: rgba(0, 0, 0);
+  padding: var(--padding);
+  background-color: rgba(240, 248, 255, 0.5);
+  width: 450px;
+}
+
+.banner > p {
   margin-top: 20px;
-  color: black;
 }
 
 /* main starts here */
@@ -81,8 +87,13 @@ main {
 /* section-one starts here */
 
 .products-one > h2 {
-  background-color: blue;
+  text-align: center;
+  padding-top: 2rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  background-color: aliceblue;
   grid-area: o;
+  height: 100vh;
 }
 
 /* section-one ends here */
