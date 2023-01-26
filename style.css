@@ -1,0 +1,551 @@
+:root {
+    --padding: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    background-color: #a35c0e;
+    min-height: 10vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    margin-left: 4rem;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: lighter;
+}
+
+.cart {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu_lists {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 0;
+}
+
+.menu_list a {
+    color: white;
+}
+
+#header {
+    min-height: 70vh;
+    background-image: url(image_10.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.banner {
+    color: white;
+    position: absolute;
+    right: 12rem;
+    bottom: 12rem;
+}
+
+.banner_title {
+    background-color: rgb(4, -3, -3, 0.7);
+}
+
+.banner_title_head {
+    color: #a35c0e;
+    padding: 1rem;
+}
+
+.banner_title_p {
+    padding-left: 30px;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.banner_btn {
+    margin: 1rem;
+    padding: 10px 40px 10px 60px;
+    background-color: #a35c0e;
+    color: white;
+    font-size: 20px;
+}
+
+.banner_btn:hover {
+    transform: scale(1.2);
+}
+
+.collection {
+    min-height: 70vh;
+}
+
+.collection_header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.collection_ul img {
+    width: 350px;
+    height: 250px;
+}
+
+.collection_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.collection_ul img:hover {
+    transform: scale(1.2);
+}
+
+.checked {
+    color: gold;
+}
+
+.unchecked {
+    color: black;
+}
+
+.collection_ul h3,
+p {
+    padding: 5px;
+    color: black;
+}
+
+.discount_products {
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 200px 0 200px;
+    box-shadow: 16px 16px 10px gray;
+}
+
+.discount_products img {
+    width: 450px;
+    height: 300px;
+}
+
+.marquee h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+.footers {
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 5rem;
+    background-color: #a35c0e;
+}
+
+.footer_social_media {
+    font-size: 4rem;
+}
+
+.footer_social_media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+/*cart css starts */
+
+.cart_container {
+    background-color: blanchedalmond;
+    width: 60%;
+    min-height: 80vh;
+    box-shadow: 0px 25px 40px #1687d933;
+    border-radius: 20px;
+    position: relative;
+    top: 10%;
+    left: 25%;
+}
+
+.cart_title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #a35c0e;
+}
+
+.image_box img {
+    width: 180px;
+    height: 130px;
+}
+
+.Cart-Items {
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    height: 100%;
+}
+
+.title {
+    padding-top: 5px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+}
+
+.subtitle {
+    line-height: 10px;
+    font-size: 18px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #909090;
+}
+
+.counter {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+}
+
+.count {
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+}
+
+.prices {
+    height: 100%;
+    text-align: right;
+}
+
+.amount {
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+}
+
+.save {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #1687d9;
+    cursor: pointer;
+}
+
+.remove {
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+}
+
+hr {
+    width: 66%;
+    float: right;
+    margin-right: 5%;
+}
+
+.checkout {
+    float: right;
+    margin-right: 5%;
+    width: 28%;
+}
+
+.total {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Subtotal {
+    font-size: 22px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #202020;
+}
+
+.items {
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+}
+
+.total-amount {
+    font-size: 36px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+}
+
+.checkout_button {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #202020;
+}
+
+
+/*    table,
+th,
+td {
+border: 1px solid black;
+width: 80%;
+border-collapse: collapse;
+height: 80px;
+text-align: center;
+}
+
+.cart_image img {
+width: 200px;
+height: 100px;
+}   */
+
+
+/*cart css ends */
+
+
+/* signup begins here */
+
+
+/* Full-width input fields */
+
+.signup_container {
+    height: 60vh;
+    width: 40%;
+    position: relative;
+    left: 25%;
+    top: 2rem;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+
+/* signup ends here */
+
+
+/* collection page starts */
+
+.collection_page {
+    height: 200vh;
+    width: 90%;
+}
+
+.collection_ul_page img {
+    width: 300px;
+    height: 200px;
+}
+
+.collection_ul_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.checked {
+    color: gold;
+}
+
+.unchecked {
+    color: black;
+}
+
+.collection_ul_page h3,
+p {
+    padding: 5px;
+    color: black;
+}
+
+.checkout_button_hh {
+    margin-top: 5px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to bottom right, #a35c0e, #a35c0e);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* collection page ends*/
+
+@media (max-width:765px) {
+    .Cart-Items {
+        flex-direction: column;
+    }
+}
+
+.collection_details {
+    text-align: center;
+    width: 60%;
+    margin-left: 30%;
+}
+
+.collection_details h3 {
+    font-size: 3rem;
+}
+
+.collection_details p {
+    font-size: 1rem;
+}
+
+@media (max-width:800px) {
+    .collection_ul_page {
+        flex-direction: column;
+    }
+}
