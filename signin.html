@@ -16,14 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">       
+    <nav class="nav">        
         <div class="nav__bar">
             <span><a class="nav__a" href="./ecommerce.html">Home</a></span>
             <span><a class="nav__SALE" href="#">SALE</a></span>
             <span><a class="nav__a" href="#">Woman</a></span>
-            <span><a class="nav__a" href="#">Man</a></span>        
+            <span><a class="nav__a" href="#">Man</a></span>
+        
             <div id="nav__signin">
-                <span><a class="" href="./signin.html">Signup</a></span>
+                <span><a class="" href="#">Signup</a></span>
                 <i class="fa-solid fa-shirt nav__logo"></i>
             </div>
             <div class="nav__logindetails">                
@@ -33,13 +34,28 @@
         </div>
 </nav>
     <header>
-            <button class="header__cartbtn" aria-label="cart button"><i class="fa-solid fa-cart-shopping header__cart"></i></button></a>
-
+        <a href="./cart.html"><button class="header__cartbtn" aria-label="cart button"><i class="fa-solid fa-cart-shopping header__cart"></i></button></a>                
     </header>
-    <main class="main">
-        <div id="main__img">
-            <img id="main__noitem" src="https://i.postimg.cc/QCbygCq0/empty-cart.png" alt="no items in your cart">
-        </div>
+    <main class="main">    
+            <form class="signup__form">
+              <h1>Signup</h1>
+              <div class="signup__content">
+                <div class="signup__input-field">
+                  <input id="signup__name" type="text" placeholder="Full name" autocomplete="nope">
+                </div>
+                <div class="signup__input-field">
+                  <input class="signup__name" type="email" placeholder="Email address" autocomplete="nope">
+                </div>
+                <div class="signup__input-field">
+                    <input class="signup__name" type="password" placeholder="Password" autocomplete="new-password">
+                </div>
+                <div class="signup__input-field">
+                    <input class="signup__name" type="password" placeholder="Password again" autocomplete="new-password">
+                </div>
+                <a href="#" class="signup__forgoturpw">Forgot Your Password?</a>
+              </div>              
+                <button class="signup__btn">Register</button>            
+            </form>         
     </main>
     <footer class="footer">
         <section class="footer__sec1">
