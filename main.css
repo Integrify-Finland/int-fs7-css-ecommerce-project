@@ -124,10 +124,22 @@ nav {
   line-height: 2.1rem;
 }
 
-.banner--btn {
-  background-color: #fff;
+.banner__btn {
+
   padding: 1.7em 3em;
   text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: var(font-family);
+  font-weight: 700;
+}
+
+.banner__btn:hover{
+  background-color: #4caf50;
+}
+
+.banner__btn a {
   color: #000;
 }
 
