@@ -9,5 +9,4 @@
    - Your creativity and additional functionality to the project will help you to get extra 1 points
 
 
-   https://ecommerce-project-sowjanya.netlify.app/  ---netlify link
   
