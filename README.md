@@ -8,3 +8,5 @@
    - deploy the project on netlify and share the deployment link in README.md; do not forget to make a PR as well (1 point)
    - Your creativity and additional functionality to the project will help you to get extra 1 points
   
+### netlify link
+   - https://splendorous-bubblegum-3d6d29.netlify.app/
