@@ -72,6 +72,10 @@ nav {
   font-weight: 700;
 }
 
+.btn:hover {
+  background-color: #000;
+}
+
 .btn a {
   color: #fff
 }
