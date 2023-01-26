@@ -1,0 +1,142 @@
+#cart-main {
+    width: 80%;
+    min-height: 65vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.cart-list {
+    width: 70%;
+}
+
+aside.purchase {
+    width: 40%;
+    height: 40vh;
+    border: 2px solid gray;
+}
+
+.in-cart {
+    width: 10rem;
+    background-color: white;
+    display: flex;
+    flex-direction: raw;
+    margin: auto;
+}
+
+.in-cart>.coffee-card__header {
+    color: black;
+}
+
+table {
+    width: 90%;
+}
+thead{
+    width: 2rem;
+    font-size: 1.5rem;
+}
+
+td{
+    font-size: 1.2rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.purchase__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* padding: 0 1rem; */
+}
+
+.purchase__content div{
+    font-size: 1.3rem;
+}
+
+.purchase__btn{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: brown;
+    /* margin: auto; */
+}
+
+.thank-you{
+    width:100%;
+    height: 2rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: animateFacebook;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+
+@keyframes animateFacebook {
+    0%{
+        color: brown;
+    }
+    50%{
+        color: pink;
+    }
+    100%{
+        color: blueviolet;
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    #cart-main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cart-list {
+        width: 90%;
+    }
+    
+    aside.purchase {
+        margin-top: 3rem;
+        width: 80%;
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #cart-main {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .cart-list {
+        width: 100%;
+        margin: 3rem auto;
+
+    }
+    
+    aside.purchase {
+        margin-top: 3rem;
+        width: 80%;   
+        margin: auto;
+ 
+    }
+
+}
