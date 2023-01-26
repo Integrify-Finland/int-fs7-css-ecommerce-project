@@ -1,6 +1,6 @@
 # isa7-css-e-commerce-project
 
-## CSS Assignment - 10 points
+## CSS Assignment - 15 points
 
 - Instructions (you can design an e-commerce website that you like but make sure it has the following features)
   - products page (2 points)
@@ -12,3 +12,5 @@
   - make sure the website is 100% accessible (2 point)
   - make sure the website is 100% responsive (2 points)
   - Your creativity and additional functionality to the project will help you to get extra 1 point
+
+[My project on Netlify](https://resonant-gecko-e380ff.netlify.app)
