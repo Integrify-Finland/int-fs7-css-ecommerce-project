@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Registration of a user">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,500;1,600;1,700;1,900;1,1000&display=swap" rel="stylesheet">
+
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="icon" type="images/x-icon" href="https://www.w3docs.com/favicon.ico" >-->
+    <title>B-shops:Register</title>
+</head>
+<body>
+     <!-- User account creation starts here-->
+     <nav class="user-account" id="user">
+        <h1 class="logo-title">B-Shops</h1>
+        <ul class="account">
+            <li class="account__list"><a href="./index.html" class="account__link">Home</a></li>
+            <li class="account__list"><a href="./fashion.html" class="account__link">New Arrivals</a></li>
+            <li class="account__list"><a href="./fashion.html" class="account__link">Fashion</a></li>
+            <li class="account__list"><a href="./register.html" class="account__link">Register</a></li>
+            <li class="account__list"><a href="./login.html" class="account__link"><i class="fa-solid fa-right-to-bracket"></i>  Login</a></li>
+            <li class="account__list"><a href="./fashion.html" class="account__link"><i class="fa-solid fa-cart-shopping"></i>  Cart</a></li>
+           
+        </ul>
+        <div class="account-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+     <!-- User account creation ends here-->
+
+     <main class="registration">
+        <h1 class="registration__title">B-Shops</h1>
+        <form action="" method="post" class="registration__input">
+            <h2 class="create__account">Create Account</h2>
+            <div class="input__values">
+                <label for="firstname" class="registration__labels">First Name</label>
+                <input class="user-detail" type="text" id="firstname" name="firstname" placeholder="First name" required>
+            </div>
+            <div class="input__values">
+                <label for="lastname" class="registration__labels" >Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+            </div>
+            <div class="input__values">
+                <label for="dob" class="registration__labels">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="input__values">
+                <label for="email" class="registration__labels">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input__values">
+                <label for="password" class="registration__labels">Password</label>
+                <input type="password" name="password" id="password" placeholder=" At least 8 characters" required>
+                <span class="password__description">i  Passwords must be at least 8 characters.</span>
+            </div>
+            <div class="input__values">
+                <label for="confirmpassword" class="registration__labels">Confirm Password</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder=" " required>
+            </div>
+            <button class="btn btn-submission" type="submit" aria-describedby="submission of a form">Continue</button>
+            <h3 class="member">Already have an account? <a href="./login.html" class="member__link">sign in</a></h3>
+        </form>
+       
+     </main>
+     <footer class="closing">
+        <div class="closing__knowus">
+            <h2 class="closing__title">Get to know Us</h2>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About B-shops</a></li>
+                <li><a href="#">B-shop Blogs</a></li>
+            </ul>
+        </div>
+        <div class="closing__makemoney">
+            <h2 class="closing__title">Make money with us</h2>
+            <ul>
+                <li><a href="#">Sell products on B-shops</a></li>
+                <li><a href="#">Advertise your products</a></li>
+                <li><a href="#">Become a Member</a></li>
+            </ul>
+        </div>
+        <div class="closing__social">
+            <h2 class="closing__title">About Us</h2>
+            <p class="social__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Numquam fuga ad,sed placeat reprehenderit reiciendis dicta 
+                quis nesciunt pariatur natus?
+            </p>
+            <div class="social__media">
+                <span class="btn btn-social" role="button" aria-label="facebook"><i class="fa-brands fa-facebook social"></i></span>
+                <span class="btn btn-social" role="button" aria-label="messenger"><i class="fa-brands fa-facebook-messenger social"></i></span>
+                <span class="btn btn-social" role="button" aria-label="twitter"><i class="fa-brands fa-twitter social"></i></span>
+                <span class="btn btn-social" role="button" aria-label="instagram"><i class="fa-brands fa-square-instagram social"></i></span>
+            </div>
+        </div>
+        <span class="copy"> Copyright reserved &copy; 2023</span>
+    </footer>
+</body>
+</html>
