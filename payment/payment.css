@@ -1,0 +1,139 @@
+.grid__container {
+  display: grid;
+  grid-template-areas:
+    "n"
+    "m";
+}
+
+:root {
+  --padding: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* nav starts here */
+nav {
+  background-color: #579bb1;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: n;
+}
+
+.navbar__icon {
+  font-size: 5rem;
+  margin-right: 3rem;
+}
+.navbar__lists {
+  display: flex;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+ul {
+  display: flex;
+}
+li {
+  padding: var(--padding);
+  cursor: pointer;
+}
+nav li:hover {
+  transform: scale(1.1);
+}
+
+.navbar__list1 {
+  display: flex;
+
+  float: right;
+  font-size: 2rem;
+}
+a {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(backgroud.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: m;
+}
+
+.payment__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 85%;
+  background-color: #c1c8ca;
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+  font-size: 0px;
+}
+.main__product-img {
+  width: 100%;
+}
+
+.main__product-img img {
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+}
+.payment__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.product__details h3 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.product__details h4 {
+  font-size: 2rem;
+}
+
+.payment__btn {
+  margin-top: 2rem;
+  height: 70px;
+  width: 200px;
+  background-color: rgb(173, 153, 153);
+  border: none;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+}
+
+.payment__btn:hover {
+  transform: scale(1.1);
+}
+
+.payment__icons {
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+
+@media screen (min-width:360px) {
+    nav {
+
+    }
+        
+    
+}
