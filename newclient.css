@@ -1,0 +1,114 @@
+
+:root{
+    --bgcolor1: rgba(57, 181, 224, 0.4);
+    --color2: #A31ACB;
+    --bgcolor2: rgba(163, 26, 203, 0.8);
+    --color3: #D60079;
+    --color4: #F5EA5A;
+}
+
+/* Reset and general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Comic Sans', sans-serif;
+}
+
+/*Header*/
+
+header{
+    background-color: var(--bgcolor2);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: var(--color4);
+    font-size: 80px;
+    animation-name: anim-h1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-h1 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+/* Footer: */
+
+footer{
+    background-color: var(--bgcolor2);
+    text-align: center;
+}
+
+.footer__icon{
+    font-size: 30px;
+    color: var(--color4);
+    padding: 10px;
+}
+
+.footer__title{
+    color: var(--color4);
+    display: inline;
+}
+/* Main: */
+.client{
+    background-color: var(--bgcolor1);
+    padding:30px;
+    height: 45vh;
+}
+
+.client__p-address{
+    padding: 10px;
+}
+
+.client__form label{
+    padding: 10px;
+}
+
+.client__submit{
+    border-radius: 5px;
+    border: solid 2px var(--color2);
+    background-color: var(--color4);
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a{
+    color:var(--color3);
+    cursor: pointer;
+}
+
+/* Media*/
+@media screen and (max-width:600px){
+    header{
+        height: 80vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .client__form label{
+        padding: 80px;
+    }
+    
+}

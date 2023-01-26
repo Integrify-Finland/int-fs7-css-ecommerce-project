@@ -17,13 +17,11 @@
     <nav class="nav">
         <ul>
             <li><a href="#products">Our products</a></li>
-            <li><a href="#buy">Order now</a></li>
             <li><a href="#contact">Contact us</a></li>
         </ul>
     </nav>
     <header>
         <h1>Aurori's Charms</h1>
-        <a href="#buy">Buy now</a>
     </header>
     <main>
         <h2 class="products__title" id="products">Our Products</h2>
@@ -35,6 +33,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details" id="details"> You can customize the name</p>
                 <h3>350SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/bedsheet girl.png" alt="Bedsheet with dolls"/>
@@ -42,6 +41,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details" id="details"> You can customize the name</p>
                 <h3>350SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/yoga bag.png" alt="Yoga bag"/>
@@ -49,6 +49,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> mat not included</p>
                 <h3>300SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/Screenshot 2023-01-24 at 16.00.49.png" alt="Black and green quilt"/>
@@ -56,6 +57,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> You can customize the color</p>
                 <h3>1300SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/single quilt.png" alt="Purple and orange quilt"/>
@@ -63,6 +65,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> You can customize the color</p>
                 <h3>1000SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/kindle bag.png" alt="Kindle bag"/>
@@ -70,6 +73,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details">kindle not included</p>
                 <h3>250SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/single towel.png" alt="Single towel set"/>
@@ -77,6 +81,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> You can customize the name, the color and the theme</p>
                 <h3>400SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/towel friends.png" alt="Double towel set"/>
@@ -84,6 +89,7 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> You can customize the name, the color and the theme</p>
                 <h3>750SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
             <div class="product">
                 <img src="./images/libras towel.png" alt="Face towel"/>
@@ -91,45 +97,9 @@
                 <p class="product__show-details">Details</p>
                 <p class="product__details"> You can customize the ASL-name</p>
                 <h3>150SEK</h3>
+                <button class="product__buy"><a href="./sign.html">Buy</a></button>
             </div>
         </section>
-        <section id="buy" class="buy">
-            <h2 class="buy__title">Order here</h2>
-            <form class="buy__info-client">
-                <label for="name">Name:</label>
-                <input type="text" placeholder="Name" required id="name" name="name">
-                <label for="email">E-mail:</label>
-                <input type="email" placeholder="e-mail" required id="email" name="email">
-                <p class="buy__p-address">Delivery address: </p>
-                <div class="buy__address">
-                    <label for="city">City:</label>
-                    <input type="text" placeholder="City" required id="city" name="city">
-                    <label for="street">Street:</label>
-                    <input type="text" placeholder="Street" required id="street" name="street">
-                    <label for="zip">Zip Code:</label>
-                    <input type="number" placeholder="only numbers" required id="zip" name="zip">
-                </div>
-                <label for="choose-product">What would you like to buy?</label>
-                <select required id="choose-product">
-                    <option value="" select hidden>Choose here</option>
-                    <option value="clows-bedsheet">Clown's bedsheet for cribs</option>
-                    <option value="dolls-bedsheet">Doll's bedsheet for cribs</option>
-                    <option value="yoga">Yoga mat bag</option>
-                    <option value="quilt-double">Quilt for double bed</option>
-                    <option value="quilt-single">Quilt for single bed</option>
-                    <option value="kindle">Kindle bag</option>
-                    <option value="single-towel">Single towel set</option>
-                    <option value="double-towel">Double towel set</option>
-                    <option value="face-towel">Face towel</option>
-                </select>
-                <label for="description">Details of the product:</label>
-                <textarea id="description" name="description" rows="4" cols="50" placeholder="Write here any details for your product: color, theme, name..."></textarea>
-                <button type="submit" class="buy__submit"><a href="./payment.html">Submit</a></button>
-                <p class="buy__redirect">You will be redirected to the payment website in some seconds...</p>
-            </form>
-            
-        </section>
-
     </main>
     <footer>
         <h2 class="footer__title" id="contact">Contact us:</h2>

@@ -1,4 +1,4 @@
-/* Payment Page*/
+
 :root{
     --bgcolor1: rgba(57, 181, 224, 0.4);
     --color2: #A31ACB;
@@ -17,7 +17,7 @@
     font-family: 'Comic Sans', sans-serif;
 }
 
-button{
+a{
     color:var(--color3);
     cursor: pointer;
 }
@@ -51,90 +51,7 @@ h1{
     }
 }
 
-/*Infos*/
-
-main{
-    background-color: var(--bgcolor1);
-}
-
-.payment{
-    display: grid;
-    grid-template-areas:
-    "prod cust" 
-    "prod price"
-    "prod pay";
-    gap: 30px;
-    padding:10px;
-}
-
-.payment__product-choosen{
-    grid-area: prod;
-}
-
-.payment__customer{
-    grid-area: cust;
-}
-
-.payment__price{
-    grid-area: price;
-}
-
-.payment__pay-here{
-    grid-area: pay;
-}
-
-.payment__pay-here, .payment__price, .payment__customer, .payment__product-choosen{
-    background-color: white;
-    margin: auto;
-    padding:30px;
-    line-height: 140%;
-}
-
-.price__total{
-    font-weight: 700;
-}
-
-.choosen__img{
-    width: 250px;
-    padding: 10px;
-}
-
-.pay__img{
-    width: 100px;
-}
-
-.pay__payment-option{
-    display: inline;
-}
-
-h2{
-    color:var(--color3);
-    margin-bottom: 5px;
-}
-
-.payment__btn{
-    border-radius: 5px;
-    border: solid 2px var(--color2);
-    background-color: var(--color4);
-    font-weight: 600;
-    width: 200px;
-    height: 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.payment__redirect{
-    display: none;
-}
-
-.payment__btn:hover + .payment__redirect{
-    display: block;
-    text-align: center;
-    padding: 20px;
-}
-
-/*Footer*/
+/* Footer: */
 
 footer{
     background-color: var(--bgcolor2);
@@ -151,6 +68,40 @@ footer{
     color: var(--color4);
     display: inline;
 }
+/* Main: */
+.product{
+    background-color: var(--bgcolor1);
+}
+
+.product__description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product__details{
+    margin: 20px;
+}
+.product__img{
+    width: 250px;
+    margin: 20px;
+}
+.product__submit{
+    border-radius: 5px;
+    border: solid 2px var(--color2);
+    background-color: var(--color4);
+    font-weight: 600;
+    width: 200px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    color:var(--color3);
+    margin-left:30px;
+}
+
 
 /* Media*/
 @media screen and (max-width:600px){
@@ -162,11 +113,8 @@ footer{
         font-size: 40px;
     }
 
-    .payment{
-        grid-template-areas:
-        "prod" 
-        "cust"
-        "price"
-        "pay";
+    .product__description{
+        display: block;
     }
+    
 }
