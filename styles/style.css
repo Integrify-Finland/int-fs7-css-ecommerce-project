@@ -24,7 +24,7 @@ a{
     text-decoration: none;
 }
 
-i:hover, a:hover, button:hover{
+i:hover, a:hover, button:hover, .btn:hover{
     cursor: pointer;
 }
 
@@ -66,6 +66,21 @@ header {
     width: 10%;
     height: 100%;
     text-align: center;
+    position: relative;
+}
+
+#cart-counter{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    /* background-color: var(--main-color1); */
+    position: absolute;
+    top: 5%;
+    left: 43%;
 }
 
 .cart-icon {
@@ -229,6 +244,10 @@ footer {
         font-size: 3rem;
     }
 
+    nav{
+        padding: 0 1rem;
+    }
+
     .welcome__header{
         font-size: 3rem;
     }
@@ -265,7 +284,12 @@ footer {
     .cart-icon {
         font-size: 2.8rem;
     }
-
+    nav{
+        padding: 0 1rem;
+    }
+    nav > ul {
+        gap: 1.8rem;
+    }
     .welcome__header{
         font-size: 2rem;
     }

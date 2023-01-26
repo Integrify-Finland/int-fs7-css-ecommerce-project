@@ -1,29 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Coffee shop website">
     <meta name="keywords" content="coffee damalan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Login Dalaman</title>
 </head>
+
 <body>
-    <header>
-        <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo">
-        <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text">
-        <div class="header__cart"><a href="#"><i class="fa-solid fa-cart-shopping cart-icon"></i></a></div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#" area-label="Visit home page">Home</a></li>
-            <li><a href="#" area-label="Visit about page">About</a></li>
-            <li><a href="#" area-label="Visit specials page">Specials</a></li>
-            <li><a href="#" area-label="Visit partners page">Partnership</a></li>
-        </ul>
-    </nav>
+    <div class="page-wrapper">
+        <header>
+            <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo">
+            <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text">
+            <div class="header__cart">
+                <a href="../html/cart.html">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                </a>
+                <div class="cart-counter">2</div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html" area-label="Visit home page">Home</a></li>
+                <li><a href="#" area-label="Visit about page">About</a></li>
+                <li><a href="#" area-label="Visit specials page">Specials</a></li>
+                <li><a href="#" area-label="Visit partners page">Partnership</a></li>
+            </ul>
+        </nav>
+        <div id="login-main" role="main">
+            <section class="login form-section">
+                <div class="form-section__header">
+                    <i class="fa-solid fa-user form-section__icon"></i>
+                    <h1>Enter your personal cabinet</h1>
+                    <p>Please login, if you have already a user account</p>
+                </div>
+                <div class="form-section__content">
+                    <form action="">
+                        <label for="userEmail" area-label="Enter your email"></label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Your email" required>
+                        <label for="userPassword" area-label="Enter your password"></label>
+                        <input type="password" id="userPassword" name="userPassword" class="userPassword"
+                            placeholder="Your password" required>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="showPassword" id="showPassword" class="show-password">
+                            <label for="showPassword">Show password</label>
+                        </div>
+                        <input type="submit" value="Login" class="form-section__btn btn">
+                    </form>
+                </div>
+                <div class="form-section__footer">
+                    <a href="#" class="change-section">Don't have an account yet?</a>
+                    <a href="#" class="forgot-password">Forgotten password?</a>
+                </div>
+            </section>
+
+            <section class="registration form-section hidden">
+                <div class="form-section__header">
+                    <i class="fa-solid fa-user-secret form-section__icon"></i>
+                    <h1>Create your personal cabinet</h1>
+                    <p>Register in order to keep track of your purchases</p>
+                </div>
+                <div class="form-section__content">
+                    <form action="">
+                        <label for="userName" area-label="Enter your name"></label>
+                        <input type="text" id="userName" name="userName" placeholder="Your name" required>
+                        <label for="userSurname" area-label="Enter your surname"></label>
+                        <input type="text" id="userSurname" name="userSurname" placeholder="Your surname" required>
+                        <label for="userEmail" area-label="Enter your email"></label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="Your email" required>
+                        <label for="userPassword" area-label="Enter your password"></label>
+                        <input type="password" id="userPassword" name="userPassword" class="userPassword"
+                            placeholder="Your password" required>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" name="showPassword" id="showPassword" class="show-password">
+                            <label for="showPassword">Show password</label>
+                        </div>
+                        <input type="submit" value="Register" class="form-section__btn btn">
+                    </form>
+                </div>
+                <div class="form-section__footer">
+                    <a href="#" class="change-section">Already have an account?</a>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <h2 class="footer__header">Stay In Touch With Us</h2>
+            <section class="footer__contacts">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+
+        document.querySelectorAll(".show-password").forEach(elem => {
+            elem.addEventListener("click", function () {
+                let passwordFields = document.querySelectorAll(".userPassword");
+                passwordFields.forEach(passwordField => {
+                    if (passwordField.type === "password") {
+                        passwordField.type = "text";
+                    } else {
+                        passwordField.type = "password";
+                    }
+                })
+            }
+            )
+        });
+
+        let toggleLinks = document.querySelectorAll(".change-section");
+        toggleLinks.forEach(toggleLink => {
+            toggleLink.addEventListener("click", function () {
+                let sections = document.querySelectorAll(".form-section");
+                sections.forEach(section => {
+                    if (section.classList.contains("hidden")) {
+                        section.classList.remove("hidden");
+                    } else {
+                        section.classList.add("hidden");
+                    }
+                });
+            })
+        })
+
+
+    </script>
 </body>
+
 </html>
