@@ -39,6 +39,7 @@ a{
 .button-box{
     position: sticky;
     bottom:15%;
+    right: 20%;
     transform: translate(-50% 50%);
 }
 .puls{
@@ -368,5 +369,5 @@ a{
     .conteiner-row{
         margin-top: 2rem;
     }
-
+}
 /* resposiveness section ends here  */
