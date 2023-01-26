@@ -26,8 +26,7 @@ body{
 .chekout-form {
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0 -16px; */
-  }
+}
   .payment-information{
     flex:70%
   }
@@ -97,3 +96,21 @@ body{
     font-size: var(--font-size);
     margin-bottom: 1rem;
   }
+/* resposiveness section starts here  */
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:760px) {
+
+}
+
+@media screen and (max-width:600px) {
+  .chekout-form {
+    flex-direction: column-reverse;
+}
+.cart-information{
+  margin-bottom: 2rem;
+}
+}
+/* resposiveness section ends here  */

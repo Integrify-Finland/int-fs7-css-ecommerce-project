@@ -36,6 +36,72 @@ a{
 .list__item{
     color: black;
 }
+.button-box{
+    position: sticky;
+    bottom:15%;
+    transform: translate(-50% 50%);
+}
+.puls{
+    outline: 1px solid #84D2C5;
+    width:6rem;
+    height:6rem;
+    color:fff;
+    text-align: center;
+    background-color: #84D2C5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.phone{
+    position: absolute;
+    font-size: 2rem;
+    width: 6rem;
+    height: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation: phone.9s ease-in-out infinite;
+}
+.phone i{
+    color:#fff
+}
+
+@keyframes phone{
+0%, 100%{
+    transform: rotate(-20deg);
+}
+50%{
+    transform: rotate(21deg);
+}
+}
+.puls::before{
+    content:" ";
+    position: absolute;
+    border: 2px solid #84D2C5;
+    left: -2rem;
+    right: -2rem;
+    top:-2rem;
+    bottom:-2rem;
+    border-radius: 50%;
+    animation: puls 1.8s linear infinite;
+}
+.puls:hover::after{
+    animation-delay: 5s;
+}
+@keyframes puls{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
 /* reset and commons ends here  */
 
 /* nav section starts here  */
@@ -295,6 +361,12 @@ a{
         width: 80rem;
         height: 40rem;
         object-fit: cover;
+    }
+    .nav-midle{
+        display: none;
+    }
+    .conteiner-row{
+        margin-top: 2rem;
     }
 
 /* resposiveness section ends here  */

@@ -45,7 +45,6 @@ a{
     align-items: center;
     background-color: #fff;
     min-height: 5vh;
-    margin-bottom: 2rem;
 }
 .list-elements{
     display: flex;
@@ -54,18 +53,14 @@ a{
     color:#C27664;
     font-size: var(--font-size);
 }
+
 .nav-left{
-    width: 30%;
+    flex: 50%;
 }
 .nav-right{
-    width: 30%;
+    flex: 50%;
 }
-.nav-midle{
-    display: flex;
-    justify-content: center;
-    width: 40%;
 
-}
 .serch{
     width: 80%;
 }
@@ -89,6 +84,7 @@ a{
     font-size: var(--font-size);
     font-weight: 500;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 .product-images{
     width:75%;
@@ -116,9 +112,22 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     justify-content: center;
 }
+.conteiner-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
 .card__price{
     display: flex;
     height: 10%;
@@ -154,6 +163,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items:flex-start ;
     gap:2rem;
 }
 .chekbox{
@@ -178,10 +188,10 @@ td,tr{
     
 }
 .demension-table{
-    width:40%;
+    flex:40%;
 }
 .demension-pic{
-    width: 60%;
+    flex: 60%;
 }
 .demension-pic img{
     width: 100%;
@@ -190,14 +200,12 @@ td,tr{
 }
 
 .product-advantages{
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    margin-bottom: 5rem;
+    background-color: #fff;
 }
 .description-cards{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    width: 90%;
 }
 .decription-card{
     display: flex;
@@ -207,6 +215,8 @@ td,tr{
 }
 .description{
     margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .description-card__heading{
     font-weight: 800;
@@ -222,6 +232,7 @@ td,tr{
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
     gap: 2rem;
+    width: 90%;
  }
 
  .card{
@@ -241,5 +252,33 @@ td,tr{
     justify-content: center;
     align-items: center;
 }
-
 /* footer section ends here  */
+
+/* resposiveness section starts here  */
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:760px) {
+
+}
+
+@media screen and (max-width:600px) {
+    .inline-pic{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+     }
+     .description-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 90%;
+    }
+    .decription-card{
+        width: 60%;
+
+    }
+}
+
+/* resposiveness section ends here  */
