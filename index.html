@@ -19,11 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-  src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-  integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
-  crossorigin="anonymous"></script>
-  </head>
+     </head>
   <body>
     <header id="theTop">
       <marquee behavior="" direction="">Up To 30% off Specisall V-Day Offer!! </marquee>
@@ -36,17 +32,17 @@
         </div>
       </div>
 
-      <div class="header__cart-search">
+      <div class="header__cart-user">
 
-        <a class="link" href="/products/cart.html" target="main-frame"><button class="btn__i"
-          onClick="document.getElementById('main__iframe').scrollIntoView();"><i id="cart" class="fa-solid fa-cart-shopping"></i></button> </a>
+        <a class="link" href="/products/cart.html" target="main-frame"><button
+          onClick="document.getElementById('main__iframe').scrollIntoView();">Cart</button> </a>
 
-        <a class="link" href="/products/user-acount.html" target="main-frame"><button class="btn__i" onClick="document.getElementById('main__iframe').scrollIntoView();"><i id="user" class="fa-solid fa-user"></i></button></a>
+        <a class="link" href="/products/user-acount.html" target="main-frame"><button onClick="document.getElementById('main__iframe').scrollIntoView();">user</button></a>
 
-        <button class="header__search-btn">Search</button>
+        <!--<button class="header__search-btn">Search</button>
         <label  for="searchbar"
           ><input class="header__search" placeholder="Search" name="searchbar" type="search"/>
-        </label>
+        </label>-->
 
       </div>
 
@@ -93,15 +89,36 @@
     </main>
     <div class="arrow">
 <a href="#theTop" id="top"><i class="fa-solid fa-arrow-up"></i></a></div>
-    <footer>
-<div class="footer__col1">
-
-</div>
-<div class="footer__col2">
-  <address>Sundsvall, Sweden</address>
-  <tel>0046123456025</tel>
-</div>
-<div class="footer__col3"></div>
-    </footer>
+<footer>
+  <div class="footer-menue">
+      <ul class="footer-list">
+          <li class="footer-list-item"><a href="/products/user-acount.html" target="main-frame">Account</a></li>
+          <li class="footer-list-item"><a href="/products/cart.html" target="main-frame">Cart</a></li>
+          <li class="footer-list-item"><a href="/products/signIn.html" target="main-frame">Sign in</a></li>
+          <li class="footer-list-item"><a href="/products/signUp.html" target="main-frame">Sign up</a></li>
+          <li class="footer-list-item"><a href="/contact.html" target="main-frame">Contact</a></li>
+        </ul> 
+  </div>
+  <div class="footer-address-info">
+      
+      <address><i class="fa-solid fa-location-dot"></i> Sundsvall,Sweden</address>
+      <br>
+      <tel><i class="fa-solid fa-phone"></i>+4054644994</tel>
+      <email><i class="fa-solid fa-envelope"></i> info@Lovelyminimal.com</email>
+  </div>
+  <div class="footer-about">
+      <h4>about us</h4>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Tenetur molestias saepe, nulla </p>
+          <br>
+          <div class="footer-soc-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-twitter"></i>
+  </div>
+  </div>
+  
+</footer>
   </body>
 </html>

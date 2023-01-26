@@ -10,6 +10,23 @@
     font-family: 'Merienda', cursive;
     
 }
+/*------- variables -------*/
+:root{
+    --primary-first-color:#D4668E;
+    --primary-second-color:#FFCABE;
+    --primary-body-color:#FEF4EA;
+    --primary-btn-color:#FFB8D0;
+    --primary-aside-color:#FAECBC;
+    --primary-footer-color:#CECCFD;
+    --btn-padding: 0.25rem;
+    --btn-width: 5rem;
+    --btn-border-radius:7px;
+    --heading-fnt-w:2.5rem;
+    --subheading-fnt-w:50px;
+    --contents-fnt-w:2rem;
+    --info-fnt-w:20px;
+    --bx-shadow:-8px 10px 5px -2px rgba(163,152,152,0.55);
+}
 a{
     color: black;
 }
@@ -39,32 +56,7 @@ button{
 button:hover{
     background-color: var(--primary-first-color);
 }
-.btn__i{
-   width: 2.1rem;
-   height: 2.1rem;
-   border-radius: 50% ;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-}
-/*------- variables -------*/
-:root{
-    --primary-first-color:#D4668E;
-    --primary-second-color:#FFCABE;
-    --primary-body-color:#FEF4EA;
-    --primary-btn-color:#FFB8D0;
-    --primary-aside-color:#FAECBC;
-    --primary-footer-color:#CECCFD;
-    --btn-padding: 0.25rem;
-    --btn-width: 5rem;
-    --btn-border-radius:7px;
-    --heading-fnt-w:2.5rem;
-    --subheading-fnt-w:50px;
-    --contents-fnt-w:2rem;
-    --info-fnt-w:20px;
-    --bx-shadow:-8px 10px 5px -2px rgba(163,152,152,0.55);
-}
+
 body{
     background-color: var(--primary-body-color);
 }
@@ -84,12 +76,8 @@ marquee{
     justify-content: space-between;
     padding: 20px;
 }
-.header__cart-search{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px;
-    margin-right: 2%;
+.header__cart-user{
+   margin-left: 80%;
     box-shadow: var(--bx-shadow);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -97,20 +85,10 @@ marquee{
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
 }
-.header__cart-search:hover{
-    background-color: var(--primary-aside-color);
+.header__cart-user:hover{
+    height: 40px;
 }
-.fa-cart-shopping{
-    padding-right:10px;
-    padding-top: 5px;
-    margin-right: 5%;
-    margin-top: 5px;
-}
-.fa-user{
-    padding-top: 10px;
-   padding-right: 15px;
-   padding-left: 5px;
-}
+
 .header__search{
     padding: 5px;
     border-radius: var(--btn-border-radius);
@@ -120,10 +98,7 @@ marquee{
     -o-border-radius: var(--btn-border-radius);
     box-shadow: var(--bx-shadow);
 }
-.header__search-btn{
-    margin-right: 1%;
-    box-shadow: var(--bx-shadow);
-}
+
 
 
 /*--------- Mani section----------*/
@@ -228,13 +203,78 @@ iframe{
 
 /*--------footer-------*/
 footer{
-    width: 100%;
-    height: 12.5rem;
-    background-color:var(--primary-footer-color);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2%;
+    margin-top: 1%;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 20vh;
+   grid-gap: 0px 0px;
+    background-color:var(--primary-second-color);
+    font-family:var(--contents-fnt-w);
+    width: 100%; 
+    height: auto;
+   text-align: center;
+   padding-left: 3%;
+   padding-right: 3%;
+   
 }
-
+.footer-menue{
+   display: flex;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+vertical-align: middle;
+}
+.footer-list-item{
+    border-right: 1px solid; 
+    padding-left: 8%;  
+}
+.footer-list-item:last-child{
+    border: none;
+}
+.footer-address-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /*---------responsivness -----------*/
+@media only screen and (max-width: 750px) {
+  .img1,.img3{
+    display: none;
+  } 
+.img2{
+    width: 100%;
+}
+.main__products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main__iframe{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding-top: 2%;
+}
+.footer-menue{
+    padding: 2%;
+}
+}
