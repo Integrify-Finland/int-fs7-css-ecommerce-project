@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="ecommerce test" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="router.js" defer></script>
+        <script src="productsPopulate.js" defer></script>
+        <script src="main.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="" onclick="selectPage(event,'products')">Home</a>
+                <a href="" onclick="selectPage(event,'detail')">Detail</a>
+                <a href="" id="cart-link" onclick="selectPage(event,'cart')">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-shopping-count"></span
+                ></a>
+                <a href="" onclick="selectPage(event,'login')">Login</a>
+            </nav>
+        </header>
+        <main>
+            <div id="allPages">
+                <section class="allPages__page" id="products">
+                    <h2>Our products</h2>
+                    <div class="product-container">
+                        <!-- <div class="product-card">
+                            <img src="img/car2.webp" alt="product image" />
+                            <div class="product-card-info">
+                                <h3>Cool Product</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ducimus, ullam?
+                                </p>
+                                <p>$12000</p>
+                                <button class="btn btn-aqua product__add-btn">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+                <section class="allPages__page" id="detail">
+                    <div class="product-detail flex flex-col flex-gap-sml">
+                        <img src="img/car2.webp" alt="product image" />
+                        <div
+                            class="product-detail__info flex flex-col flex-gap-sml"
+                        >
+                            <h3 class="product-detail__name">Cool Product</h3>
+                            <p class="product-detail__price">Price: $12000</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ducimus, ullam? Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit.
+                                Velit quod assumenda quam, accusantium ratione
+                                nostrum voluptatem ab, doloremque ipsa
+                                excepturi, aspernatur recusandae! Libero
+                                obcaecati soluta beatae ipsa debitis cupiditate
+                                autem. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ducimus, ullam? Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit.
+                                Velit quod assumenda quam, accusantium ratione
+                                nostrum voluptatem ab, doloremque ipsa
+                                excepturi, aspernatur recusandae! Libero
+                                obcaecati soluta beatae ipsa debitis cupiditate
+                                autem.
+                            </p>
+                            <button class="btn btn-aqua product-detail__btn">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="allPages__page" id="cart">
+                    <h2>Your Cart</h2>
+                    <h3 id="cart__total">
+                        <!-- Total: $22000 -->
+                    </h3>
+                    <div class="cart__product-container">
+                        <!-- <div class="product-card">
+                            <img src="img/car2.webp" alt="product image" />
+                            <div class="product-card-info">
+                                <h3>Cool Product</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ducimus, ullam?
+                                </p>
+                                <p>$12000</p>
+                            </div>
+                            <button class="btn">remove</button>
+                        </div> -->
+                    </div>
+                    <div class="rowCards">
+                        <img
+                            id="card_AMEX"
+                            class="cardOption"
+                            src="https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/master/flat/amex.svg"
+                            alt="American Express option"
+                        />
+                        <img
+                            id="card_Discover"
+                            class="cardOption"
+                            src="https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/master/logo/discover.svg"
+                            alt="Discover option"
+                        />
+                        <img
+                            id="card_Master"
+                            class="cardOption"
+                            src="https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/master/logo/mastercard.svg"
+                            alt="Master Card option"
+                        />
+                        <img
+                            id="card_Visa"
+                            class="cardOption"
+                            src="https://raw.githubusercontent.com/aaronfagan/svg-credit-card-payment-icons/master/logo/visa.svg"
+                            alt="Visa option"
+                        />
+                    </div>
+                    <button class="btn btn-aqua cart__pay-btn">Pay</button>
+                </section>
+                <section class="allPages__page" id="login">
+                    <form class="login__form">
+                        <h2>Login</h2>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="email@example.com"
+                            required
+                        />
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required />
+                        <div class="login__btn-group">
+                            <button class="btn btn-aqua login__form__btn">
+                                Submit
+                            </button>
+                            <p>no account? <a href="">register here</a></p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-contact-container">
+                <div class="footer-contact">
+                    <h3>
+                        <i class="fa-solid fa-location-pin"></i> Dortmond,
+                        Germany
+                    </h3>
+                    <h3><i class="fa-solid fa-phone"></i>+4915151515151</h3>
+                    <h3>
+                        <i class="fa-solid fa-envelope"></i>email@example.com
+                    </h3>
+                </div>
+            </div>
+            <div class="footer-about">
+                <h3>About This Company</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eius velit quos blanditiis modi! Ex aut nisi reiciendis
+                    nesciunt eum dicta. Lorem ipsum, dolor sit amet consectetur
+                </p>
+                <div class="footer-about-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
