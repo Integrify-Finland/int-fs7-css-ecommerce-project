@@ -1,0 +1,217 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+
+}
+
+
+
+html{
+    background-color: #FAAB78;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    font-family: "Roboto" , sans-serif
+
+  
+}
+
+.header__alert{
+    background-color: #FAAB78;
+}
+
+
+.header-step2{
+  
+   padding: 2rem;
+    display:flex;
+    justify-content: space-between;
+    background-color:#C3ACD0
+    
+    
+}
+
+.header-actions{
+    display: flex;
+    gap: 2.2rem;
+}
+
+/* 
+banner section starts */
+
+.banner__box{
+    background-image: url('../images/hero-banner-1.jpeg');
+    background-position: cover;
+    min-height:500px
+    
+}
+
+.banner__text {
+    font-size: 1.2rem;
+    text-align: justify;
+  
+  }
+  
+
+
+
+
+  .banner__title{
+    color: #C3ACD0;
+    font-weight:800;
+    font-size: 3rem;
+   
+  }
+  
+ .banner__price{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-block-end: 20px;
+ }
+
+
+ .banner__details{
+    padding-left: 3em;
+    padding-top: 4em;
+    flex-direction: column;
+    gap: 1.5rem;
+    display:flex
+  
+    
+ }
+
+.btn-primary{
+    background-color: #C3ACD0;
+    width: 10%;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+     
+     
+    
+}
+/* 
+banner section starts */
+
+
+
+
+
+/* product secction starts here */
+
+
+
+
+.product__cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 1rem;
+}
+
+.product__card{
+    position: relative;
+}
+.promo{
+    position: absolute;
+    background-color: red;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    top: 0.1rem;
+  
+   
+   
+}
+
+
+/* product secction ends here */
+
+
+
+/* footer starts here */
+
+.footer-text{
+    width: 40%;
+}
+.footer__container{
+    background-color:#C3ACD0 ;
+    display: flex;
+    justify-content: center;
+  
+    
+
+}
+
+
+.footer-brand{
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+
+
+ 
+}
+.footer-list-title{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/******RESPONSIVENESS STARTS*/
+
+@media screen and (max-width:992px) {
+    .product__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       justify-content: center;
+       align-content: center;
+     
+     }
+
+     .banner__box{
+        background-image: url('../images/hero-banner-1.jpeg');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+        
+    }
+    
+         
+    
+    
+}
+
+
+
+.banner__details{
+    padding-left: 3em;
+    padding-top: 4em;
+    flex-direction: column;
+    gap: 1.5rem;
+    display:flex
+  
+    
+ }
+
+
+
+@media screen and (max-width:533px) {
+    .product__cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       justify-content: center;
+       align-content: center;
+     
+     }
+}
+    
+   
