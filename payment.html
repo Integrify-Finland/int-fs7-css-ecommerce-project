@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <meta name="description" content="Payment">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Aurori's Charms</h1>
+    </header>
+    <main>
+        <section class="payment">
+            <section class="payment__product-choosen">
+                <img src="./images/single towel.png" class="choosen__img" alt="single towel"/>
+                <h2>Details of the product:</h2>
+                <p>Theme: Finding Nemo </p>
+                <p>Name: Dori</p>
+            </section>
+            <section class="payment__customer">
+                <h2>Delivery Information:</h2>
+                <p>P.Sherman</p>
+                <p>42 Wallaby Way - Sidney</p>
+                <p>Zip code: 12345</p>
+            </section>
+            <section class="payment__price">
+                <h2>Total Amount:</h2>
+                <p>Price: 400SEK</p>
+                <p>Discount: 200SEK</p>
+                <p>Delivery fee: 100SEK</p>
+                <p class="price__total">Total: 300SEK</p>
+            </section>
+            <section class="payment__pay-here">
+                <h2>Payment:</h2>
+                <label for="klarna" class="pay__payment-option"><img class="pay__img" src="https://hejstadjurbutik.online/wp-content/uploads/2019/11/klarna-logo.jpg" alt="klarna"/></label>
+                <input type="radio" id="klarna" name="payment">
+                <label for="paypal"class="pay__payment-option"><img class="pay__img" src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt="paypal"/></label>
+                <input type="radio" id="paypal" name="payment">
+            </section>
+        </section>
+        <button class="payment__btn">Pay</button>
+        <p class="payment__redirect">You will be redirected to Klarna website in some seconds...</p>
+    </main>
+    <footer>
+        <h2 class="footer__title" id="contact">Contact us:</h2>
+        <a href="https://www.instagram.com/encantos_da_aurori/" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram footer__icon"></i></a>
+        <a href="https://wa.me/+123456789" target="_blank" aria-label="whatsapp"><i class="fa-brands fa-whatsapp footer__icon"></i></a>
+    </footer>
+</body>
+</html>
