@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand&display=swap);
+
+* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFF;
+    margin: 0px;
+}
+
+.main {
+    width: 1300px;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*********** Start Header (or) Menu **********/
+.header {
+    width: 1300px;
+    height: 100px;
+    float: left;
+    border-top: 2px solid #df001a;
+    border-bottom: 2px solid #df001a;
+    background: #FFF;
+}
+
+.header-left {
+    width: 250px;
+    float: left;
+}
+
+.header-right {
+    width: 1050px;
+    float: left;
+    padding-top: 10px;
+}
+
+.header-right-top {
+    width: 300px;
+    height: 35px;
+    float: left;
+    padding-left: 750px;
+    margin: 0;
+}
+
+.header-right-top ul {
+    list-style: none;
+    float: left;
+    margin: 5px 20px;
+}
+
+.header-right-top ul li {
+    float: left;
+    padding: 0px 10px;
+}
+
+.header-right-top ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    background: #df001a;
+    color: #FFF;
+    padding: 8px 10px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.header-right-top ul li a:hover {
+    background: #bb0016;
+    color: #FFF;
+}
+
+.form {
+    height: 35px;
+    width: 350px;
+    padding: 0px 10px;
+    float: left;
+    border: 1px solid #df001a;
+    border-radius: 2px 0px 0px 0px;
+}
+
+.header-right-bottom {
+    width: 1050px;
+    height: 40px;
+    float: left;
+}
+
+.header-right-bottom-left {
+    width: 470px;
+    float: left;
+    padding-left: 100px;
+}
+
+.header-right-bottom-center {
+    width: 250px;
+    float: left;
+}
+
+.header-right-bottom-center ul {
+    list-style: none;
+    margin: 0px;
+    padding-left: 100px
+}
+
+.header-right-bottom-center ul li {
+    list-style: none;
+    font-family: arial;
+    font-size: 12px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    float: left;
+    font-weight: bold;
+    border-right: 1px solid #000;
+}
+
+.header-right-bottom-center ul li a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 2px 5px 5px;
+    text-decoration: none;
+    color: #FFF;
+    background: #df001a;
+}
+
+.header-right-bottom-center ul li a:hover {
+    color: #FFF;
+    background: #bb0016;
+}
+
+.header-right-bottom-right {
+    width: 180px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/*********** End Header  **********/
+
+/******** Start Dropdown Menu ********/
+.ftl_menu {
+    width: 1280px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    float: left;
+    background: #df001a;
+    border-radius: 2px
+}
+
+#navbar li,
+#navbar li a {
+    background: #df001a;
+    float: left;
+    position: relative
+}
+
+#navbar li,
+#navbar li a,
+.ftl_menu {
+    position: relative
+}
+
+#navbar li a,
+#navbar ul li a {
+    font-weight: 700;
+    font-style: italic
+}
+
+#navbar,
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+#navbar {
+    height: 45px;
+    left: 0;
+    overflow: hidden;
+    top: 0
+}
+
+#navbar li {
+    z-index: 10
+}
+
+#navbar li a {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    height: 45px;
+    line-height: 40px;
+    padding: 0 25px;
+    text-decoration: none;
+    z-index: 20
+}
+
+#navbar li:first-child a {
+    padding-left: 35px
+}
+
+#navbar li ul li:first-child a {
+    background-image: none;
+    padding-left: 10px
+}
+
+#navbar li.pad {
+    display: block;
+    height: 45px;
+    width: 35px
+}
+
+#navbar ul,
+#navbar ul li {
+    width: 180px
+}
+
+#navbar ul {
+    height: auto;
+    padding: 10px 2px;
+    position: absolute;
+    top: -120px;
+    z-index: 1;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -o-transition: .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out
+}
+
+#navbar ul li a {
+    background: 0 0;
+    line-height: 20px;
+    width: 180px;
+    font-size: 12px;
+    padding: 3px 15px;
+    height: auto !important
+}
+
+#navbar:hover {
+    height: 350px
+}
+
+#navbar li:hover ul {
+    -moz-transform: translate(0, 161px);
+    -o-transform: translate(0, 161px);
+    -webkit-transform: translate(0, 161px)
+}
+
+#navbar a:hover,
+#navbar li:hover > a {
+    color: #000;
+}
+
+/************** End Dropdown Menu ************/
+
+/************* Start Slider (or) Banner *************/
+.slider {
+    width: 1300px;
+    background: url(/images/airpods.jpg);
+    height: 300px;
+    float: left;
+}
+
+.slider-padding {
+    padding: 150px 0px 0px 100px;
+}
+
+.btn {
+    background: #df001a;
+    color: #FFF;
+    padding: 9px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-shadow: none;
+    float: left;
+}
+
+.btn:hover {
+    background: #bb0016;
+}
+
+
+.content {
+    width: 1300px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.content-left {
+    width: 300px;
+    height: auto;
+    float: left;
+    padding: 20px 15px;
+}
+
+.categories {
+    font-size: 24px;
+    background: #EEE;
+    width: 258px;
+    padding: 8px 15px;
+    border: 1px solid #df001a;
+}
+
+#content_left_menu,
+#content_left_menu a,
+#content_left_menu li,
+#content_left_menu ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 250px;
+    list-style: none;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps !important;
+    position: relative
+}
+
+#content_left_menu a {
+    line-height: 1.3
+}
+
+#content_left_menu {
+    width: 250px
+}
+
+#content_left_menu > ul > li > a {
+    padding-right: 40px;
+    font-weight: 700;
+    display: block;
+    background: #df001a;
+    color: #fff;
+    border-bottom: 1px solid #590000
+}
+
+#content_left_menu > ul > li > a > span {
+    background: #bb0016;
+    padding: 12px 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 300
+}
+
+#content_left_menu > ul > li > a:hover {
+    text-decoration: none
+}
+
+#content_left_menu > ul > li.active {
+    border-bottom: none
+}
+
+#content_left_menu > ul > li.active > a {
+    color: #fff;
+}
+
+#content_left_menu > ul > li.active > a span {
+    background: #df001a;
+}
+
+#content_left_menu span.cnt {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    background: 0 0
+}
+
+#content_left_menu ul ul {
+    display: none
+}
+
+#content_left_menu ul ul li {
+    border: 1px solid #e0e0e0;
+    border-top: 0
+}
+
+#content_left_menu ul ul a {
+    padding: 10px;
+    display: block;
+    color: #ed1144;
+    font-size: 13px
+}
+
+#content_left_menu ul ul a:hover {
+    color: #bd0e36;
+}
+
+#content_left_menu ul ul li.odd {
+    background: #f4f4f4;
+}
+
+#content_left_menu ul ul li.even {
+    background: #fff;
+}
+
+.content-right {
+    width: 930px;
+    height: auto;
+    float: left;
+    padding: 20px 20px 0px 20px;
+}
+
+.categories-right {
+    font-variant: small-caps;
+    font-size: 23px;
+    background: #EEE;
+    width: 870px;
+    margin: 0px 15px;
+    padding: 8px 15px;
+    border: 1px solid #df001a;
+}
+
+.content-right-product {
+    width: 270px;
+    padding: 0px 5px;
+    margin: 15px;
+    float: left;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
+.content-right-product-h4 {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    padding: 5px 15px;
+    float: left;
+    text-align: center !important;
+}
+
+.content-right-product-p {
+    width: 240px;
+    color: #333;
+    line-height: 26px;
+    padding: 5px 15px;
+    float: left;
+    text-align: center !important;
+}
+
+.content-right-product-amount {
+    width: 240px;
+    color: #df001a !important;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 5px 15px 10px;
+    float: left;
+    text-align: center !important;
+}
+
+.cart {
+    width: 140px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0px 25px 0px 75px;
+}
+
+/************ End Content **************/
+
+/************ Start Footer *****************/
+.footer {
+    width: 1300px;
+    float: left;
+    background: #eb3d51;
+}
+
+.footer-parts {
+    width: 300px;
+    float: left;
+    padding: 0px 10px;
+}
+
+.footer-parts-h4 {
+    font-size: 18px;
+    padding: 15px 10px 0px;
+    color: #FFF;
+}
+
+.footer-parts ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-parts ul li {
+    list-style: none;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+.footer-parts ul li a {
+    padding: 8px 10px;
+    margin: 2px 0px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-parts ul li a:hover {
+    color: #000;
+}
+
+.copyrights {
+    width: 1240px;
+    font-size: 12px;
+    background: #df001a;
+    float: left;
+    padding: 15px 30px 15px 30px;
+    color: #FFF;
+}
+
+.copyrights-left {
+    width: 940px;
+    float: left;
+}
+
+.copyrights-left a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.copyrights-left a:hover {
+    color: #CCC;
+}
+
+.copyrights-right {
+    width: 300px;
+    float: left;
+    text-align: right;
+}
+
+.copyrights-right a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.copyrights-right a:hover {
+    color: #CCC;
+}
+
+.fa {
+    color: #FFF;
+}
+
+.about-footer {
+    padding: 10px 10px;
+    width: 280px;
+    color: #FFF;
+    float: left;
+    text-align: justify;
+}
+
+.form-2 {
+    height: 35px;
+    width: 200px;
+    padding: 0px 10px;
+    float: left;
+    border: 1px solid #df001a;
+    border-radius: 2px 0px 0px 0px;
+}
+
+/*************** End Footer ***********/
