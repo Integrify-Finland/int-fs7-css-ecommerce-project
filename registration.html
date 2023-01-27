@@ -10,7 +10,7 @@
     <title>Registration</title>
 </head>
 <body>
-    <header class="pages flex-main">
+    <header class="header flex-main">
         <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
         <a href="/index.html">Back to the Shop</a>
         <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
@@ -48,17 +48,16 @@
             <br>
             <div>
                 <span>Gender : &nbsp;</span>
+                <label for="male">Male</label>
                 <input type="radio" id="male" name="gender">
-                <label for="male"> &nbsp; Male &nbsp; </label>
-                <input type="radio" id="female" name="gender">
                 <label for="female"> &nbsp; Female</label>
+                <input type="radio" id="female" name="gender">
             </div>
-            <br>
             <br>
             <div>
                 <label for="message">Message</label>
                 <br>
-                <textarea id="message" name="message" cols="30" rows="5"></textarea>
+                <textarea id="message" name="message" cols="30" rows="9"></textarea>
             </div>
             <br>
             <button type="submit">Submit</button>
