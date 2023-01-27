@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .product__price::after, 
@@ -185,6 +186,14 @@ aside.purchase {
         aspect-ratio: 3/3;
     }
 
+    .cart-row{
+        row-gap: 1rem;
+        padding: 1rem 0;
+    }
+    .cart-header{
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -209,4 +218,15 @@ aside.purchase {
     .in-cart>.coffee-card__content img {
         aspect-ratio: 3/3;
     }
+
+    .cart-row{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        padding: 1rem 0;
+    }
+    .cart-header{
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
 }
