@@ -147,6 +147,7 @@ main {
 }
 .product-card img {
     width: 100%;
+    cursor: pointer;
 }
 .product-card-info {
     display: flex;
