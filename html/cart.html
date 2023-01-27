@@ -45,54 +45,60 @@
         <div class="thank-you">Thank you for purchasing in our shop!</div>
         <div id="cart-main" role="main">
             <section class="cart-list">
-                <table>
-                    <thead>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Amount</th>
-                        <th>Total Price</th>
-                    </thead>
-                    <tr>
-                        <td>
-                            <div class="coffee-card  in-cart">
-                                <div class="coffee-card__header">
-                                    Bourbon
-                                </div>
-                                <div class="coffee-card__content">
-                                    <img src="../images/coffeeProducts/bourbonBeans.png"
-                                        alt="Bourbon Coffee Beans Picture">
-                                </div>
+                <div class="cart-row cart-header">
+                    <div>Product</div>
+                    <div>Price</div>
+                    <div>Amount</div>
+                    <div>Total price</div>
+                </div>
+                <div class="cart-row" id="product-1">
+                    <div class="cart__product">
+                        <div class="in-cart">
+                            <div class="coffee-card__header">
+                                Bourbon
                             </div>
-                        </td>
-                        <td>10$</td>
-                        <td>1</td>
-                        <td>10$</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="coffee-card in-cart">
-                                <div class="coffee-card__header">
-                                    Geisha
-                                </div>
-                                <div class="coffee-card__content">
-                                    <img src="../images/coffeeProducts/geishaBeans.png"
-                                        alt="Geisha Coffee Beans Picture">
-                                </div>
+                            <div class="coffee-card__content">
+                                <img src="../images/coffeeProducts/bourbonBeans.png" alt="Bourbon Coffee Beans Picture">
                             </div>
-                        </td>
-                        <td>5$</td>
-                        <td>2</td>
-                        <td>10$</td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                    <div class="product__price"></div>
+                    <div class="product__amount">
+                        <div class="amount-decrease">-</div>
+                        <div id="amount">1</div>
+                        <div class="amount-increase">+</div>
+                    </div>
+                    <div class="product__total-price"></div>
+                </div>
+                <div class="cart-row" id="product-2">
+                    <div class="cart__product">
+                        <div class="in-cart">
+                            <div class="coffee-card__header">
+                                Catimor
+                            </div>
+                            <div class="coffee-card__content">
+                                <img src="../images/coffeeProducts/catimorBeans.png" alt="Catimor Coffee Beans Picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__price"></div>
+                    <div class="product__amount">
+                        <div class="amount-decrease">-</div>
+                        <div id="amount">1</div>
+                        <div class="amount-increase">+</div>
+                    </div>
+                    <div class="product__total-price"></div>
+                </div>
             </section>
             <aside class="purchase">
                 <div class="purchase__header">
                     <h2>Your orders</h2>
                 </div>
                 <div class="purchase__content">
+                    <div>Total Weight</div>
+                    <div id="purchase__amount"></div>
                     <div>Total Order Price</div>
-                    <div>20$</div>
+                    <div id="purchase__price">20</div>
                 </div>
                 <button class="purchase__btn btn">Checkout</button>
             </aside>
@@ -107,7 +113,63 @@
             </section>
         </footer>
     </div>
+    <script>
 
+        // dummy data setup start
+        let price1 = 10;
+        let price2 = 12;
+
+        document.getElementById("product-1").querySelector(".product__price").innerText = price1;
+        document.getElementById("product-2").querySelector(".product__price").innerText = price2;
+
+        let totalPrice1 = document.getElementById("product-1").querySelector(".product__total-price");
+        let totalPrice2 = document.getElementById("product-2").querySelector(".product__total-price");
+
+        let currentAmount1 = parseInt(document.getElementById("product-1").querySelector("#amount").innerText);
+        let currentAmount2 = parseInt(document.getElementById("product-2").querySelector("#amount").innerText);
+
+        totalPrice1.innerText = price1 * currentAmount1;
+        totalPrice2.innerText = price2 * currentAmount2;
+
+        document.querySelector("#purchase__price").innerText = (price1 * currentAmount1) + (price2 * currentAmount2);
+        document.querySelector("#purchase__amount").innerText = currentAmount1 + currentAmount2;
+
+        // dummy data setup end
+
+        document.querySelectorAll(".amount-decrease").forEach(decrease => {
+            decrease.addEventListener("click", function (evt) {
+                let currentAmount = parseInt(evt.target.parentNode.querySelector("#amount").innerText);
+                let price = parseInt(evt.target.parentNode.parentNode.querySelector(".product__price").innerText);
+                if (currentAmount !== 1) {
+                    currentAmount--;
+                    evt.target.parentNode.querySelector("#amount").innerText = currentAmount;
+                    evt.target.parentNode.parentNode.querySelector(".product__total-price").innerText = currentAmount * price;
+                    let currentTotalPrice = parseInt(document.querySelector("#purchase__price").innerText);
+                    document.querySelector("#purchase__price").innerText = currentTotalPrice - price;
+                    let currentTotalAmount = parseInt(document.querySelector("#purchase__amount").innerText);
+                    document.querySelector("#purchase__amount").innerText = currentTotalAmount - 1;
+                }
+            })
+        });
+
+        document.querySelectorAll(".amount-increase").forEach(increase => {
+            increase.addEventListener("click", function (evt) {
+                let currentAmount = parseInt(evt.target.parentNode.querySelector("#amount").innerText);
+                let price = parseInt(evt.target.parentNode.parentNode.querySelector(".product__price").innerText);
+                if (currentAmount !== 50) {
+                    currentAmount++;
+                    evt.target.parentNode.querySelector("#amount").innerText = currentAmount;
+                    evt.target.parentNode.parentNode.querySelector(".product__total-price").innerText = currentAmount * price;
+                    let currentTotalPrice = parseInt(document.querySelector("#purchase__price").innerText);
+                    document.querySelector("#purchase__price").innerText = currentTotalPrice + price;
+                    let currentTotalAmount = parseInt(document.querySelector("#purchase__amount").innerText);
+                    document.querySelector("#purchase__amount").innerText = currentTotalAmount + 1;
+                }
+            })
+        })
+
+
+    </script>
 
 </body>
 
