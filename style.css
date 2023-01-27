@@ -217,6 +217,9 @@ main{
     cursor: pointer;
     color: white;
 }
+.btn-price a{
+    width: 100%;
+}
 .product__card:hover{
     transform: scale(1);
     box-shadow: -17px -13px 44px -14px rgba(0,0,0,0.53);
@@ -533,7 +536,7 @@ align-items: center;
 .cart-container{
     width: 100%;
     height: 85%;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 20px;
     box-shadow: 0px 25px 40px #1687d933;
     display: flex;
@@ -553,9 +556,9 @@ align-items: center;
 .cart__remove{
     font-size: 1.4rem;
     font-weight: 600;
-    color: #E44C4C;
+    color: red;
     cursor: pointer;
-    border-bottom: 1px solid #E44C4C;
+    border-bottom: 1px solid red;
 }
 .cart-items{
     margin: auto;
@@ -587,7 +590,7 @@ align-items: center;
     line-height: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #909090;
+    color: #202020;
 }
 .cart-counter{
     width: 15%;
@@ -629,20 +632,82 @@ align-items: center;
     padding-top: 0.5rem;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #1687d9;
+    color: #03001C;
     cursor: pointer;
 }
 .item-remove{
     padding-top: 0.5rem;
     font-size: 1.4rem;
     font-weight: 600;
-    color: #E44C4C;
+    color: red;
+    cursor: pointer;
+}
+
+/* shopping cart css ends here */
+
+/* prodcut detail css starts here */
+
+.productdetail-container{
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.productdetail__title{
+    padding: 0.8rem;
+}
+.productdetail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.product-img{
+    width: 20%;
+    padding: 0.8rem;
+}
+.productdetaillist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    width: 50%;
+}
+.prodcutdetail__desc{
+    text-align: justify;
+}
+.productdetail__price{
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 0.8rem;
+}
+.productdetail__shopping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+
+}
+.shopping__styles{
+    display: flex;
+    gap: 2rem;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+.shopping__styles span{
+    color: black;
     cursor: pointer;
 }
 
 
 
-/* shopping cart css ends here */
 /* for key frames starts here*/
 @keyframes glow{
     from {
@@ -921,6 +986,12 @@ align-items: center;
         height: 100%;
      }
      /* fashion.html css starts here*/
+
+     /* shopping cart css starts here */
+
+
+     /* shopping cart css ends here */
+
 }
 
 /* responsiveness ends here*/
