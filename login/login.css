@@ -289,9 +289,9 @@ body {
 /* Large */
 
 @media only screen and (min-width: 992px) {
-  .login-title {
+  /* .login-title {
     border: 1rem solid red;
-  }
+  } */
 
   .login {
     height: 100vh;
@@ -325,9 +325,9 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-  .login-title {
+  /* .login-title {
     border: 1rem solid blue;
-  }
+  } */
 
   .account-grid {
     display: grid;
@@ -434,9 +434,9 @@ body {
 
 /* Medium, i.e. landscape tablets */
 @media only screen and (max-width: 768px) {
-  .login-title {
+  /* .login-title {
     border: 1rem solid green;
-  }
+  } */
 
   .account-grid {
     display: grid;
@@ -548,9 +548,9 @@ body {
 /*Small */
 
 @media only screen and (max-width: 600px) {
-  .login-title {
+  /* .login-title {
     border: 1rem solid pink;
-  }
+  } */
 
   .account-grid {
     display: grid;

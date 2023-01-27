@@ -304,10 +304,10 @@ body {
 /* Large */
 
 @media only screen and (min-width: 992px) and (max-width: 1080px) {
-  .product h1 {
+  /* .product h1 {
     width: 80vw;
     border: 1rem solid pink;
-  }
+  } */
 
   .product__details {
     padding: 1rem 1rem;
@@ -340,10 +340,10 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
-  .product h1 {
+  /* .product h1 {
     width: 80vw;
     border: 1rem solid blue;
-  }
+  } */
 
   .product__details {
     padding: 1rem 1rem;
@@ -420,10 +420,10 @@ body {
 
 /* Medium, i.e. landscape tablets */
 @media only screen and (max-width: 768px) {
-  .product h1 {
+  /* .product h1 {
     width: 80vw;
     border: 1rem solid green;
-  }
+  } */
 
   .product__details {
     padding: 1rem 1rem;
