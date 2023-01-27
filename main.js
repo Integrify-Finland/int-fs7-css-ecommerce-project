@@ -125,7 +125,7 @@ const productDetailPopulate = (detailProduct = null) => {
                                     Add to cart
                                 </button>
                             </div>`
-        : `<h3 class="product-detail__name">No Product Selected</h3>`;
+        : `<h3 class="product-detail__name">Please select a product first form main page to show</h3>`;
 };
 
 updateCart();
