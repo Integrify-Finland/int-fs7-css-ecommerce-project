@@ -12,4 +12,3 @@
 
 
    -deployed link - https://profound-arithmetic-3dcd1e.netlify.app
-  
