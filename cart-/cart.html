@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-bar">
+        <li class="nav__link"><a href="../index.html">Home</a></li>
+        <li class="nav__link">
+          <a href="../online-shop/online-shop.html">Online Shop</a>
+        </li>
+        <li class="nav__link"><a href="../visit-us/visit-us.html">Visit Us</a></li>
+        <li class="nav__link"><a href="../classes/classes.html">Classes</a></li>
+        <li class="nav__link">
+          <a href="../contact-info/contact-info.html">Contact Information</a>
+        </li>
+
+        <li class="nav__link">
+          <a href="./cart.html"
+            >Cart <i class="fa-solid fa-cart-shopping cart__icon"></i
+          ></a>
+        </li>
+
+        <li class="nav__link">
+          <a href="../login/login.html">Login </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="cart">
+
+        <div class="cart-items">
+          <div class="cart__img">
+            <img src="../images/blue-birds.jpg" alt="blue birds art" class="img__det">
+          </div>
+          <div class="cart-about">
+            <h1 class="cart__item-name">Blue Birds</h1>
+            <h3 class="size">A2 - Stephanie</h3>
+          </div>
+          <div class="counter">
+            <div class="add__btn">+</div>
+            <div class="count">1</div>
+            <div class="add__btn">-</div>
+          </div>
+          <div class="prices">
+            <div class="amount">$100</div>
+            <div class="remove"><u>Remove</u></div>
+          </div>
+          <div class="checkout">
+            <div class="total">
+            <div>
+            <div class="subtotal">Sub-Total</div>
+            <div class="items">1 Item</div>
+            </div>
+            <div class="total-amount">$100</div>
+            </div>
+            <button class="checkout__button">Checkout</button>
+            </div>
+        </div>
+
+        <div class="cart-title">
+          <!-- <h2>Your Cart is Empty</h2> -->
+          <a href="../online-shop/online-shop.html"> <h4>Return to the Online Shop</h4></a>
+        </div>
+
+        <div class="cart-anim">
+            <i class="fa-solid fa-cart-shopping cart__icon-anim"></i>
+        </div>
+        
+      </div>
+
+      <div></div>
+    </main>
+
+
+     <!-- Footer start -->
+     <div class="footer-test">
+      <footer class="footer">
+        <div class="footer-grid">
+          <ul class="footer__list">
+            <li>
+              <a href="./contact-info/contact-info.html"> Support </a>
+            </li>
+            <li>
+              <a href="../login/login.html"> Login </a>
+            </li>
+            <li>
+              <a href="./visit-us/visit-us.html"> Visit Us </a>
+            </li>
+          </ul>
+
+          <div class="contact-info">
+            <h4><i class="fa-solid fa-phone icon"></i> +4500000000</h4>
+
+            <h4><i class="fa-solid fa-envelope icon"></i> palette@gmail.com</h4>
+
+            <h4>
+              <i class="fa-solid fa-location-pin icon"></i> Copenhagen,
+              Denmark
+            </h4>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook Logo"> <i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en"  aria-label="Twitter Logo"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram Logo"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn Logo"><i class="fab fa-linkedin"></i></a> 
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

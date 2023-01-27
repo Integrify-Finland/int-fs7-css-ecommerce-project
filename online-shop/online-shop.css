@@ -1,0 +1,497 @@
+:root {
+  --font-family-cursive: "Amatic SC", arial;
+  --nav-color: #293241;
+  --font-family-main: "Roboto Mono", monospace;
+  --background-color-1: #393c43d7;
+  --font-color-dark: #1a1f2a;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+* {
+  text-decoration: none;
+  font-size: 62.5%;
+}
+
+/* nav bar start */
+
+.nav-bar {
+  font-family: var(--font-family-cursive);
+  font-size: 8rem;
+  font-weight: bolder;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 0;
+  padding: 2vh 0;
+  box-sizing: border-box;
+
+  background-color: var(--nav-color);
+  box-shadow: inset -1px -1px 10px 1px rgba(115, 106, 92, 0.431);
+}
+
+.nav__link {
+  list-style: none;
+}
+
+.nav__link a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  text-shadow: 0.05rem 0.05rem rgb(255, 255, 255);
+}
+
+.cart__icon {
+  color: antiquewhite;
+  padding-left: 1rem;
+  font-size: 2.5vw;
+}
+
+/* nav bar end */
+
+/* Shop start */
+
+.box {
+  background-color: #293241;
+}
+
+.shop-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 15rem;
+  padding-bottom: 10rem;
+
+  font-family: var(--font-family-main);
+
+  background-color: antiquewhite;
+}
+
+.shop__title {
+    font-size: 7rem;
+    text-align: center;
+    font-family: var(--font-family-main);
+}
+
+.shop__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7rem;
+}
+
+.item__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
+  max-height: 50vh;
+  max-width: 20vw;
+  
+}
+
+.item__box a img:hover {
+    box-shadow: 2rem 2rem 2rem var(--font-color-dark);
+    transition: box-shadow 0.2s ease-in;
+}
+
+.item__box p {
+    font-size: 2rem;
+}
+
+.item__box a {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.item__box a img {
+  box-shadow: 1rem 1rem 1rem var(--font-color-dark);
+    transition: box-shadow 0.2s ease-in;
+}
+
+.shop__art {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 11/16;
+  max-height: 40vh;
+  /*max-width: 20vw;  */
+  object-fit: fill;
+  
+}
+
+
+
+
+/* Shop end */
+
+
+/* Footer start */
+.footer-test {
+  width: 100%;
+  background-color: #1a1f2a;
+  padding-top: 5rem;
+}
+
+.footer {
+  font-family: var(--font-family-cursive);
+  font-size: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: antiquewhite;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  font-size: 10rem;
+  font-weight: bolder;
+}
+
+.footer__list a {
+  color: antiquewhite;
+}
+
+.footer__list a:hover {
+  font-weight: bolder;
+  color: #5b6d92;
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.icon {
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  
+}
+
+.footer-social a {
+  font-size: 6rem;
+  color: antiquewhite;
+}
+
+.footer-social a:hover {
+  font-weight: bolder;
+  color: #5b6d92;
+}
+/* Footer end */
+
+
+
+/* SCALING */
+
+
+
+/* Large */
+
+@media only screen and (min-width: 992px) {
+    /* SHOP */
+  .shop__title {
+    /* border: 1rem solid red; */
+    font-size: 5vw;
+  }
+
+  .shop-flex {
+    margin: 0 15vw;
+  }
+
+  .shop__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vh;
+    transition: ease-in-out 0.4s;
+  }
+
+  .artist__name {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  /* SHOP END */
+
+  
+  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+  /* SHOP */
+  .shop__title {
+    /* border: 1rem solid green; */
+    font-size: 5vw;
+  }
+
+  .shop-flex {
+    margin: 0 15vw;
+  }
+
+  .shop__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vh;
+    transition: ease-in-out 0.4s;
+  }
+
+  .artist__name {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  /* SHOP END */
+
+
+
+
+  /* NAV */
+  .nav__link {
+      font-size: 5vw;
+      transition: ease-in-out 0.3s;
+  }
+
+  /* NAV END*/
+  
+  
+
+
+
+  /* FOOTER */
+
+  .footer {
+      margin-top: 0;
+  }
+
+  .footer-grid {
+      width: 100vw;
+      align-content: center;
+      justify-content: space-evenly;
+  }
+
+  .footer__list-items{
+      font-size: 4vw;
+  }
+
+  .contact-info h4 {
+      font-size: 3vw;
+  }
+
+  .contact-info p{
+      text-align: center;
+  }
+
+  .footer-social {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1vh;
+  }
+
+  .social__icon {
+      font-size: 4vw;
+  }
+  /*FOOTER END */
+
+}
+
+
+/* Medium, i.e. landscape tablets */
+@media only screen and (max-width: 768px) {
+
+/* SHOP */
+.shop__title {
+  /* border: 1rem solid blue; */
+  font-size: 5vw;
+}
+
+.shop-flex {
+  margin: 0 15vw;
+}
+
+.shop__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3vh;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.shop__art {
+  width: 30vw;
+}
+
+.artist__name {
+  font-size: 1vw;
+  text-align: center;
+}
+
+/* SHOP END */
+
+
+
+   /* NAV */
+   .nav__link {
+      font-size: 5vw;
+      transition: opacity ease-in-out 0.3s;
+  }
+
+  /* NAV END*/
+  
+
+
+  /* FOOTER */
+
+  .footer {
+      margin-top: 0;
+  }
+
+  .footer-grid {
+      width: 100vw;
+      align-content: center;
+      justify-content: space-evenly;
+  }
+
+  .footer__list-items{
+      font-size: 4vw;
+  }
+
+  .contact-info h4 {
+      font-size: 3vw;
+  }
+
+  .contact-info p{
+      text-align: center;
+  }
+
+  .footer-social {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1vh;
+  }
+
+  .social__icon {
+      font-size: 4vw;
+  }
+  /*FOOTER END */
+
+
+
+}
+
+
+
+/*Small */
+
+@media only screen and (max-width: 600px) {
+  
+  /* SHOP */
+  .shop__title {
+    /* border: 1rem solid pink; */
+    font-size: 5vw;
+  }
+
+  .shop-flex {
+    margin: 0 15vw;
+  }
+
+  .shop__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+    transition: opacity ease-in-out 0.4s;
+  }
+
+  .shop__art {
+    width: 30vw;
+  }
+
+  .artist__name {
+    font-size: 1vw;
+    text-align: center;
+  }
+
+  /* SHOP END */
+
+   /* NAV */
+   .nav__link {
+      font-size: 5vw;
+      transition: opacity ease-in-out 0.3s;
+  }
+
+  /* NAV END*/
+  
+
+
+  /* FOOTER */
+
+  .footer {
+      margin-top: 0;
+  }
+
+  .footer-grid {
+      width: 100vw;
+      align-content: center;
+      justify-content: space-evenly;
+  }
+
+  .footer__list-items{
+      font-size: 3vw;
+  }
+
+  .contact-info h4 {
+      font-size: 3.2vw;
+  }
+
+  .footer__list li a {
+    font-size: 8vw;
+  }
+
+
+  .contact-info p{
+      text-align: center;
+  }
+
+  .footer-social {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1vh;
+  }
+
+  .social__icon {
+      font-size: 4vw;
+  }
+  /*FOOTER END */
+}
