@@ -296,8 +296,9 @@ main{
 .cart__items-action{
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+
 }
 .cart__item-action{
     flex: 0.2;
@@ -345,6 +346,10 @@ main{
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+}
+.product__price{
+    
+    font-size: 1.2rem;
 }
 /* cart section ends here */
 
