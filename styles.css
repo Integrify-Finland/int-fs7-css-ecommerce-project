@@ -6,6 +6,7 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  font-family: "Public Sans", sans-serif;
 }
 
 :root {
@@ -18,21 +19,21 @@ html {
 }
 /* container starts here */
 
-.container {
-  display: grid;
-  grid-template-areas:
-    "m"
-    "o"
-    "t"
-    "f";
-}
-
 /* container ends here */
 
 /* header starts here */
+
+.announcement {
+  z-index: 9;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5s ease-out;
+}
+
 .header > .header__left {
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
   padding: 2rem;
 }
 
@@ -41,14 +42,17 @@ header {
   justify-content: space-between;
   background-color: rgb(204, 189, 170);
   box-shadow: 0px 0px 15px 0px rgba(15, 15, 15, 0.9);
-  grid-area: h;
   z-index: 10;
   position: fixed;
   width: 100%;
 }
 
 header .header__right {
-  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  gap: 1.5rem;
+  font-size: 30px;
 }
 
 /* header ends here */
@@ -73,46 +77,139 @@ main {
   position: relative;
   top: 15rem;
   color: rgba(0, 0, 0);
-  padding: var(--padding);
+  padding: 3rem 1rem;
   background-color: rgba(240, 248, 255, 0.5);
-  width: 450px;
+  width: 500px;
+
+  position: relative;
 }
 
 .banner > p {
   margin-top: 20px;
 }
 
+.badge {
+  background-color: rgb(44, 40, 40);
+  color: white;
+  width: 7.5rem;
+  padding: 0.25rem 0.4rem;
+
+  position: absolute;
+  top: 100px;
+  right: -20px;
+}
+
 /* main starts here */
 
 /* section-one starts here */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  gap: 3rem;
+  background-color: white;
 
-.products-one > h2 {
-  text-align: center;
-  padding-top: 2rem;
-  text-decoration: underline;
-  text-transform: uppercase;
-  background-color: aliceblue;
-  grid-area: o;
-  height: 100vh;
+  padding: 2rem;
 }
 
+.products__shirt img {
+  flex: 1;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.products__shirt {
+  width: 250px;
+  height: 550px;
+  background-color: rgb(231, 225, 247);
+}
+
+.products .products__shirt .details {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#shirt h1 {
+  text-align: center;
+  margin: 4rem;
+}
 /* section-one ends here */
 
 /* section-two starts here */
 
-.products-two > h2 {
-  background-color: yellow;
-  color: black;
-  grid-area: t;
+#jacket h2 {
+  text-align: center;
+  margin: 4rem;
 }
 
 /* section-two ends here */
 
+.shopping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  height: 100vh;
+}
+
+.shopping .shopping__btn {
+  width: 650px;
+  height: 60px;
+  border-style: none;
+}
+
+.shopping .shopping__btn--buy {
+  width: 650px;
+  height: 60px;
+  background-color: rgb(86, 2, 243);
+  color: white;
+  font-size: 20px;
+  border-style: none;
+}
 /* footer starts here */
 
 footer {
-  background-color: green;
-  grid-area: f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+  background-color: rgb(51, 51, 49);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 170px 50px;
+  gap: 2rem;
+}
+
+.top .address li {
+  margin-bottom: 1.3rem;
+  gap: 2rem;
+  font-size: 18px;
+}
+
+.top .us li {
+  margin-bottom: 1.3rem;
+  font-size: 18px;
+}
+
+.top .contact {
+  font-size: 40px;
+}
+
+.top .contact h4 {
+  margin-bottom: 2.5rem;
+}
+
+.top .contact .social-media {
+  text-align: center;
 }
 
 /* footer ends here */
