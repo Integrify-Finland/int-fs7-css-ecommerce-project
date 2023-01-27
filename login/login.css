@@ -180,6 +180,7 @@ body {
 }
 
 .new__account h3 {
+  width: 100%;
   text-align: center;
   margin-top: 0;
   color: var(--font-color-dark);
@@ -465,6 +466,8 @@ body {
   .new__account {
     width: 60vw;
     padding: 2vh 2vw;
+    justify-content: center;
+    align-items: center;
   }
 
   .new-acc-title {
