@@ -11,9 +11,9 @@ const productsData = [
 const productsPopulate = productsData
     .map((product) => {
         return `<div class="product-card">
-                <img src="img/car2.webp" alt="product image" />
+                <img onclick="showDetail(event,${product.id})" src="img/car2.webp" alt="product image" />
                 <div class="product-card-info">
-                    <h3 onclick="showDetail(${product.id})"><a onclick="selectPage(event, 'detail')">${product.title}</a></h3>
+                    <h3 onclick="showDetail(event, ${product.id})"><a>${product.title}</a></h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Ducimus, ullam?

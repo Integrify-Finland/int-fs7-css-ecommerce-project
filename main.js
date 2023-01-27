@@ -8,11 +8,12 @@ const productDetail = document.querySelector(".product-detail");
 
 let shoppingCart = [];
 
-const showDetail = (productId) => {
+const showDetail = (event,productId) => {
     let detailProduct = productsData.find(
         (product) => product.id === productId
     );
     productDetailPopulate(detailProduct);
+    selectPage(event, 'detail')
 };
 
 const updateCart = () => {
