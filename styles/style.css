@@ -1,7 +1,6 @@
 :root {
     --main-color1: #c66845;
     --main-color2: #4F322E;
-    /* --main-color3: #5c8879d8; */
     --main-color3: #345B54;
     --padding: 1rem;
 }
@@ -39,7 +38,6 @@ i:hover, a:hover, button:hover, .btn:hover{
 header {
     width: 100%;
     min-height: 15vh;
-    /* background-color: pink; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -247,10 +245,7 @@ main > section{
 }
 
 .about__content p {
-    /* background-color: var(--main-color3); */
-    /* background-color: rgba(71, 128, 118, 0.888); */
     background-color: #365953;
-    
     color: white;
     font-size: 1.4rem;
     text-align: justify;
@@ -265,7 +260,6 @@ main > section{
 
 .coffee-varieties{
     min-height: 100vh;
-    /* background-color: var(--main-color1); */
     justify-content: space-around;
     padding: var(--padding);
 }
@@ -436,7 +430,6 @@ footer {
 @media screen and (max-width: 600px) {
     .page-wrapper {
         width: 100vw;
-        /* background-color: rgba(255, 0, 0, 0.196); */
     }
 
     header {
@@ -479,8 +472,6 @@ footer {
     
     .welcome__btn{
         width: 40%;
-        /* height: 3rem;
-        font-size: 1.5rem; */
     }
 
     .about__content{
