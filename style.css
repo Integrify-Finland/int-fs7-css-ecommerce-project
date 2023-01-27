@@ -675,6 +675,10 @@ body {
         font-size: 3vw;
     }
 
+    .footer__list li a {
+        font-size: 8vw;
+      }    
+
     .contact-info p{
         text-align: center;
     }

@@ -642,6 +642,11 @@ body {
     font-size: 4vw;
   }
 
+  .footer__list li a {
+    font-size: 8vw;
+  }
+
+
   .contact-info h4 {
     font-size: 3vw;
   }

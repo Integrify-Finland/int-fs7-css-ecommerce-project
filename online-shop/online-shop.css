@@ -475,6 +475,11 @@ body {
       font-size: 3.2vw;
   }
 
+  .footer__list li a {
+    font-size: 8vw;
+  }
+
+
   .contact-info p{
       text-align: center;
   }
