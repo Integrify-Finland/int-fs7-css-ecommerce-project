@@ -29,15 +29,19 @@
       <ul class="nav-bar">
         <li class="nav__link"><a href="index.html">Home</a></li>
         <li class="nav__link">
-          <a href="online-shop\online-shop.html">Online Shop</a>
-        </li>
-        <li class="nav__link"><a href="visit-us\visit-us.html">Visit Us</a></li>
-        <li class="nav__link"><a href="classes\classes.html">Classes</a></li>
-        <li class="nav__link">
-          <a href="contact-info\contact-info.html">Contact Information</a>
+          <a href="./online-shop/online-shop.html">Online Shop</a>
         </li>
         <li class="nav__link">
-          <a href="./cart/cart.html">Cart <i class="fa-solid fa-cart-shopping cart__icon"></i></a>
+          <a href="./visit-us/visit-us.html">Visit Us</a>
+        </li>
+        <li class="nav__link"><a href="./classes/classes.html">Classes</a></li>
+        <li class="nav__link">
+          <a href="./contact-info/contact-info.html">Contact Information</a>
+        </li>
+        <li class="nav__link">
+          <a href="./cart-/cart.html"
+            >Cart <i class="fa-solid fa-cart-shopping cart__icon"></i
+          ></a>
         </li>
         <li class="nav__link"><a href="./login/login.html">Login</a></li>
       </ul>
@@ -51,7 +55,36 @@
     </header>
 
     <main>
-      
+      <!--About Section Start-->
+      <div class="about-grid">
+        <div class="about">
+          <h2 class="about__title">About Us</h2>
+          <p class="about__para">
+            Palette was first founded by Jane Doe (artist and illustrator) in
+            1997. <br />
+
+            It was founded with the goal of providing an inclusive space for
+            aspiring and established artists to sell and display their works.
+            Since it's early days, the small shop has grown exponentially and is
+            now a combined gallery and store, home to the works of many artists
+            from around the world.
+            <br />
+            Palette also hosts several events to encourage art and
+            self-expression in the local community. Read more about our classes
+            <a href="classes\classes.html"> here.</a> Book a tour of our gallery
+            via our
+            <a href="online-shop\online-shop.html"> online-shop.</a>
+            <br />
+          </p>
+        </div>
+
+        <img
+          src="images\orange-toned-mountains.jpg"
+          alt="orange mountain art"
+          class="about__img"
+        />
+      </div>
+      <!--About Section End-->
 
       <!--Shop Start-->
 
@@ -62,10 +95,11 @@
         <div class="shop-flex">
           <div class="shop__layout">
             <div class="item__box">
-              <a href="./product-page/bluebirds.html"> <img
-                src="images\blue-birds.jpg"
-                alt="blue bird art"
-                class="shop__art"
+              <a href="./product-page/bluebirds.html">
+                <img
+                  src="images\blue-birds.jpg"
+                  alt="blue bird art"
+                  class="shop__art"
               /></a>
               <p class="artist__name">Blue Birds - Stephanie</p>
             </div>
@@ -78,11 +112,13 @@
               <p class="artist__name">Dark Flowers - John</p>
             </div>
             <div class="item__box">
-              <img
-                src="images\green-leaves.jpg"
-                alt="green leaves art"
-                class="shop__art"
-              />
+              <a href="./product-page/leaves.html">
+                <img
+                  src="images\green-leaves.jpg"
+                  alt="green leaves art"
+                  class="shop__art"
+                />
+              </a>
               <p class="artist__name">Leaves - Jane Doe</p>
             </div>
 
@@ -109,58 +145,59 @@
       </div>
 
       <!--Shop Start-->
-
-
-      <!--About Section Start-->
-      <div class="about-grid">
-        <div class="about">
-          <h2 class="about__title">
-            <a href="about-us\about-us.html">About Us</a>
-          </h2>
-          <p class="about__para">
-            Palette was first founded by Jane Doe (artist and illustrator) in
-            1997. <br />
-
-            It was founded with the goal of providing an inclusive space for
-            aspiring and established artists to sell and display their works.
-            Since it's early days, the small shop has grown exponentially and is
-            now a combined gallery and store, home to the works of many artists
-            from around the world. The works come in all shapes and sizes,
-            ranging from oil paintings and prints, to ceramics and jewellery.
-            <br />
-            Palette also hosts several events to encourage art and
-            self-expression in the local community, with the goal to "help
-            people to create". These include; weekly illustration classes,
-            painting classes, and even monthly children's workshops. Read more
-            about our classes <a href="classes\classes.html"> here.</a> Book a
-            tour of our gallery via our
-            <a href="online-shop\online-shop.html"> online-shop.</a>
-            <br />
-          </p>
-        </div>
-
-        <img
-          src="images\orange-toned-mountains.jpg"
-          alt="orange mountain art"
-          class="about__img"
-        />
-      </div>
-      <!--About Section End-->
-
     </main>
 
-    <footer>
-      <ul>
-        <li>
-          Contact
-        </li>
-        <li>
-          Login
-        </li>
-        <li>
+    <!-- Footer start -->
+    <div class="footer-test">
+      <footer class="footer">
+        <div class="footer-grid">
+          <ul class="footer__list">
+            <li>
+              <a
+                href="./contact-info/contact-info.html"
+                class="footer__list-items"
+              >
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="./login/login.html" class="footer__list-items">
+                Login
+              </a>
+            </li>
+            <li>
+              <a href="./visit-us/visit-us.html" class="footer__list-items">
+                Visit Us
+              </a>
+            </li>
+          </ul>
 
-        </li>
-      </ul>
-    </footer>
+          <div class="contact-info">
+            <h4><i class="fa-solid fa-phone icon"></i> +4500000000</h4>
+
+            <h4><i class="fa-solid fa-envelope icon"></i> palette@gmail.com</h4>
+
+            <h4>
+              <i class="fa-solid fa-location-pin icon"></i> Copenhagen, Denmark
+            </h4>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook Logo">
+              <i class="fab fa-facebook social__icon"></i
+            ></a>
+            <a href="https://twitter.com/?lang=en" aria-label="Twitter Logo">
+              <i class="fab fa-twitter social__icon"></i
+            ></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram Logo">
+              <i class="fab fa-instagram social__icon"></i
+            ></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn Logo"
+              ><i class="fab fa-linkedin social__icon"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

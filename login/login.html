@@ -27,74 +27,190 @@
   <body>
     <nav class="nav">
       <ul class="nav-bar">
-        <li class="nav__link"><a href="index.html">Home</a></li>
-        <li class="nav__link"><a href="about-us\about-us.html">About Us</a></li>
+        <li class="nav__link"><a href="../index.html">Home</a></li>
         <li class="nav__link">
-          <a href="online-shop\online-shop.html">Online Shop</a>
+          <a href="../online-shop/online-shop.html">Online Shop</a>
         </li>
-        <li class="nav__link"><a href="visit-us\visit-us.html">Visit Us</a></li>
-        <li class="nav__link"><a href="classes\classes.html">Classes</a></li>
+        <li class="nav__link"><a href="../visit-us/visit-us.html">Visit Us</a></li>
+        <li class="nav__link"><a href="../classes/classes.html">Classes</a></li>
         <li class="nav__link">
-          <a href="contact-info\contact-info.html">Contact Information</a>
+          <a href="../contact-info/contact-info.html">Contact Information</a>
         </li>
+        
         <li class="nav__link">
-          <a href="/login/login.html"
-            >Login 
-          </a>
-        </li>
-        <li class="nav__link">
-          <a href="/cart/cart.html"
+          <a href="../cart-/cart.html"
             >Cart <i class="fa-solid fa-cart-shopping cart__icon"></i
           ></a>
+        </li>
+
+        <li class="nav__link">
+          <a href="../login/login.html">Login </a>
         </li>
       </ul>
     </nav>
 
     <main>
+      <div class="login">
+        <div class="account-grid">
+          <div class="login-details">
+            <h3 class="login-title">Login</h3>
+            <form class="login-form">
+              <label for="email"
+                ><input
+                  type="email"
+                  name="email"
+                  id="email login-email"
+                  class="input__details"
+                  placeholder="Email Address"
+                  required
+              /></label>
+              <label for="password"
+                ><input
+                  type="password"
+                  name="password"
+                  id="password login-password"
+                  class="input__details"
+                  placeholder="Password"
+                  required
+              /></label>
 
-    <div class="login">
+              <label for="remember-checkbox" class="remember-checkbox">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox remember-checkbox"
+                  class="remember"
+                />
+                <p>Remember Me</p>
+              </label>
 
-      <div class="login-details">
-        <h3 class="login-title">Login</h3>
-        <form class="login-form">
-          <label for="email" 
-            ><input
-              type="email"
-              name="email"
-              id="email"
-              class="input__details"
-              placeholder="Email Address"
-              required
-          /></label>
-          <label for="password" 
-            ><input
-              type="password"
-              name="password"
-              id="password"
-              class="input__details"
-              placeholder="Password"
-              required
-          /></label>
+              <label for="login-btn">
+                <input
+                  type="submit" 
+                  value="Login"
+                  name="login-btn"
+                  id="login-btn"
+                  class="login-btn"
+              /></label>
+            </form>
+          </div>
 
-          <label for="remember-checkbox" class="remember-checkbox">
-            <input type="checkbox" name="checkbox" id="checkbox" class="remember"> <p> Remember Me</p>
-        </label>
+          <div class="new__account">
+            <h3 class="login-title new-user">New User</h3>
+            <h4 class="new-acc-title">
+              Dont have an account?
+              <br>
+              Create one here:
+            </h4>
 
-          <label for="submit" >
-            <input type="submit" name="submit" id="submit" class="submit"
-          /></label>
-        
-        </form>
+            <div class="account-flex">
+              <div class="account-form">
+                <form class="account__form">
+                  <label for="name">
+                    <!-- <h5 class="name">Your Full-Name:</h5>  -->
+                    <input
+                      type="name"
+                      name="name"
+                      id="name"
+                      class="name input__details"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </label>
+
+                  <label for="email">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email new-account-email"
+                      class="email input__details"
+                      required
+                      placeholder="Email Address"
+                    />
+                  </label>
+
+                  <label for="password">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password new-account-password"
+                      class="password input__details"
+                      required
+                      placeholder="Password"
+                    />
+                  </label>
+
+                  <label for="password-repeat">
+                    <input
+                      type="password-repeat"
+                      name="password-repeat"
+                      id="password-repeat new-account-password-repeat"
+                      class="password input__details"
+                      required
+                      placeholder="Password"
+                    />
+                  </label>
+
+                  <label for="remember-checkbox" class="remember-checkbox accept">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox"
+                      class="remember "
+                    />
+                    <p>Accept Terms & Conditions</p>
+                  </label>
+
+                  <label for="register">
+                    <input
+                      type="submit"
+                      value="Register"
+                      name="register"
+                      id="register"
+                      class="register"
+                  /></label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="new__account">Dont have an account? <a href=""> Create one here: </a></div>
-    
-
-
-
-    </div>
     </main>
 
-    <footer></footer>
+     <!-- Footer start -->
+     <div class="footer-test">
+      <footer class="footer">
+        <div class="footer-grid">
+          <ul class="footer__list">
+            <li>
+              <a href="./contact-info/contact-info.html"> Support </a>
+            </li>
+            <li>
+              <a href="./login.html"> Login </a>
+            </li>
+            <li>
+              <a href="./visit-us/visit-us.html"> Visit Us </a>
+            </li>
+          </ul>
+
+          <div class="contact-info">
+            <h4><i class="fa-solid fa-phone icon"></i> +4500000000</h4>
+
+            <h4><i class="fa-solid fa-envelope icon"></i> palette@gmail.com</h4>
+
+            <h4>
+              <i class="fa-solid fa-location-pin icon"></i> Copenhagen,
+              Denmark
+            </h4>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook Logo"> <i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en" aria-label="Twitter Logo"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram Logo"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn Logo"><i class="fab fa-linkedin"></i></a> 
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
