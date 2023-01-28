@@ -113,6 +113,35 @@ body {
 }
 /* navbar content end */
 
+/* landing page start */
+.landing {
+    max-width: 100%;
+    height: 84vh;
+    background-image: url(https://www.geico.com/living/wp-content/uploads/save-on-heating-bill.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.landing h1, .landing p {
+    position: absolute;
+    top: 48.5%;
+    left: 50%;
+    font-size: 3.5rem;
+    color: #8b8e87;
+    box-shadow: 2px 4px 3px 5px black;
+    padding: 0.3rem;
+}
+
+.landing p {
+    top: 65%;
+    font-size: 2.5rem;
+}
+
+.landing p:nth-child(3) {
+    top: 78%;
+}
+/* landing page end */
+
 /* main content start */
 #clothes, #shoes, #domestic-heating {
     background-image: url(/src/images/view-image.jpeg);
@@ -120,7 +149,7 @@ body {
     background-attachment: fixed;
     padding: 0.3rem;
     padding-top: 2rem;
-    scroll-margin-top: 2.5rem;
+    scroll-margin-top: 3rem;
 }
 
 .warming {
@@ -130,7 +159,7 @@ body {
     border-radius: var(--items-border);
 }
 
-#clothes h1, .warming h2, #shoes h1, #domestic-heating h1 {
+#clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
     background-color: rgb(36, 37, 130);
     color: var(--text-color);
     padding: 0.3rem 0.5rem;
@@ -164,20 +193,20 @@ body {
     padding: 0.4rem;
 }
 
-.warming__card-description h3 {
+.warming__card-description h4 {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.warming__card-description p, .warming__card-description h4 {
+.warming__card-description p, .warming__card-description h5 {
     font-size: 1rem;
 }
 
-.warming__card-description h4 a {
+.warming__card-description h5 a {
     color: rgb(36, 37, 130);
 }
 
-.warming__card-description h4 a:active {
+.warming__card-description h5 a:active {
     color: green;
 }
 
@@ -378,11 +407,24 @@ textarea {
 
 /* media query start */
 @media all and (min-width: 1210px) and (max-width: 1460px) {
-    .warming__card-description h3 {
+    .landing h1 {
+        font-size: 3.2rem;
+    }
+
+    .landing p {
+        font-size: 1.8rem;
+        margin-top: 0.4rem;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.2rem;
+    }
+
+    .warming__card-description h4 {
         font-size: 1.1rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 0.8rem;
     }
 
@@ -401,6 +443,22 @@ textarea {
 }
 
 @media all and (max-width: 1210px) {
+    .landing h1 {
+        font-size: 2.6rem;
+        box-shadow: 1.5px 3px 2.5px 4px black;
+        padding: 0.2rem;
+    }
+
+    .landing p {
+        font-size: 1.8rem;
+        margin-top: 0.15rem;
+        box-shadow: 1.5px 3px 2.5px 4px black;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.4rem;
+    }
+
     .warming__card {
         height: auto;
         min-height: 59.5vh;
@@ -410,11 +468,11 @@ textarea {
         grid-template-columns: 1fr;
     }
 
-    .warming__card-description h3 {
+    .warming__card-description h4 {
         font-size: 2rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 1.4rem;
     }
 
@@ -464,17 +522,21 @@ textarea {
         margin-top: 1rem;
     }
 
-    .shopping-cart2, .shopping-cart4 {
+    .shopping-cart1, .shopping-cart2, .shopping-cart3, .shopping-cart4 {
         display: none;
     }
 }
 
 @media all and (max-width: 1000px) {
-    .warming__card-description h3 {
+    .landing h1 {
+        font-size: 2.4rem;
+    }
+
+    .warming__card-description h4 {
         font-size: 1.9rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 1.3rem;
     }
 
@@ -498,26 +560,26 @@ textarea {
     .logo {
         font-size: 0.9rem;
     }
-
-    @keyframes shopping-cart1 {
-        to {
-            top: 6rem;
-            left: 8rem;}
-    }
-
-    @keyframes shopping-cart3 {
-        to {
-            top: 6rem;
-            right: 8rem;}
-    }
 }
 
 @media all and (max-width: 900px) {
-    .warming__card-description h3 {
+    .landing h1 {
+        font-size: 2rem;
+    }
+
+    .landing p {
         font-size: 1.6rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .landing p:nth-child(3) {
+        margin-top: 0.9rem;
+    }
+    
+    .warming__card-description h4 {
+        font-size: 1.6rem;
+    }
+
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 1rem;
     }
 
@@ -567,15 +629,27 @@ textarea {
 }
 
 @media all and (max-width: 768px) {
+    .landing h1 {
+        font-size: 1.7rem;
+    }
+
+    .landing p {
+        font-size: 1.5rem;
+        margin-top: 0.1rem;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.8rem;
+    }
     .warming {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .warming__card-description h3 {
+    .warming__card-description h4 {
         font-size: 1.9rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 1.3rem;
     }
 
@@ -618,32 +692,29 @@ textarea {
         margin-top: 0.5rem;
         font-size: 1rem;
     }
-
-    @keyframes shopping-cart1 {
-        to {
-            top: 5.1rem;
-            left: 3rem;}
-    }
-    
-    @keyframes shopping-cart3 {
-        to {
-            top: 5.1rem;
-            right: 3rem;}
-    }
 }
 
 @media all and (max-width: 640px) {
+    .landing h1 {
+        font-size: 1.5rem;
+    }
+
+    .landing p {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
     .warming {
         grid-template-columns: repeat(1, 1fr);
         width: 75%;
         margin: auto;
     }
 
-    .warming__card-description h3 {
+    .warming__card-description h4 {
         font-size: 2.2rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 1.6rem;
     }
 
@@ -684,21 +755,47 @@ textarea {
     .cart h3 {
         font-size: 0.7rem;
     }
+}
 
-    .shopping-cart1, .shopping-cart3 {
-        top: 3rem;
-        width: 2rem;
-        height: 2rem;
+@media all and (min-width: 481px) and (max-width: 630px) {
+    .landing h1 {
+        font-size: 1.1rem;
+        box-shadow: 1px 2px 1.5px 2.5px black;
+    }
+
+    .landing p {
+        font-size: 0.8rem;
+        box-shadow: 1px 2px 1.5px 2.5px black;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.6rem;
     }
 }
 
 @media all and (max-width: 480px) {
+    .landing h1 {
+        font-size: 0.7rem;
+        box-shadow: 0.3px 0.8px 0.3px 1.2px black;
+        padding: 0.1rem;
+    }
 
-    .warming__card-description h3 {
+    .landing p {
+        font-size: 0.7rem;
+        margin-top: 0.1rem;
+        box-shadow: 0.2px 0.7px 0.2px 1.1px black;
+        padding: 0.1rem;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.4rem;
+    }
+    
+    .warming__card-description h4 {
         font-size: 1.6rem;
     }
 
-    .warming__card-description p, .warming__card-description h4 {
+    .warming__card-description p, .warming__card-description h5 {
         font-size: 0.9rem;
     }
 
