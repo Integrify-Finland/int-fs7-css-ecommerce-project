@@ -1,4 +1,3 @@
-/* reset and common code start */
 :root {
     --text-color: white;
     --items-border: 0.6rem;
@@ -31,9 +30,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-/* reset and common code end */
 
-/* header content start */
 .header {
     background-color: #242582;
     padding: 0.8rem 0;
@@ -55,9 +52,7 @@ body {
     border-radius: 50%;
     width: 1.5rem;
 }
-/* header content end */
 
-/* navbar content start */
 .navbar {
     background-color: #553d67;
     padding: 0.5rem 1rem;
@@ -111,12 +106,10 @@ body {
     transition: 0.4s;
     padding: 0.2rem;
 }
-/* navbar content end */
 
-/* landing page start */
 .landing {
     max-width: 100%;
-    height: 84vh;
+    height: 85vh;
     background-image: url(https://www.geico.com/living/wp-content/uploads/save-on-heating-bill.jpg);
     background-size: 100% 100%;
     position: relative;
@@ -140,9 +133,7 @@ body {
 .landing p:nth-child(3) {
     top: 78%;
 }
-/* landing page end */
 
-/* main content start */
 #clothes, #shoes, #domestic-heating {
     background-image: url(/src/images/view-image.jpeg);
     background-size: 100% 100%;
@@ -224,9 +215,7 @@ marquee {
 #domestic-heating {
     background-image: url(/src/images/domestic-heating.jpeg);
 }
-/* main content end */
 
-/* footer content start */
 #footer {
     background-color: #553d67;
     color: var(--text-color);
@@ -257,9 +246,6 @@ marquee {
 .fa-brands {
     font-size: x-large;
 }
-/* footer content end */
-
-/* about page start */
 
 .view {
     position: absolute;
@@ -302,9 +288,7 @@ button {
     padding: 0.5rem;
     border-radius: 10px;
 }
-/* about page end */
 
-/* other page start */
 dl {
     margin-top: 2.5rem;
     text-align: left;
@@ -319,15 +303,11 @@ dd {
 dd li {
     margin: 0.5rem 0;
 }
-/* other page end */
 
-/* registration page start */
 textarea {
     margin-top: 0.3rem;
 }
-/* registration page end */
 
-/* cart page start */
 .cart {
     background-image: url(/src/images/cart.png);
     background-size: 100% 90%;
@@ -403,9 +383,7 @@ textarea {
         top: 29rem;
         right: 11rem;}
 }
-/* cart page end */
 
-/* media query start */
 @media all and (min-width: 1210px) and (max-width: 1460px) {
     .landing h1 {
         font-size: 3.2rem;
@@ -443,6 +421,28 @@ textarea {
 }
 
 @media all and (max-width: 1210px) {
+    .header {
+        padding: 0.7rem 0;
+    }
+
+    .header a {
+        font-size: 1.3rem;
+    }
+
+    .header img {
+        width: 1.3rem;
+    }
+
+    .navbar {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
     .landing h1 {
         font-size: 2.6rem;
         box-shadow: 1.5px 3px 2.5px 4px black;
@@ -475,28 +475,6 @@ textarea {
     .warming__card-description p, .warming__card-description h5 {
         font-size: 1.4rem;
     }
-
-    .header {
-        padding: 0.7rem 0;
-    }
-
-    .header a {
-        font-size: 1.3rem;
-    }
-
-    .header img {
-        width: 1.3rem;
-    }
-
-    .navbar {
-        font-size: 1.2rem;
-        gap: 1.5rem;
-        padding: 0.5rem;
-    }
-
-    .logo {
-        font-size: 1rem;
-    }
     
     marquee {
         font-size: large;
@@ -528,18 +506,6 @@ textarea {
 }
 
 @media all and (max-width: 1000px) {
-    .landing h1 {
-        font-size: 2.4rem;
-    }
-
-    .warming__card-description h4 {
-        font-size: 1.9rem;
-    }
-
-    .warming__card-description p, .warming__card-description h5 {
-        font-size: 1.3rem;
-    }
-
     .header {
         padding: 0.6rem 0;
     }
@@ -560,29 +526,21 @@ textarea {
     .logo {
         font-size: 0.9rem;
     }
-}
 
-@media all and (max-width: 900px) {
     .landing h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
-    .landing p {
-        font-size: 1.6rem;
-    }
-
-    .landing p:nth-child(3) {
-        margin-top: 0.9rem;
-    }
-    
     .warming__card-description h4 {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
 
     .warming__card-description p, .warming__card-description h5 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+}
 
+@media all and (max-width: 900px) {
     .header {
         padding: 0.5rem 0;
     }
@@ -617,6 +575,26 @@ textarea {
         margin: 0 1rem;
     }
 
+    .landing h1 {
+        font-size: 2rem;
+    }
+
+    .landing p {
+        font-size: 1.6rem;
+    }
+
+    .landing p:nth-child(3) {
+        margin-top: 0.9rem;
+    }
+    
+    .warming__card-description h4 {
+        font-size: 1.6rem;
+    }
+
+    .warming__card-description p, .warming__card-description h5 {
+        font-size: 1rem;
+    }
+
     .container {
         padding: 0.3rem;
     }
@@ -629,6 +607,24 @@ textarea {
 }
 
 @media all and (max-width: 768px) {
+    .header {
+        padding: 0.4rem 0;
+    }
+
+    .header a {
+        font-size: 1rem;
+    }
+
+    .header img {
+        width: 1rem;
+    }
+    
+    .navbar {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+        padding: 0;
+    }
+
     .landing h1 {
         font-size: 1.7rem;
     }
@@ -651,24 +647,6 @@ textarea {
 
     .warming__card-description p, .warming__card-description h5 {
         font-size: 1.3rem;
-    }
-
-    .header {
-        padding: 0.4rem 0;
-    }
-
-    .header a {
-        font-size: 1rem;
-    }
-
-    .header img {
-        width: 1rem;
-    }
-    
-    .navbar {
-        font-size: 0.8rem;
-        gap: 0.5rem;
-        padding: 0;
     }
 
     #footer {
@@ -695,6 +673,27 @@ textarea {
 }
 
 @media all and (max-width: 640px) {
+    .header {
+        padding: 0.3rem 0;
+    }
+
+    .header a {
+        font-size: 0.9rem;
+    }
+
+    .pages a {
+        font-size: 0.5rem;
+    }
+
+    .header img {
+        width: 0.9rem;
+    }
+    
+    .navbar {
+        font-size: 0.5rem;
+        gap: 0.3rem;
+    }
+
     .landing h1 {
         font-size: 1.5rem;
     }
@@ -718,33 +717,12 @@ textarea {
         font-size: 1.6rem;
     }
 
-    .header {
-        padding: 0.3rem 0;
-    }
-
-    .header a {
-        font-size: 0.9rem;
-    }
-
-    .pages a {
-        font-size: 0.5rem;
-    }
-    
     dl {
         margin-top: 1.5rem;
     }
     
     dd {
         margin: 0.5rem 0 1.5rem 0;
-    }
-
-    .header img {
-        width: 0.9rem;
-    }
-    
-    .navbar {
-        font-size: 0.5rem;
-        gap: 0.3rem;
     }
     
     .cart legend {
@@ -774,6 +752,27 @@ textarea {
 }
 
 @media all and (max-width: 480px) {
+    .header {
+        padding: 0.2rem 0;
+    }
+
+    .header a {
+        font-size: 0.7rem;
+    }
+
+    .pages a {
+        font-size: 0.3rem;
+    }
+
+    .header img {
+        width: 0.6rem;
+    }
+    
+    .navbar {
+        font-size: 0.3rem;
+        gap: 0.1rem;
+    }
+    
     .landing h1 {
         font-size: 0.7rem;
         box-shadow: 0.3px 0.8px 0.3px 1.2px black;
@@ -799,33 +798,12 @@ textarea {
         font-size: 0.9rem;
     }
 
-    .header {
-        padding: 0.2rem 0;
-    }
-
-    .header a {
-        font-size: 0.7rem;
-    }
-
-    .pages a {
-        font-size: 0.3rem;
-    }
-    
     dl {
         margin-top: 0.5rem;
     }
     
     dd {
         margin: 0.5rem 0 1rem 0;
-    }
-
-    .header img {
-        width: 0.6rem;
-    }
-    
-    .navbar {
-        font-size: 0.3rem;
-        gap: 0.1rem;
     }
     
     .cart legend {
