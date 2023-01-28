@@ -435,8 +435,8 @@ textarea {
 
     .navbar {
         font-size: 1.2rem;
-        gap: 1.5rem;
-        padding: 0.5rem;
+        gap: 1.4rem;
+        padding: 0.4rem;
     }
 
     .logo {
@@ -520,7 +520,7 @@ textarea {
 
     .navbar {
         gap: 1rem;
-        padding: 0.4rem;
+        padding: 0.3rem;
     }
 
     .logo {
@@ -555,7 +555,8 @@ textarea {
     
     .navbar {
         gap: 0.7rem;
-        padding: 0.3rem;
+        padding: 0.2rem 0;
+        justify-content: space-around;
     }
 
     .logo {
@@ -573,6 +574,8 @@ textarea {
 
     .nav-links {
         margin: 0 1rem;
+        flex-grow: 0;
+        width: 57%;
     }
 
     .landing h1 {
@@ -621,8 +624,6 @@ textarea {
     
     .navbar {
         font-size: 0.8rem;
-        gap: 0.5rem;
-        padding: 0;
     }
 
     .landing h1 {
@@ -691,7 +692,7 @@ textarea {
     
     .navbar {
         font-size: 0.5rem;
-        gap: 0.3rem;
+        padding: 0.1rem;
     }
 
     .landing h1 {
