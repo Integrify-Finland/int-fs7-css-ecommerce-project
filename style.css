@@ -118,7 +118,7 @@ body {
 #log-in {
     position: absolute;
     top: 0.2rem;
-    right: 0.2rem;
+    right: 0.5rem;
     display: none;
     gap: 0.5rem;
 }
