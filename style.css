@@ -40,11 +40,11 @@ body {
 .header a {
     color: var(--text-color);
     font-size: 1.5rem;
+    transition: all 0.5s;
 }
 
 .header a:hover {
     transform: scale(1.3);
-    transition: 0.4s;
     color: gold;
 }
 
@@ -97,13 +97,12 @@ body {
     color: var(--text-color);
     border-radius: var(--items-border);
     padding: 0.4rem;
-    transition: 1s;
+    transition: all 0.5s;
 }
 
 .navbar a:hover, .navbar i:hover {
     background-color: #242582;
     transform: scale(1.2);
-    transition: 0.4s;
     padding: 0.2rem;
 }
 
@@ -183,11 +182,11 @@ body {
     background-color: var(--text-color);
     height: 59.5vh;
     flex-direction: column;
+    transition: all 0.3s;
 }
 
 .warming__card:hover {
     transform: scale(1.05);
-    transition: 0.5s;
     box-shadow: 4px 6px 8px 5px rgb(36, 37, 130);
 }
 
