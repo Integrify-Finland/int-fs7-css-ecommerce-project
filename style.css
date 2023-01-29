@@ -114,22 +114,25 @@ body {
     position: relative;
 }
 
-#log-in {
+#login {
     position: absolute;
     top: 0.2rem;
     right: 0.5rem;
-    display: none;
     gap: 0.5rem;
 }
 
-#log-in input {
+.hidden {
+    display: none;
+}
+
+#login input {
     height: 2.1rem;
     width: 13rem;
     border-radius: 10px;
     padding-left: 0.3rem;
 }
 
-#enter:hover {
+#login-enter:hover {
     color: var(--text-color);
     background-color: #242582;
 }
@@ -368,11 +371,13 @@ textarea {
     left: 0.5rem;
     animation-name: shopping-cart2;
 }
+
 .shopping-cart3 {
     top: 5rem;
     right: 0.5rem;
     animation-name: shopping-cart3;
 }
+
 .shopping-cart4 {
     top: 20rem;
     right: 0.5rem;
@@ -546,18 +551,18 @@ textarea {
         font-size: 0.9rem;
     }
     
-    #log-in {
+    #login {
         flex-direction: column;
         align-items: end;
         gap: 0.1rem;
     }
 
-    #log-in input {
+    #login input {
         height: 1.5rem;
         width: 12rem;
     }
 
-    #enter {
+    #login-enter {
         padding: 0 0.1rem;
         font-size: smaller;
     }
@@ -810,12 +815,12 @@ textarea {
         gap: 0.1rem;
     }
 
-    #log-in input {
+    #login input {
         height: 1rem;
         width: 10rem;
     }
 
-    #enter {
+    #login-enter {
         font-size: x-small;
     }
 

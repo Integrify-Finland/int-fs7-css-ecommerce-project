@@ -1,11 +1,19 @@
-const loginBtn = document.getElementById('login');
-const loginEnter = document.getElementById('enter');
-const loginDiv = document.getElementById('log-in');
+const logInIcon = document.getElementById('login-icon');
+const logIn = document.getElementById('login');
+const logInEnter = document.getElementById('login-enter');
 
-loginBtn.addEventListener('click', () => {
-    loginDiv.style.display = 'flex';
+
+logInIcon.addEventListener('click', () => {
+    if (logIn.classList.contains('hidden')) {
+        logIn.classList.remove('hidden');
+        logInIcon.innerText = '[x]';
+    } else {
+        logIn.classList.add('hidden');
+        logInIcon.innerText = 'LogIn';
+    }
 });
 
-loginEnter.addEventListener('click', () => {
-    loginDiv.style.display = 'none';
+logInEnter.addEventListener('click', () => {
+    logIn.classList.add('hidden');
+    logInIcon.innerText = 'LogIn';
 });
