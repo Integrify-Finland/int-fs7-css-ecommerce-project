@@ -140,7 +140,7 @@ body {
     top: 48.5%;
     left: 50%;
     font-size: 3.5rem;
-    color: #8b8e87;
+    color: rgb(191, 104, 50);
     box-shadow: 2px 4px 3px 5px black;
     padding: 0.3rem;
 }
@@ -150,7 +150,7 @@ body {
     font-size: 2.5rem;
 }
 
-.landing p:nth-child(3) {
+.landing p:nth-child(4) {
     top: 78%;
 }
 
@@ -414,7 +414,7 @@ textarea {
         margin-top: 0.4rem;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.2rem;
     }
 
@@ -475,7 +475,7 @@ textarea {
         box-shadow: 1.5px 3px 2.5px 4px black;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.4rem;
     }
 
@@ -622,7 +622,7 @@ textarea {
         font-size: 1.6rem;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.9rem;
     }
     
@@ -671,9 +671,10 @@ textarea {
         margin-top: 0.1rem;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.8rem;
     }
+
     .warming {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -783,7 +784,7 @@ textarea {
         box-shadow: 1px 2px 1.5px 2.5px black;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.6rem;
     }
 }
@@ -832,7 +833,7 @@ textarea {
         padding: 0.1rem;
     }
 
-    .landing p:nth-child(3) {
+    .landing p:nth-child(4) {
         margin-top: 0.4rem;
     }
     
