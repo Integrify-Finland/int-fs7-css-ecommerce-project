@@ -65,7 +65,7 @@ nav {
   cursor: pointer;
 }
 .btn {
-  background-color: #4caf50;
+  background-color: #ff0000;
   color: white;
   padding: 0.6em 1.4em;
   border: none;
@@ -75,7 +75,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #000;
+  background-color: rgb(118, 22, 207);;
 }
 
 .btn a {
@@ -136,7 +136,7 @@ nav {
 }
 
 .banner__btn:hover{
-  background-color: #4caf50;
+  background-color: rgb(118, 22, 207);;
 }
 
 .banner__btn a {
@@ -176,7 +176,7 @@ nav {
   max-width: 100%;
 }
 
-.product h3 {
+.product h2 {
   margin: 0.6rem 0;
   font-family: var(--font-family);
   color: #000;
@@ -188,7 +188,7 @@ nav {
 }
 
 .product button {
-  background-color: #4caf50;
+  background-color: #ff0000;;
   color: white;
   padding: 1rem 3rem;
   border: none;
@@ -197,8 +197,8 @@ nav {
   transition: all 0.3s ease;
 }
 .product button:hover {
-  background-color: #000;
-  box-shadow: 0 0 10px #3e8e41;
+  background-color: rgb(118, 22, 207);
+  box-shadow: 0 0 10px rgb(118, 22, 207);
   transform: scale(1);
 }
 

@@ -31,7 +31,7 @@
 }
 
 .product__btn--details {
-  background-color: #000;
+  background-color: #ff0000;
   color: #fff;
   padding: 1.2em 3em;
   margin: 1rem 0;
@@ -40,7 +40,7 @@
 }
 
 .product__btn--details:hover {
-  background-color: #4caf50;
+  background-color: rgb(118, 22, 207);;
 }
 
 /*  responsiveness starts here */
