@@ -49,7 +49,7 @@ header {
   box-shadow: 0px 0px 15px 0px rgba(15, 15, 15, 0.9);
   z-index: 10;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -230,7 +230,6 @@ footer {
 
 .policy {
   margin-left: 3rem;
-  margin-bottom: 0;
 }
 
 .cards {
