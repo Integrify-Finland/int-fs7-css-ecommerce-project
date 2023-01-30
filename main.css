@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+  --primary-color: #000;
+  --font-family: "Urbanist", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: var(font-family);
+}
+
+/* navigation starts here */
+nav {
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  padding: 1.25em;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-right: auto;
+  font-family: var(font-family);
+  font-weight: 900;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.6em;
+  gap: 10px;
+}
+
+.menu li {
+  margin-left: 0.6em;
+  font-size: 1.1rem;
+  font-family: var(font-family);
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #4caf50;
+  text-decoration: none;
+}
+.cart__icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+}
+.btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 0.6em 1.4em;
+  border: none;
+  cursor: pointer;
+  font-family: var(font-family);
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: rgb(118, 22, 207);;
+}
+
+.btn a {
+  color: #fff;
+}
+
+/*   Navigation ends here */
+
+/* Header starts here */
+#header {
+  height: 100vh;
+}
+
+.banner {
+  min-height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__title {
+  width: 70%;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-family: var(font-family);
+}
+
+.banner__description {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 50%;
+  color: #fff;
+  line-height: 2.1rem;
+}
+
+.banner__btn {
+
+  padding: 1.7em 3em;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: var(font-family);
+  font-weight: 700;
+}
+
+.banner__btn:hover{
+  background-color: rgb(118, 22, 207);;
+}
+
+.banner__btn a {
+  color: #000;
+}
+
+/* Header ends here */
+
+/* product section starts here */
+#product-section {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 4rem 0;
+}
+
+.product {
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+  padding: 2rem;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h2 {
+  margin: 0.6rem 0;
+  font-family: var(--font-family);
+  color: #000;
+}
+
+.product .price {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.product button {
+  background-color: #ff0000;;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+.product button:hover {
+  background-color: rgb(118, 22, 207);
+  box-shadow: 0 0 10px rgb(118, 22, 207);
+  transform: scale(1);
+}
+
+/* product section ends here  */
+
+/* footer starts here */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer__menu a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* footer ends here */
+
+/* responsiveness starts here */
+@media (max-width: 768px) {
+  /* Responsive nav menu starts here */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    padding: 1.25em;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-family: var(font-family);
+    font-weight: 900;
+    margin: 0 auto;
+  }
+
+  .menu li {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.8em 1.4em;
+  }
+
+  /* Responsive nav menu ends here*/
+
+  /* Responsive Header Banner starts here */
+  .banner__title {
+    font-size: 1.5rem;
+  }
+  .banner__description {
+    font-size: 1rem;
+  }
+  .banner__title {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-family: var(font-family);
+  }
+
+  .banner__description {
+    font-size: 1.2rem;
+    padding: 1rem 1.3rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    line-height: 2.1rem;
+  }
+
+  .banner--btn {
+    background-color: #fff;
+    padding: 1.7em 3em;
+    text-transform: uppercase;
+    color: #000;
+  }
+  /* Responsive Header Banner ends here */
+
+  /* Responsive product items starts here*/
+  .product-grid {
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+  }
+
+  #product-section {
+    padding: 2em;
+  }
+  /* Responsive product items ends here*/
+
+  /* Responsive footer starts here */
+  .container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .footer__menu a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+/* Responsive footer ends here */
+
+/* responsiveness ends here */
