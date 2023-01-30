@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cart</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu__lists">
+            <li class="menu__list"><a href="../index.html" class="menu__link">Products</a></li>
+            <li class="menu__list"><a href="./signup.html" class="menu__link">Sign up</a></li>
+            <li class="menu__list"><a href="./product_detail.html" target="-blank" class="menu__link">Product
+                    Detail</a>
+            </li>
+            <li class="menu__list"><a href="./cart.html" target="-blank" class="menu__link">Cart</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="cart">
+        <div class="cart__chekout">
+            <h1>Checkout</h1>
+            <form class='form' action="/">
+                <!-- billing detail starts here -->
+                <p class="caps">BILLING DETAILS</p>
+                <!-- first flex starts here-->
+                <div class="first-flex">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <br>
+                        <input placeholder="name" type="text" name="name" id="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email Address</label>
+                        <br>
+                        <input placeholder='email' type="email" name="email" id="email">
+                    </div>
+                </div>
+                <!-- first flex ends here-->
+                <div class="phone">
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input placeholder='phone number' type="number" name="phone" id="phone">
+                </div>
+                <!-- billing detail ends here -->
+                <p class="caps">SHOPPING INFO</p>
+                <!-- Shopping info starts here -->
+                <label for="address">Address</label>
+                <br>
+                <input placeholder='address' type="text" name="address" id="address">
+                <!-- second flex starts here-->
+                <div class="second-flex">
+                    <div class="zip">
+                        <label for="zip">Zip Code</label>
+                        <br>
+                        <input placeholder='zip code' type="number" name="zip" id="zip">
+                    </div>
+                    <div class="city">
+                        <label for="city">City</label>
+                        <br>
+                        <input placeholder='city' type="text" name="city" id="city">
+                    </div>
+                </div>
+                <!-- second flex ends here-->
+                <label for="">Country</label>
+                <br>
+                <input placeholder='country' type="text" name="country" id="country">
+                <P class="caps">PAYMENT METHOD</P>
+                <!-- payment methods starts here -->
+                <i class="fab fa-paypal"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <!-- payment methods ends here -->
+                <!-- Shopping info ends here -->
+            </form>
+        </div>
+        <div class="cart__summary">
+            <h2>Summary</h2>
+            <div class="summary">
+                <div class="summary__upper">
+                    <div class="summary__products">
+                        <div class="model">
+                            <img src="../images/Sony Headphone.jpg" alt="Sony Headphone">
+                            <div class="single-product">
+                                <div class="name">Sony Headphone</div>
+                                <div class="price">$ 2999</div>
+                            </div>
+                        </div>
+                        <div class="quantity">1</div>
+                    </div>
+                    <div class="summary__products">
+                        <div class="model">
+                            <img src="../images/Philips-tv.jpg" alt="Philips TV">
+                            <div class="single-product">
+                                <div class="name">Philips TV</div>
+                                <div class="price">$ 899</div>
+                            </div>
+                        </div>
+                        <div class="quantity">2</div>
+                    </div>
+                    <div class="summary__products">
+                        <div class="model">
+                            <img src="../images/iPhone.jpg" alt="iPhone 12">
+                            <div class="single-product">
+                                <div class="name">iPhone 12</div>
+                                <div class="price">$ 599</div>
+                            </div>
+                        </div>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="summary__lower">
+                    <div class="cart__total">
+                        <P>TOTAL</P>
+                        <P>$ 5396</P>
+                    </div>
+                    <div class="cart__total">
+                        <P>SHIPPIG</P>
+                        <P>$ 50</P>
+                    </div>
+                    <div class="cart__total">
+                        <P>AVT(INCLUDED)</Pva>
+                        <P>$1079 </P>
+                    </div>
+                    <div class="cart__total">
+                        <P>GRAND TOTAL</P>
+                        <P>$ 5446</P>
+                    </div>
+                </div>
+                <button class="btn">Checkout</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
