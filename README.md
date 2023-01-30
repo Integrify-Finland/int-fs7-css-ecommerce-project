@@ -12,4 +12,5 @@
    - Your creativity and additional functionality to the project will help you to get extra 1 point
 
    https://verdant-sunshine-ee54bc.netlify.app
+   netlify link added
   
