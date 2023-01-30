@@ -1,0 +1,119 @@
+/* reset code and common starts here*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.btn {
+  background-color: #85d6de;
+  border: none;
+  padding: 5px;
+  color: black;
+}
+/* reset code and common ends here  */
+body {
+  background-color: #e5e5cb;
+}
+/* navbar starts here */
+nav {
+  background: #1a120b;
+  height: 3rem;
+}
+.menu__lists {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+.menu__link {
+  color: white;
+}
+/* navbar ends here */
+/* cart starts here */
+.cart {
+  background-color: #d5cea3;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* cart checkout starts here */
+.cart__chekout {
+  background-color: #fff6bd;
+  width: 500px;
+  padding-left: 5rem;
+  border-radius: 4%;
+  padding-top: 1rem;
+}
+.caps {
+  color: #3a4f7a;
+  font-size: large;
+}
+.name-email {
+  display: flex;
+}
+.first-flex,
+.second-flex {
+  display: flex;
+}
+.caps {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/* cart checkout ends here */
+/* checkout summary starts here */
+.cart__summary {
+  background-color: #fff6bd;
+  width: 20rem;
+  border-radius: 4%;
+  padding-top: 1rem;
+}
+.cart__summary h2 {
+  margin-left: 1rem;
+}
+.summary__products {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.model {
+  display: flex;
+}
+img {
+  width: 6rem;
+  margin-right: 0.5rem;
+  border-radius: 5%;
+}
+.summary__lower {
+  padding: 1rem;
+}
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.btn {
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+/* checkout summary ends here */
+/* cart ends here */
+/* media query starts here */
+@media (max-width: 768px) {
+  .first-flex,
+  .second-flex {
+    flex-direction: column;
+  }
+  .cart__chekout {
+    width: 20rem;
+  }
+}
+/* media query ends here */
