@@ -442,14 +442,14 @@ main{
 .footer{
     align-items: center;
     background-color: rgba(237, 11, 49, 0.693);
-    min-height: 20vh;
+    min-height: 40vh;
     justify-content: space-around;
     padding: 1rem;
     cursor: pointer;
     text-align: center;
     width: 100%;
     height: 100%;
-    /* margin-bottom: 5rem; */
+    /* margin-bottom: 0.5rem; */
     left: 0;
     right: 0;
     gap: 2rem;
@@ -479,9 +479,10 @@ main{
 .footer__subscription{
     color: #fff;
     display:flex;
+    align-items: center;
     padding: 0.5rem;
-    margin-left: 10%;
-    font-size: 1.3rem;
+    margin-left: 25%;
+    font-size: 1.2rem;
 }
 .btn__sub{
     margin-left: -5px;
@@ -490,22 +491,29 @@ main{
 .footer__sub{
     border: none;
     padding: var(--padding);
-    width: 20rem;
+    width: 10rem;
 }
 .footer__link{
     display: flex;
+    float: left;
     color: #fff;
+    justify-content: space-around;
 }
-.copy-right{
+.copyright{
     display: flex;
     
 }
 .copyright{
     color: #fff;
     font-size: 1.2rem;
+    float: right;
+    justify-content: space-between;
+
     
     
 }
+
+
  
     
     
