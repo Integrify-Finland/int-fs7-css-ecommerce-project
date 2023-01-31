@@ -1,0 +1,232 @@
+:root {
+    --main-color1: #c66845;
+    --main-color2: #4F322E;
+    --main-color3: #345B54;
+}
+
+#cart-main {
+    width: 90%;
+    min-height: 65vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.cart-list {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-row{
+    border-bottom: 2px solid rgb(165, 157, 157);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.3rem;
+}
+
+.cart-header{
+    font-weight: 600;
+    height: 4rem;
+    background-color: beige;
+}
+
+.cart-row>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product__price::after, 
+.product__total-price::after,
+#purchase__price::after{
+    content: "$"
+}
+
+#amount::after,
+#purchase__amount::after{
+    content: "kg";
+}
+
+.product__amount > div{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__amount > div{
+    border: 1px solid gray;
+}
+
+.product__amount > div:nth-child(2){
+    width: 4rem;
+    border-right: 0;
+    border-left: 0;
+}
+
+.product__amount > div:not(:nth-child(2)){
+    border: 1px solid gray;
+}
+
+.product__amount > div:not(:nth-child(2)):hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.product__amount > div:first-child{
+    border-radius: 40% 0 0 40%;
+}
+
+.product__amount > div:last-child{
+    border-radius: 0 40% 40% 0;
+}
+
+.in-cart {
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-cart>.coffee-card__header {
+    color: black;
+}
+
+
+
+aside.purchase {
+    width: 30%;
+    height: 40vh;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.purchase__content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 2rem;
+}
+
+.purchase__content div{
+    font-size: 1.3rem;
+    padding: .3rem;
+}
+
+.purchase__content div[id]{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.purchase__btn{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.4rem;
+    color: white;
+    background-color: brown;
+}
+
+.thank-you{
+    width:100%;
+    height: 2rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: animateFacebook;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animateFacebook {
+    0%{
+        color: var(--main-color1);
+    }
+    50%{
+        color: var(--main-color2);
+    }
+    75%{
+        color: var(--main-color3);
+    }
+    100%{
+        color: var(--main-color1);
+    }
+}
+
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    #cart-main {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cart-list {
+        width: 90%;
+        margin: auto;
+    }
+    
+    aside.purchase {
+        width: 80%;
+        height: 40vh;
+        margin: 3rem auto 0 auto;
+    }
+
+    .in-cart>.coffee-card__content img {
+        aspect-ratio: 3/3;
+    }
+
+    .cart-row{
+        row-gap: 1rem;
+        padding: 1rem 0;
+    }
+    .cart-header{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #cart-main {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .cart-list {
+        width: 100%;
+        margin: 3rem auto;
+
+    }
+    
+    aside.purchase {
+        margin-top: 3rem;
+        width: 80%;   
+        margin: auto;
+ 
+    }
+
+    .in-cart>.coffee-card__content img {
+        aspect-ratio: 3/3;
+    }
+
+    .cart-row{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        padding: 1rem 0;
+    }
+    .cart-header{
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}

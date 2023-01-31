@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee shop website">
+    <meta name="keywords" content="coffee damalan">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Damalan Coffee</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo" onclick="goHome()">
+            <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text" onclick="goHome()">
+            <div class="header__cart">
+                <a href="../html/cart.html" id="cart-link">
+                    <i class="fa-solid fa-cart-shopping cart-icon">
+                        <div id="cart-counter">2</div>
+                    </i>
+                </a>
+            </div>
+            <script>
+                function goHome(){
+                    window.open("../index.html", "_self");
+                }
+            </script>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" area-label="Visit home page">Home</a></li>
+                <li><a href="#about" area-label="Visit about page">About</a></li>
+                <li><a href="#coffee-varieties" area-label="Visit specials page">Specials</a></li>
+                <li><a href="#" area-label="Visit partners page">Partnership</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="welcome">
+                <h1 class="welcome__header">great beans &#8212;	 great coffee</h1>
+                <button class="welcome__btn"><a href="#coffee-varieties">To The Shop</a> </button>
+                <a href="../html/login.html" id="login-link">
+                    <i class="fa-solid fa-house-user welcome__icon"></i>
+                    <span area-label="Login or register here" class="welcome__login">Login</span>
+                </a>
+            </section>
+            <section class="about" id="about"> 
+                <h2 class="about__header">About Our Shop</h2>
+                <article class="about__content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati inventore velit
+                        accusantium quae illum debitis. Accusamus molestias atque consequuntur magnam officiis harum,
+                        obcaecati repellendus illum debitis nobis expedita qui? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati inventore velit
+                        accusantium quae illum debitis. Accusamus molestias atque consequuntur magnam officiis harum,
+                        obcaecati repellendus illum debitis nobis expedita qui? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Cupiditate numquam laudantium dolore illo omnis corporis esse ex itaque cum
+                        nemo eum totam, exercitationem maiores deserunt, nihil, eveniet eius vel iste?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores obcaecati inventore velit
+                        accusantium quae illum debitis. Accusamus molestias atque consequuntur magnam officiis harum,
+                        obcaecati repellendus illum debitis nobis expedita qui? Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                    </p>
+                </article>
+            </section>
+            <section class="coffee-varieties" id="coffee-varieties">
+                <h2 class="coffee-varieties__header">Coffee varieties</h2>
+                <div class="coffee-varieties__content">
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Bourbon
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/bourbonBeans.png" alt="Bourbon Coffee Beans Picture">
+                            <p>Bourbon is the other of the two main varieties of Arabica,
+                                along with Typica. It was created on the Island of Bourbon in the 18th century.</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Catimor
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/catimorBeans.png" alt="Catimor Coffee Beans Picture">
+                            <p>Catimor is a mix between Caturra and Timor, that was created in Portugal in 1959. Due to
+                                Timor being a variety of Robusta, Catimors acidity is low and the flavor is a bit
+                                bitter.</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Catuai
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/catuaiBeans.png" alt="Catuai Coffee Beans Picture">
+                            <p>Catuai is a hybrid of Caturra and Mundo Novo. It was created in Brazil in the 1940s and
+                                it was created to be more productive, but equally high quality as Caturra.</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Caturra
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/caturraBeans.png" alt="Caturra Coffee Beans Picture">
+                            <p>Caturra was created in Brazil in the 1930’s. The variety is based on a natural mutation
+                                of Bourbon.</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Heirloom
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/heirloomBeans.png" alt="Heirloom Coffee Beans Picture">
+                            <p>Heirloom is an Ethiopian wild variety, that is an inheritor of the original coffee bushes
+                                growing in the Ethiopian forests. Nowadays Heirloom has multiple recognizable variants.
+                            </p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Geisha
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/geishaBeans.png" alt="Geisha Coffee Beans Picture">
+                            <p>Geisha (also Gesha) is a high-quality variety, that is especially found in Panama. It is
+                                originally from the Ethiopian village of Gesha. 
+                            </p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Mundo Novo
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/mundoNovoBeans.png" alt="Mundo Novo Coffee Beans Picture">
+                            <p>Mundo Novo is a mix between Bourbon and Typica. The variety was created in the 1940’s and
+                                is especially suited for the Brazilian growth conditions.
+                            </p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            SL28 & SL34
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/SL28&SL34Beans.png" alt="SL28 & SL34 Coffee Beans Picture">
+                            <p>SL28 & SL34 grow in Kenya. Most of the high quality coffees from Kenya include both of
+                                these varieties. SL comes from Scott Laboratories, a company that the Kenyan government..</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Timor
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/timorBeans.png" alt="Timor Coffee Beans Picture">
+                            <p>Timor (also Tim Tim) is a natural mix of Arabica and Robusta that was found on the island
+                                of Timor in the 1940’s..
+                            </p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Typica
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/typicaBeans.png" alt="Typica Coffee Beans Picture">
+                            <p>Typica (also Tipica) is the forefather of coffees. It has spread around the world and it
+                                has adapted to local climates, creating many different variations like Kona (Hawaii) and
+                                Blue Mountain (Jamaica)..</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Variedad Colombia
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/variedadColombiaBeans.png" alt="Variedad Colombia Coffee Beans Picture">
+                            <p>Variedad Colombia (sometimes just Colombia) is a hybrid of Caturra, created in Colombia.
+                                The strain is very productive and great at surviving leaf diseases..</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                    <div class="coffee-card">
+                        <div class="coffee-card__header">
+                            Yellow Bourbon
+                        </div>
+                        <div class="coffee-card__content">
+                            <img src="../images/coffeeProducts/yellowBourbonBeans.png" alt="Yellow Bourbon Coffee Beans Picture">
+                            <p>Yellow Bourbon, Red Bourbon and Pink Bourbon are all natural mutations of Bourbon. Their
+                                productivity is quite low, but the flavor makes up for the size of the yield.</p>
+                        </div>
+                        <div class="coffee-card__footer">
+                            <button class="btn">Discover More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2 class="footer__header">Stay In Touch With Us</h2>
+            <section class="footer__contacts">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

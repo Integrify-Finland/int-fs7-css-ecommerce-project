@@ -1,0 +1,126 @@
+:root {
+    --main-color1: #c66845;
+    --main-color2: #4F322E;
+    --main-color3: #688D80;
+    --padding: 1rem;
+}
+
+#login-main {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    width: 50%;
+    min-height: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eb9d61c7;
+}
+
+.form-section__header {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form-section__header > *, a {
+    text-align: center;
+}
+
+.form-section__header > p {
+    font-size: 1.3rem;
+}
+
+.form-section__icon {
+    color: var(--main-color2);
+    font-size: 2.5rem;
+}
+
+.form-section__content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 70%; */
+}
+
+.form-section__content form>input:not(input[type="submit"]) {
+    height: 2.5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.checkbox-wrapper>label{
+    font-size: 1.1rem;
+}
+
+.form-section__btn {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background-color: #EFB384;
+    transition: all .3s ease-in-out;
+}
+
+.form-section__btn:hover {
+    background-color: #f6a76a;
+    color: white;
+}
+
+.form-section__footer {
+    max-height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section__footer > a{
+    font-size: 1.2rem;
+    color: var(--main-color2);
+}
+
+.form-section__footer > a:hover{
+    font-size: 1.2rem;
+    /* color: white; */
+    text-decoration: underline;
+}
+
+.hidden{
+    display: none;
+}
+
+.forgot-password:hover::after{
+    content: "i'm really sorry -_-";
+    display: block;
+    color:red;
+    position: absolute;
+}
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    #login-main{
+        width: 95vw;
+    }
+
+    .form-section {
+        width: 70%;
+        padding: 1rem;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #login-main{
+        width: 100vw;
+    }
+
+    .form-section {
+        width: 90%;
+        padding: .5rem;
+        height: 100%;
+    }
+}
+
