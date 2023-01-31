@@ -314,6 +314,10 @@ legend {
     font-size: larger;
 }
 
+input {
+    padding-left: 0.3rem;
+}
+
 button {
     padding: 0.4rem;
     border-radius: 10px;
@@ -648,6 +652,7 @@ textarea {
     }
 
     .container {
+        width: 90%;
         padding: 0.3rem;
     }
 }
@@ -723,8 +728,9 @@ textarea {
         padding: 0.1rem;
     }
     
-    .cart legend {
+    legend {
         font-size: 1rem;
+        border-bottom: 1px dotted black;
     }
     
     .cart h3 {
@@ -844,6 +850,10 @@ textarea {
 
     #user-nav-drop {
         gap: 0.15rem;
+    }
+
+    form {
+        margin-top: 1.1rem;
     }
 
     #login input {
