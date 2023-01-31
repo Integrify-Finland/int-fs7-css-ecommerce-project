@@ -158,7 +158,7 @@ body {
 
 #clothes, #shoes, #domestic-heating {
     background-image: url(/src/images/view-image.jpeg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     padding: 0.3rem;
     padding-top: 2rem;
@@ -271,13 +271,11 @@ marquee {
 
 .view {
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
     width: 100%;
     height: 100vh;
     background-image: url(/src/images/snow-fall.gif);
-    background-size: 100% 100%;
+    background-size: cover;
     opacity: 0.2;
 }
 
@@ -332,7 +330,7 @@ textarea {
 
 .cart {
     background-image: url(/src/images/cart.png);
-    background-size: 100% 90%;
+    background-size: 100% 100%;
     opacity: 0.7;
 }
 
@@ -352,7 +350,7 @@ textarea {
     width: 100px;
     height: 100px;
     background-image: url(/src/images/shopping-cart.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     border-radius: 10%;
     position: absolute;
     animation-duration: 2s;
