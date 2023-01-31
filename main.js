@@ -1,4 +1,4 @@
-import { logInIcon, logIn, logInEnter, NavList, userNavList, userNavDrop, NavListDrop, closeList1, closeList2 } from './elements.js'
+import { logInIcon, logIn, logInEnter, NavList, userNavList, userNavDrop, NavListDrop, closeList1, closeList2 } from './nav-elements.js'
 
 logInIcon.addEventListener('click', () => {
     if (logIn.style.display === 'flex') {

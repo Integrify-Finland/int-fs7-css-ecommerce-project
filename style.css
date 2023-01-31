@@ -254,6 +254,7 @@ marquee {
     padding: 1rem;
     justify-content: space-around;
     gap: 1rem;
+    scroll-margin-top: 3rem;
 }
 
 #footer a {
@@ -283,7 +284,7 @@ marquee {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 92.5vh;
     background-image: url(/src/images/snow-fall.gif);
     background-size: cover;
     opacity: 0.2;
@@ -292,7 +293,7 @@ marquee {
 .container {
     background-color: antiquewhite;
     color: #242582;
-    width: 50%;
+    width: 60%;
     min-height: 75vh;
     max-height: 80vh;
     margin: 2rem auto 0 auto;
@@ -348,16 +349,57 @@ textarea {
     opacity: 0.7;
 }
 
-.cart legend {
+.cart legend, .products {
     background-color: rgba(85, 61, 103, 0.8);
     color: var(--text-color);
     border-radius: 15px;
 }
 
-.cart h3 {
+th {
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+.products button {
+    font-size: large;
+    color: rgb(58, 170, 50);
+    padding: 0.4rem;
+}
+
+.products button:hover, .fa-trash:hover {
+    opacity: 0.6;
+}
+
+.fa-trash {
+    font-size: 1.5rem;
+}
+
+.payment {
+    border-radius: 15px;
+    gap: 1rem;
+    background-color: rgb(58, 170, 50);
+    padding: 0.5rem 0;
+}
+
+.fa-ideal {
     color: red;
-    font-size: 2rem;
-    font-weight: 900;
+}
+
+
+.fa-cc-mastercard {
+    color: #F79E1B;
+}
+
+.fa-paypal {
+    color: #3b7bbf;
+}
+
+.fa-credit-card {
+    color: #04d484;
+}
+
+.fa-cc-visa {
+    color: #1A1F71;
 }
 
 .shopping-cart {
@@ -399,25 +441,25 @@ textarea {
 @keyframes shopping-cart1 {
     to {
         top: 9rem;
-        left: 11rem;}
+        left: 6rem;}
 }
 
 @keyframes shopping-cart2 {
     to {
         top: 29rem;
-        left: 11rem;}
+        left: 6rem;}
 }
 
 @keyframes shopping-cart3 {
     to {
         top: 9rem;
-        right: 11rem;}
+        right: 6rem;}
 }
 
 @keyframes shopping-cart4 {
     to {
         top: 29rem;
-        right: 11rem;}
+        right: 6rem;}
 }
 
 @media all and (min-width: 1210px) and (max-width: 1460px) {
@@ -448,7 +490,7 @@ textarea {
     }
 
     .container {
-        width: 65%;
+        width: 70%;
     }
     
     .cart legend {
@@ -516,7 +558,7 @@ textarea {
     }
 
     .container {
-        width: 75%;
+        width: 80%;
         margin: 1rem auto 0rem auto;
         padding: 0.5rem;
     }
@@ -524,14 +566,6 @@ textarea {
     .cart legend {
         font-size: 1.1rem;
         padding: 0.3rem;
-    }
-    
-    .cart h3 {
-        font-size: 1.2rem;
-    }
-    
-    .cart h3 {
-        margin-top: 1rem;
     }
 
     .shopping-cart1, .shopping-cart2, .shopping-cart3, .shopping-cart4 {
@@ -655,6 +689,10 @@ textarea {
         width: 90%;
         padding: 0.3rem;
     }
+
+    .fa-credit-card {
+        font-size: 1.5rem;
+    }
 }
 
 @media all and (min-width: 769px) and (max-width: 840px) {
@@ -732,10 +770,33 @@ textarea {
         font-size: 1rem;
         border-bottom: 1px dotted black;
     }
+
+    td img {
+        width: 95px;
+        height: 90px;
+    }
+
+    th {
+        font-size: medium;
+        padding: 0.3rem;
+    }
     
-    .cart h3 {
-        margin-top: 0.5rem;
-        font-size: 1rem;
+    td {
+        font-size: small;
+    }
+
+    .products button {
+        font-size: small;
+        padding: 0.2rem;
+    }
+
+    .fa-trash {
+        font-size: 1.2rem;
+    }
+
+    .payment {
+        gap: 0.5rem;
+        padding: 0.3rem 0;
     }
 }
 
@@ -800,10 +861,6 @@ textarea {
         font-size: 0.5rem;
         padding: 0.2rem;
     }
-    
-    .cart h3 {
-        font-size: 0.7rem;
-    }
 }
 
 @media all and (min-width: 481px) and (max-width: 630px) {
@@ -840,11 +897,11 @@ textarea {
     }
     
     .logo {
-        font-size: 0.5rem;
+        font-size: 0.3rem;
     }
 
     .navbar a, .navbar i {
-        font-size: 0.25rem;
+        font-size: 0.2rem;
         padding: 0.25;
     }
 
@@ -902,8 +959,32 @@ textarea {
         font-size: 0.3rem;
         padding: 0.1rem;
     }
+
+    td img {
+        width: 55px;
+        height: 50px;
+    }
+
+    th {
+        font-size: x-small;
+        padding: 0.1rem;
+    }
     
-    .cart h3 {
+    td {
+        font-size: 0.3rem;
+    }
+
+    .products button {
+        font-size: 0.4rem;
+        padding: 0.1rem;
+    }
+
+    .fa-trash {
         font-size: 0.5rem;
     }
+
+    .fa-ideal, .fa-cc-mastercard, .fa-paypal, .fa-credit-card, .fa-cc-visa {
+        font-size: 0.7rem;
+    }
+
 }
