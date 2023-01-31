@@ -69,7 +69,7 @@ main {
   background-image: url(/img/backgroud.jpg);
   background-position: center;
   background-size: cover;
-  grid-area: m;
+  
 }
 
 .payment__container {
