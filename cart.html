@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecommerce Project">
+    <title>Ecommerce project with html css</title>
+
+    <!-- font awesome cdn link added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <!-- navbar starts here  -->
+    
+    <i class="fas fa-bars fa-2x" id="menu-icon" class="hidden"></i>
+      <nav id="menu" class="hidden">
+            <h1  id="nav-bar1"class="nav__header">Lets' Meat</h1>
+        
+            <ul class="nav-bar2">
+         <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="resarvation.html" class="nav__link">Resarvation</a>
+            </li>
+            <li class="nav__list">
+                <a href="onlineorder.html" class="nav__link">Online Order</a>
+            </li>
+            <li class="nav__list">
+                <a href="menu.html" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span>Cart<i class="fa-solid fa-cart-shopping"></i></span>
+
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <!-- navbar ends here -->
+<main>
+<div class="cart flex-center">
+    <div class="cart__items">
+        
+        <div class="cart__items-heading card">
+           <h2>Order Cart [2 items]</h2> 
+           <div class="cart__items-action">
+            <label for="select">
+                <input type="checkbox" name="selet" id="select">
+            Select Your Order
+            </label>
+            <button class="btn button"><i class="fas fa-trash-alt"></i></button>
+            <button class="btn button">Order Now</button>
+           </div>
+        </div>    
+        <div class="cart__item flex-space-around">
+           <input type="checkbox" name="checkbox" id="order"/> 
+           <img src="./biryani.jpg" alt="biryani" class="cart__item-img">
+        
+        <div class="cart__item-desciption">
+            <h3 class="product__name">Hyderabadi Biryani</h3>
+            <br>
+            <button class="btn button"><i class="fas fa-trash-alt"></i></button>
+            <button class="btn button"><i class="fas fa-add"></i></button>
+        <span>1</span>
+        <button class="btn button"><i class="fas fa-minus"></i></button>
+        </div>
+        
+            <h4 class="product__price">Price: $25.99</h4>
+        </div>
+        <!-- <div class="cart__item-action"> -->
+            <!-- <button class="btn button"><i class="fas fa-trash-alt"></i></button>
+         </div>
+         <button class="btn button"><i class="fas fa-add"></i></button>
+         <span>2</span>
+         <button class="btn button"><i class="fas fa-minus"></i></button> -->
+        <!-- </div> -->
+    </div>
+    <div>
+    <div class="cart__item flex-space-around">
+        <input type="checkbox" name="mutton" id="mutton"/> 
+        <img src="./mutton.jpg" alt="mutton" class="cart__item-img">
+     
+     <div class="cart__item-desciption">
+         <h3 class="product__name">Mutton Bhuna</h3>
+         <br>
+         <button class="btn button"><i class="fas fa-trash-alt"></i></button>
+      
+        <button class="btn button"><i class="fas fa-add"></i></button>
+        <span>1</span>
+        <button class="btn button"><i class="fas fa-minus"></i></button>
+         <!-- <h4 class="product__price">Price: $45.99</h4> -->
+     </div>
+        <h4 class="product__price">Price: $45.99</h4>
+        </div>
+     <div class="cart__item-action">
+         <!-- <button class="btn button"><i class="fas fa-trash-alt"></i></button>
+      </div>
+      <button class="btn button"><i class="fas fa-add"></i></button>
+      <span>1</span>
+      <button class="btn button"><i class="fas fa-minus"></i></button> -->
+     </div>
+ 
+</div>
+ <!-- <div class="cart__item flex-space-around">
+    <input type="checkbox" name="" id=""/> 
+    <img src="./fish.jpg" alt="biryani" class="cart__item-img">
+ 
+ <div class="cart__item-desciption">
+     <h3 class="product__name">Thai Salmon</h3>
+     <h4 class="product__price">Price: $25.99</h4>
+ </div>
+ <div class="cart__item-action">
+     <button class="btn"><i class="fas fa-trash-alt"></i></button>
+  </div>
+  <button class="btn"><i class="fas fa-add"></i></button>
+  <span>2</span>
+  <button class="btn"><i class="fas fa-minus"></i></button>
+ </div>
+</div> -->
+<br>
+    <div class="cart__payment">
+        <div class="cart__payment-summary card">
+            <h2>Payemnt Summary</h2>
+            <div>
+                <p>Subtotal :</p>
+                <p>$72.98</p>
+            </div>
+            <div>
+                <p>Shipping Cost :</p>
+                <p>$5.50</p>
+            </div>
+            <div>
+                <p>Total :</p>
+                <p>$78.48</p>
+            </div>
+            <button class="btn cart__payment-btn">Pay Now</button>
+        </div>
+        <div class="cart__payment-method card">
+            <h2>Payment Methods</h2>
+            <div>
+                <i class="fa-brands fa-cc-visa fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-amex fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+        </div>
+    </div>    
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+    <!-- footer section starts here  -->
+        <!-- <footer class="footer">
+          
+            <div class="footer__para">
+                <p>
+                    <h2><i class="fas fa-map-marker"></i>Utrecht, Netherlands</h2>
+                    <h2><i class="fa fa-phone"></i> +310678945367</h2>
+                </p>
+            </div>
+            <div class="footer__time">
+                <h3>Opening Hours</h3>
+                <h3>Monday to Thursday : 12.00 to 23.00</h3>
+                <h3>Friday to Sunday : 12.00 to 01.00</h3>
+            </div>
+            <div class="footer__subscription">
+                
+               <label for="subscribe">Subscribe For Newsletter:</label>
+               <input type="email" id="subscribe" name="subscribe" class="footer__sub" placeholder="Enter Your Email">
+               <button class="btn btn__sub">Subscribe</button>
+            </div>
+            <nav class="footer-nav">
+                <a href="#" class="footer__link">Follow Us :<br/><i class="fab fa-facebook footer__icon"><br/></i> Lets' Meat</a>
+            </nav>
+            <div class="copy-right">
+                <p class="copyright">&copy; Copyright 2023 Lets'Meat.All Rishts Resarved</p>
+            </div>
+
+        </footer>
+
+ -->
+
+
+    <!-- footer section ends here  -->
+    <script src="./scripts/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecommerce Project">
+    <title>Ecommerce project with html css</title>
+
+    <!-- font awesome cdn link added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <!-- navbar starts here  -->
+    
+    <i class="fas fa-bars fa-2x" id="menu-icon" class="hidden"></i>
+      <nav id="menu" class="hidden">
+            <h1  id="nav-bar1"class="nav__header">Lets' Meat</h1>
+        
+            <ul class="nav-bar2">
+         <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="resarvation.html" class="nav__link">Resarvation</a>
+            </li>
+            <li class="nav__list">
+                <a href="onlineorder.html" class="nav__link">Online Order</a>
+            </li>
+            <li class="nav__list">
+                <a href="menu.html" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span>Cart<i class="fa-solid fa-cart-shopping"></i></span>
+
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <!-- navbar ends here -->
+<main>
+    <section class="resarvation">
+            <h2 class="section-title text-center">Resarvation</h2>
+        <div class="card">
+            <form action="" class="form">
+                <div class="form-control flex-center">
+                    <label for="name">Mr./Mrs.</label>
+                    <input type="text" id="name" required autocomplete="name"/>
+                </div>
+         
+                <div class="form-control flex-center">
+                    <label for="name">Contact Details</label>
+                    <input type="text" id="name" required autocomplete="name"/>
+                </div>
+        
+                <div class="form-control flex-center">
+                    <label for="name">Number of Person </label>
+                        <select name="Adult" id="Adult">1</select>
+                        
+                   
+                </div>
+            
+                     <div class="form-control flex-center">
+                            <label for="name">Date</label>
+                                <input type="date"/>
+                          
+                           </div>
+                 
+                     <div class="form-control flex-center form-btn-field">
+                          <label for="name">Time</label>
+                           <input type="time"/>
+                      
+                            
+                    
+                </div>
+                <div class="form-control flex-center">
+                    <button class="btn">Submit</button>
+                      
+              
+          </div>
+            </form>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+    <!-- footer section starts here  -->
+        <footer class="footer">
+           
+            <div class="footer__para">
+                <p>
+                    <h2><i class="fas fa-map-marker"></i>Utrecht, Netherlands</h2>
+                    <h2><i class="fa fa-phone"></i> +310678945367</h2>
+                </p>
+            </div>
+            <div class="footer__time">
+                <h3>Opening Hours</h3>
+                <h3>Monday to Thursday : 12.00 to 23.00</h3>
+                <h3>Friday to Sunday : 12.00 to 01.00</h3>
+            </div>
+            <div class="footer__subscription">
+                
+               <label for="subscribe">Subscribe For Newsletter:</label>
+               <input type="email" id="subscribe" name="subscribe" class="footer__sub" placeholder="Enter Your Email">
+               <button class="btn btn__sub">Subscribe</button>
+            </div>
+            <nav class="footer-nav">
+                <a href="#" class="footer__link">Follow Us :<br/><i class="fab fa-facebook footer__icon"><br/></i> Lets' Meat</a>
+            </nav>
+            <div class="copy-right">
+                <p class="copyright">&copy; Copyright 2023 Lets'Meat.All Rishts Resarved</p>
+            </div>
+
+        </footer>
+
+
+
+
+    <!-- footer section ends here  -->
+    <script src="./scripts/index.js"></script>
+
+</body>
+</html>
