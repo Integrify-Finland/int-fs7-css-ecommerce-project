@@ -1,12 +1,4 @@
-const logInIcon = document.getElementById('login-icon');
-const logIn = document.getElementById('login');
-const logInEnter = document.getElementById('login-enter');
-const NavList = document.getElementsByClassName('fa-list')[0];
-const userNavList = document.getElementsByClassName('fa-list')[1];
-const userNavDrop = document.getElementById('user-nav-drop');
-const NavListDrop = document.getElementById('nav-list-drop');
-const closeList1 = document.getElementsByClassName('close-list1');
-const closeList2 = document.getElementsByClassName('close-list2');
+import { logInIcon, logIn, logInEnter, NavList, userNavList, userNavDrop, NavListDrop, closeList1, closeList2 } from './elements.js'
 
 logInIcon.addEventListener('click', () => {
     if (logIn.style.display === 'flex') {
@@ -51,6 +43,7 @@ for (let i = 0; i < closeList1.length; i++) {
         NavListDrop.classList.add('hidden');
     });
 }
+
 for (let i = 0; i < closeList2.length; i++) {
     closeList2[i].addEventListener('click', () => {
         userNavDrop.classList.add('hidden');
