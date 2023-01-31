@@ -20,24 +20,30 @@
 
     <nav class="navbar flex-main">
         <div class="logo"><span>Winter ⛄ Stuff</span></div>
-        <a href="#">Home</a>
-        <div class="nav-links flex-main">
-            <a href="#clothes">Clothes</a>
-            <a href="#shoes">Shoes</a>
-            <a href="#domestic-heating">Domestic Heating</a>
-            <a href="/other.html">Other</a>
-            <a href="#footer">Contact</a>
+        <a class="close-list1 close-list2" href="#">Home</a>
+        <div class="drop">
+            <i class="fa-solid fa-list"> > Site</i>
+            <div id="nav-list-drop" class="flex-main hidden">
+                <a class="close-list1" href="#clothes">Clothes</a>
+                <a class="close-list1" href="#shoes">Shoes</a>
+                <a class="close-list1" href="#domestic-heating">Domestic Heating</a>
+                <a href="/other.html">Other</a>
+                <a class="close-list1" href="#footer">Contact</a>
+            </div>
         </div>
-        <div class="user-nav flex-main">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <a href="/cart.html" aria-label="shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="/registration.html">SignUp</a>
-            <a id="login-icon" href="#">LogIn</a>
+        <div>
+            <i class="fa-solid fa-list"> > User</i>
+            <div id="user-nav-drop" class="flex-main hidden">
+                <i class="fa-solid fa-magnifying-glass close-list2"></i>
+                <a href="/cart.html" aria-label="shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="/registration.html">SignUp</a>
+                <a class="close-list2" id="login-icon" href="#">LogIn</a>
+            </div>
         </div>
     </nav>
 
     <div class="landing">
-        <div id="login" class="flex-main hidden">
+        <div id="login" class="flex-main">
             <input type="text" placeholder="User Name" required>
             <input type="password" placeholder="Password" required>
             <button id="login-enter">Enter</button>
