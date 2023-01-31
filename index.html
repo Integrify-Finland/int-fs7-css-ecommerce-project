@@ -24,8 +24,8 @@
 <body>
     <div class="page-wrapper">
         <header>
-            <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo">
-            <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text">
+            <img src="../images/Icon Logo-06.png" alt="Shop's logo" class="header__logo" onclick="goHome()">
+            <img src="../images/Text Logo-Color 2.png" alt="Shop's logo" class="header__logo-text" onclick="goHome()">
             <div class="header__cart">
                 <a href="../html/cart.html" id="cart-link">
                     <i class="fa-solid fa-cart-shopping cart-icon">
@@ -33,6 +33,11 @@
                     </i>
                 </a>
             </div>
+            <script>
+                function goHome(){
+                    window.open("../index.html", "_self");
+                }
+            </script>
         </header>
         <nav>
             <ul>
@@ -239,7 +244,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
         <footer>
             <h2 class="footer__header">Stay In Touch With Us</h2>
