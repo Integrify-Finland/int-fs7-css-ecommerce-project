@@ -66,7 +66,7 @@ main {
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
-  background-image: url(backgroud.jpg);
+  background-image: url(/img/backgroud.jpg);
   background-position: center;
   background-size: cover;
   grid-area: m;
