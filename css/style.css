@@ -1,0 +1,180 @@
+
+
+/*about start*/
+.about{
+    height: 100vh;
+    background: url(https://i.postimg.cc/YCZb6P2m/clement-helardot-95-YRwf6-CNw8-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about__title{
+    background: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    position: relative;
+}
+.about__ankor{
+    position:absolute;
+    bottom: -20px;
+    cursor: pointer;
+    left: 50%;
+    background: var(--purple);
+    border-radius: 50%;
+    padding: 0.25rem 0.75rem;
+}
+/*about end*/
+/*product start*/
+.product{
+    
+    min-height: 100vh;
+    background: var(--pink);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+}
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: var(--padding);
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background-color: var(--text-color);
+    margin: 15px;
+    border-radius: 1rem;
+    box-shadow: 4px ;
+    box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.2);}
+.card__img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card__title{
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.card__content{
+    color: var(--purple);
+}
+.card__footer{
+    padding-top: 1rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__button{
+    border: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: var(--purple-light);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.card__button:hover{
+    color: var(--purple);
+    background: var(--text-color);
+    outline: 2px solid var(--purple);
+    transition: 1sec;
+}
+/*product end*/
+/* product pages start*/
+    .front,.back,.fullstack{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        min-height: 100vh;
+        background:no-repeat center center url(https://i.postimg.cc/XYmTWzzW/louise-viallesoubranne-5-Eh-N4wbfv-Bc-unsplash.jpg);
+        background-size: cover;
+    }
+    .back{
+        background-image: url(https://i.postimg.cc/yd00rkw9/mohammad-rahmani-8q-EB0f-Te9-Vw-unsplash.jpg);
+    }
+    .fullstack{
+        background-image: url(https://i.postimg.cc/597tWxbF/stephen-phillips-hostreviews-co-uk-2k-H-6-T6x-0-I-unsplash.jpg);
+    }
+    .course-description{
+        box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.4);
+        border-radius: 25px;
+        background: var(--purple);
+        margin: 0 5%;
+        padding: 1rem;
+    }
+    .course-title{
+        transform: translateY(25px);
+        box-shadow: 0;
+    }
+    .course-btn{
+        padding: 0.75rem;
+        width: 150px;
+        font-size: larger;
+        font-weight: bold;
+        background: var(--text-color);
+        color: var(--purple);
+        border: 3px var(--purple) solid;
+        transform: translateY(-75px);
+    }
+    .course-btn:hover{
+        box-shadow: 0px 0px 22px 5px rgba(216, 21, 230, 0.4);
+
+    }
+    .offset1-right{
+        transform: translatey(-25px);
+        
+        margin-right: 20%;
+        margin-left: 10px;
+    }
+    .offset2-left{
+        transform: translatey(-50px);
+        margin-left: 15%;
+        margin-right: 20px;
+    }
+    .offset2-right{
+        transform: translatey(-50px);
+        margin-right: 20%;
+        margin-left: 10px;
+    }
+    .offset1-left{
+        transform: translatey(-25px);
+        margin-left: 15%;
+        margin-right: 20px;
+    }
+/*product pages end*/
+/*purchase start*/
+.purchase{
+    min-height: 100vh;
+    background: var(--purple-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding);
+}
+
+.purchase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around   ;
+    align-items: center;
+}
+/*purchase end*/
+
+

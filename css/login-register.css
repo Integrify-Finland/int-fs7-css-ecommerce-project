@@ -1,0 +1,16 @@
+main{
+    background: url(https://i.postimg.cc/D0mtgykL/luke-chesser-e-ICUFSeirc0-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    flex-grow:1;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

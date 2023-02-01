@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: var(--text-color);
+    list-style: none;
+}
+:root{
+    --purple-dark:#2D033B;
+    --purple: #810CA8;
+    --purple-light:#C147E9;
+    --pink:#E5B8F4;
+    --text-color: #F7EFE5;
+    --padding: 1.5rem;
+}
+
+.btn{
+    padding: 0.5rem;
+    
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/*header start*/
+.header{
+    background: var(--purple);
+    padding: var(--padding) var(--padding) 0.5rem var(--padding);
+    display: flex;
+    justify-content: space-between;
+}
+.company-name{
+ 
+    font-size: 1.5rem;
+}
+.header-right,nav{
+    display: flex;
+    justify-content: center;
+}
+/*header end*/
+/*navigation start*/
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    margin: auto 0;
+}
+.nav-link:hover{
+   border-bottom: 2px solid var(--pink);
+
+
+}
+.news-link{
+    position: relative;
+}
+.news-count{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    position:absolute;
+    right: -20px;
+    top: -20px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+}
+/* navigation end*/
+/*form start*/
+form{
+    background: var(--text-color);
+    padding: 0.5rem 1rem 1rem 1rem;
+    width: 350px;
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 22px 5px rgba(0,0,0,0.2);
+}
+
+
+form label{
+    color: var(--purple);
+    font-weight: bold;
+    font-style: normal;
+    width: 280px;
+    margin: 20px 0 10px 0;
+}
+form label:first-child{
+    margin-top: 10px;
+}
+form input{
+    font-style: normal;
+    color: var(--purple-dark);
+    border: 2px var(--purple) solid;
+    border-radius: 15px;
+    padding: 8px;
+    width: 240px;
+    
+}
+form button{
+    background: var(--purple);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    border: 2px var(--purple) solid;
+    width: 210px;
+    margin-top: 40px;
+}
+form button:hover{
+    
+    background: var(--text-color);
+    color: var(--purple);
+}
+/*form end*/
+/*footer start*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background: var(--text-color);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.footer h4,.footer a,.footer i{
+    color: var(--purple-light);
+}
+.footer__right ul{
+    display: flex;gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/*footer end*/
+
+
+
+/**/
+
+@media (max-width:480px){
+    .header{
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
+   }
+   form{
+       width: 250px;
+   }
+   
+   
+}
+/**/

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8aad6d85c7.js" crossorigin="anonymous"></script>
+    <script>
+        function srcollToClass(classname){
+            var element=document.getElementsByClassName(classname)[0];
+            setTimeout(function () {
+            window.scrollTo({left:0, top:element.offsetTop,behavior:"smooth"});},2);
+            
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <h1 class="company-name"><a href="index.html">theRomeo`s <i class="fa-solid fa-laptop-code"></i> studio </a></h1>
+
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="html/login.html" class="nav-link">Login</a></li>
+                    <li><a href="html/register.html" class="nav-link">Register</a></li>
+                    <li class="news-link">
+                        <a href="html/cart.html" class="nav-link">Cart</a>
+                        <div class="news-count">3</div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <section class="about">
+            <h2 class="about__title">
+                We are here to help you fullfill your dreams
+                <span  class="about__ankor" onclick="srcollToClass('product')"><i class="fa-solid fa-arrow-down"></i></span>
+            </h2>
+    </section>
+    <section class="product" id="product">
+        <h2>What we offer to you?</h2>
+        <div class="card__container">
+            <div class="card">
+                <img src="https://i.postimg.cc/FsG7BPRW/jackson-sophat-t-l5-FFH8-VA-unsplash.jpg" alt="html picture" class="card__img">
+                <div class="card__footer">
+                    <div class="card__title">
+                        Front-end
+                    </div>
+                    <div class="card__content">
+                        Intense 3 month course of CSS+HTML basics
+                    </div>
+                    <button class="card__button" onclick="srcollToClass('front')">Read more</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.postimg.cc/wBmd8v6f/kobu-agency-67-L18-R4t-W-w-unsplash.jpg" alt="php image" class="card__img">
+                <div class="card__footer">
+                    <div class="card__title">
+                        Back-end
+                    </div>
+                    <div class="card__content">
+                        3 month course of PHP and SQL
+                    </div>
+                    <button class="card__button" onclick="srcollToClass('back')">Read more</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.postimg.cc/QMsqsYD2/markus-spiske-8-Oy-KWQg-Bs-KQ-unsplash.jpg" alt="fullstack image" class="card__img">
+                <div class="card__footer">
+                    <div class="card__title">
+                        Full-stack
+                    </div>
+                    <div class="card__content">
+                        5 month course to build your own website
+                    </div>
+                    <button class="card__button" onclick="srcollToClass('fullstack')">Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="front">
+        <h2 class="course-title course-description">Front-end</h2>
+        <p class="course-description">This is one of the best courses to learn Front-end web development as it covers some of the most useful programming languages ad technologies you will need as a front-end web developer like HTML, CSS, JavaScript, jQuery, and Bootstrap! </p>
+        <p class="course-description offset1-right">Created by theRomeo this course is also very hands-on, and you will start from creating a simple web page using HTML to write a chrome extension using JavaScript.</p>
+        <p class="course-description offset2-left">Talking about social proof, more than 119,530 students have already benefitted from this course, and it also has, on average, 4.3 ratings from close to 3,468 participants, which is phenomenal.</p>
+        <a href="html/product.html" class="btn course-btn course-description">Full info</a>
+    </section>
+    <section class="back">
+        <h2 class="course-title course-description">Back-end</h2>
+        <p class="course-description">In this course, you'll explore the basic structure of a web application, and how a web browser interacts with a web server. You'll be introduced to the request/response cycle, including GET/POST/Redirect. </p>
+        <p class="course-description offset1-left">You'll also gain an introductory understanding of Hypertext Markup Language (HTML), as well as the basic syntax and data structures of the PHP language, variables, logic, iteration, arrays, error handling, and superglobal variables, among other elements.</p>
+        <p class="course-description offset2-right"> An introduction to Cascading Style Sheets (CSS) will allow you to style markup for webpages. Lastly, you'll gain the skills and knowledge to install and use an integrated PHP/MySQL environment like XAMPP or MAMP.</p>
+        <a href="html/product.html" class="btn course-btn course-description">Full info</a>
+
+    </section>
+    <section class="fullstack">
+        <h2 class="course-title course-description">Full-stack</h2>
+        <p class="course-description">Develop with front-end development languages and tools such as HTML, CSS, JavaScript, React and Bootstrap </p>
+        <p class="course-description offset1-right">Deploy and scale applications using Cloud Native methodologies and tools like Containers, Kubernetes, Microservices and Serverless Functions</p>
+        <p class="course-description offset2-left"> Build your GitHub portfolio by applying your Full Stack Cloud Development skills with multiple labs and hands-on projects, including a capstone</p>
+        <a href="html/product.html" class="btn course-btn course-description">Full info</a>
+
+    </section>
+    <section class="purchase">
+        <h2>If you are willing to enroll in any course, please fill the form and we will contact you the same day.</h2>
+        <form action="" class="purchase__form">
+            
+            <label for="name">Please enter your name:</label>
+            <input type="text" placeholder="Your name" name="name" id="name">
+            <label for="email">Please enter your email:</label>
+            <input type="email" placeholder="Your email" name="email" id="email">
+            <label for="phone">Please enter your phone:</label>
+            <input type="phone" placeholder="Your phone" name="phone" id="phone">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__left">
+            <h4>Made by theRomeo. <br> All rights served.</h4>
+        </div>
+        <div class="footer__right">
+            <h4>Here you can find more about us:</h4>
+            <ul>
+                <li><a href="#" class="media-link"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a href="#" class="media-link"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                <li><a href="#" class="media-link"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href="#" class="media-link"><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+            </ul>      
+        </div>
+        
+    </footer>
+
+
+    
+</body>
+</html>
