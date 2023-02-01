@@ -29,9 +29,13 @@ main li{
     display: flex;
     flex-direction: column;
     
+
     padding: 5px;
     border: 2px solid var(--text-color);
     border-left: 0;
+}
+.product-right p,.product-right li,.product-right h2,.product-right h4{
+    color: #222;
 }
 .price{
     text-align: center;
