@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cart</title>
+</head>
+<body>
+
+    <header></header>
+        <a href="index.html" class="logo">KidBooks</a>
+        <ul class="navbar">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="index.html" class="nav__link">Register</a></li>
+            <li><a href="index.html" class="nav__link">Login</a>
+            </li><li><a href="index.html" class="nav__link">Logout</a></li>
+            <li><a href="Cart.html" class="nav__link">Cart</a></li>
+            
+        </ul>
+
+        <div class="icons">
+            <a href="#"><i class='bx bx-search' ></i></a>
+            <a href="#"><i class='bx bxs-user-circle' ></i></a>
+            <a href="#"><i class='bx bxs-shopping-bags' ></i></a>
+            <a href="#"></a>
+        </div>
+        </header>
+    <main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="cart flex-center" >
+            <div class="cart__items">
+                <div class="cart__items-heading card"><h2>Shopping Cart [1 items]</h2>
+                <div class="cart__items-action">
+                    <label for="select">
+                        <input type="checkbox" name="select" id="select">Select all items
+                    </label>
+                    <button class="btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button class="btn">Shop More</button>
+                </div></div>
+
+                <div class="cart__items card">
+
+                    <imput type="checkbox" name="" id=""/>
+                    <img src="./images/fairytale.jpg" alt="The Fairytale" class="cart__item-img"/>
+                </div>
+                <div class="cart__payment">
+                    <div class="cart__item-description"><h3 class="product__name">The Fairytale</h3>
+                    <h5 class="product__price">€9.50</h5>
+                <p class="cart__item-shipping">Free Shipping within Germany</p></div>
+                <button class="cart__items-action">
+                    <i class="fas fa-trash-alt"></i></fa-trash-alt> 
+                </button>
+                </div>
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span>1</span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="cart__payment">
+            <h2>Payment Summanry</h2>
+        <div><p>Subtotal</p>
+            <p>€9.50</p></div>
+        <div><p>Shipping Cost</p>
+            <p>€0.00</p></div>
+        <div><p>Toatl Cost</p>
+            <p>€9.50</p></div>
+            <button class="btn cart__payment-btn">Purchase
+
+            </button>
+            </div>
+        <div class="cart__payment-methods card">
+        <h2>Methods of Payment</h2>
+
+        <div>
+        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+        <i class="fa-brands fa-cc-visa fa-3x"></i>
+        </div>
+        </div>
+    </main>
+    <br>
+        <br>
+        <br>
+        <br>
+        <footer class="footer">
+            <div>
+                <label for="subscribe">Subscribe to Newsletter: </label>
+                <input type="email" id="subscribe"
+                name= "subscribe" class="footer__input" placeholder="Enter email address"/> <button class="btn btn-subsribe">Subscribe</button>
+            </div>
+            <div><p>&copy;Copyright 2023 GBEFUN BOOKSTORE. <br>All Rights Reserved</p></div>
+            
+        </footer>
+        <br>
+
+</body>
+</html>
