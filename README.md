@@ -1,11 +1,8 @@
-[ecommerceintegrify.netlify.app]
-#isa7-css-ecommerce-project
+I created this ecommerce website. please visit the website [here](ecommerceintegrify.netlify.app)
 
-## CSS Assignment
+# isa7-css-ecommerce-project
 
 ### isa7-css-ecommerce-project
-
-#### CSS Assignment - 15 points
 
 - Instructions (you can design an ecommerce website the you like but make sure it has the following features)
   - products page (2 points)
