@@ -1,5 +1,4 @@
-[ecommerceintegrify.netlify.app]
-
+ecommerceintegrify.netlify.app
 #isa7-css-ecommerce-project
 
 ## CSS Assignment
