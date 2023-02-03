@@ -96,7 +96,7 @@ h2 {
   margin-top: 20px;
 }
 
-.badge {
+a .badge {
   display: flex;
   background-color: rgb(44, 40, 40);
   color: white;
