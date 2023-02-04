@@ -604,7 +604,7 @@ table button:hover, .fa-trash:hover {
 
 @media all and (max-width: 900px) {
     .header {
-        padding: 0.3em;
+        padding: 0.6em;
     }
 
     .header a {
@@ -613,6 +613,10 @@ table button:hover, .fa-trash:hover {
 
     .header img {
         width: 2rem;
+    }
+
+    .pages {
+        padding: 0.8em;
     }
 
     .pages a {
@@ -715,12 +719,11 @@ table button:hover, .fa-trash:hover {
 
     .container {
         width: 80%;
-        margin: 1.5rem auto 0 auto;
+        margin: 2rem auto 0 auto;
     }
     
     legend {
         padding: 0.1em;
-        font-size: 1.5rem;
         border-bottom: 2px dashed rgb(85, 61, 103);
     }
     
@@ -775,10 +778,6 @@ table button:hover, .fa-trash:hover {
 }
 
 @media all and (max-width: 480px) {
-    .header {
-        padding: 0.1em;
-    }
-
     .header a {
         font-size: 1.5rem;
     }
@@ -788,11 +787,11 @@ table button:hover, .fa-trash:hover {
     }
 
     .pages a {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .pages img {
-        width: 0.7rem;
+        width: 0.9rem;
     }
 
     .navbar {
@@ -801,6 +800,10 @@ table button:hover, .fa-trash:hover {
 
     .logo span, .navbar a, .navbar i {
         font-size: 1rem;
+    }
+
+    .landing h1 {
+        font-size: 1.45rem;
     }
 
     #login {
@@ -815,16 +818,6 @@ table button:hover, .fa-trash:hover {
     
     #login-enter {
         padding: 0.1em;
-    }
-
-    .landing h1, .landing p {
-        font-size: 1.3rem;
-        box-shadow: 1px 2px 1px 1.3px black;
-    }
-    
-    .landing p {
-        top: 64.85%;
-        font-size: 1rem;
     }
     
     .warming__card-description h4 {
@@ -841,11 +834,6 @@ table button:hover, .fa-trash:hover {
 
     .container {
         width: 90%;
-        margin: 0.5rem auto 0 auto;
-    }
-    
-    legend {
-        font-size: 1rem;
     }
     
     .container p {
@@ -862,28 +850,24 @@ table button:hover, .fa-trash:hover {
         margin: 0.3rem 0 2rem 0;
     }
 
-    dd li {
-        font-size: 0.8rem;
-    }
-
     table {
         margin-bottom: 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     
     th {
         font-size: small;
-        padding: 0.1em;
+        padding: 0.1em 0;
     }
 
     td img {
         width: 4rem;
-        height: 3.5rem;
+        height: 4rem;
     }
     
     table button {
         font-size: 0.8rem;
-        padding: 0.5em 0.1em;
+        padding: 0.5em 0.2em;
     }
 
     .fa-trash {
@@ -891,8 +875,8 @@ table button:hover, .fa-trash:hover {
     }
 
     .payment {
-        font-size: 0.5rem;
-        gap: 0.1rem;
+        font-size: 0.3rem;
+        gap: 0.2rem;
         padding: 0.1em;
     }
 }
