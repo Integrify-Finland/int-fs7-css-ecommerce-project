@@ -1,0 +1,241 @@
+/* reset code and common starts here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Public Sans", sans-serif;
+}
+
+:root {
+  --padding: 1rem;
+}
+/* reset code and common ends here */
+
+html {
+  scroll-behavior: smooth;
+}
+/* container starts here */
+
+/* container ends here */
+
+/* header starts here */
+
+header > .header__left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+
+header nav a {
+  color: rgb(44, 40, 40);
+}
+header nav a:hover {
+  padding: 5px;
+  border-radius: 0.8px;
+  background-color: rgb(250, 235, 215);
+  color: rgb(206, 67, 67);
+  transition-duration: 150ms;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(204, 189, 170);
+  box-shadow: 0px 0px 15px 0px rgba(15, 15, 15, 0.9);
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  height: auto;
+}
+
+header .header__right {
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+  gap: 1.5rem;
+  font-size: 30px;
+}
+
+/* header ends here */
+
+/* main starts here */
+
+main {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: url(./images/fashion.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  top: 15rem;
+  color: rgba(0, 0, 0);
+  padding: 3rem 1rem;
+  background-color: rgba(240, 248, 255, 0.5);
+  max-width: 500px;
+  height: 250px;
+
+  position: relative;
+}
+
+.banner > p,
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+a .badge {
+  display: flex;
+  background-color: rgb(44, 40, 40);
+  color: white;
+  width: 7.5rem;
+  height: 2rem;
+  padding: 0.25rem 0.4rem;
+
+  position: absolute;
+  top: 205px;
+  right: -18px;
+}
+
+/* main starts here */
+
+/* section-one starts here */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  gap: 3rem;
+  background-color: white;
+
+  padding: 2rem;
+}
+
+.products__shirt img {
+  flex: 1;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.products__shirt {
+  width: 250px;
+  height: 550px;
+  background-color: rgb(231, 225, 247);
+}
+
+.products .products__shirt .details {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#shirt h1 {
+  text-align: center;
+  margin: 4rem;
+}
+/* section-one ends here */
+
+/* section-two starts here */
+
+#jacket h1 {
+  text-align: center;
+  margin: 4rem;
+}
+
+/* section-two ends here */
+
+.shopping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  height: 100vh;
+}
+
+.shopping .shopping__btn {
+  height: 60px;
+  width: 70%;
+  border-style: none;
+}
+
+.shopping .shopping__btn:hover {
+  background-color: rgb(189, 185, 185);
+  transition: all 300ms ease-in-out;
+}
+
+.shopping .shopping__btn--buy {
+  width: 70%;
+  height: 60px;
+  background-color: rgb(86, 2, 243);
+  color: white;
+  font-size: 20px;
+  border-style: none;
+}
+/* footer starts here */
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+  background-color: rgb(51, 51, 49);
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 170px 50px;
+  gap: 2rem;
+}
+
+.top .address li {
+  margin-bottom: 1.3rem;
+  gap: 2rem;
+  font-size: 18px;
+}
+
+.top .us li {
+  margin-bottom: 1.3rem;
+  font-size: 18px;
+}
+
+.top .contact {
+  font-size: 40px;
+}
+
+.top .contact h4 {
+  margin-bottom: 2.5rem;
+}
+
+.top .contact .social-media {
+  text-align: center;
+}
+
+.policy {
+  margin-left: 3rem;
+}
+
+.cards {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+/* footer ends here */
