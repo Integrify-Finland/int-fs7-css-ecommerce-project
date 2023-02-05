@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+             <a href="#kids">kids</a>
+             <a href="#women">Women</a>
+             <a href="#">Men</a>
+             <!-- <input type="text" placeholder="Search..">  -->              
+              <a href="signup.html">Signup</a>
+              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp Cart</a>
+              <a href="login.html"><i class="fa-solid fa-user"></i>&nbsp login</a>
+        </header>
+    <div class="cart-page">
+        <table>
+            <tr>
+                <th>product</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/men2.jpg" alt="kidsitem">
+                        <div>
+                            <p>Jens</p>
+                            <small>price:500 DKK</small><br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>500 dkk</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/women3.jpg" alt="kidsitem">
+                        <div>
+                            <p>T shirt</p>
+                            <small>price:200 DKK</small><br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>200 dkk</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/kid1.jpg" alt="kidsitem">
+                        <div>
+                            <p>Floeal T-shirt</p>
+                            <small>price:350 DKK</small><br>
+                            <a href="#">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>350 dkk</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>1050 Dkk</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>30 Dkk</td>
+                </tr>
+                <tr>
+                    <td>Ttotal</td>
+                    <td>1080 Dkk</td>
+                </tr>
+            </table>
+        </div>
+        <div id="button">
+            <a href="#"><button>Proceed to checkout</button> </a>
+        </div>
+    </div>
+    <footer>
+        <div>
+        Copyright © My Online Store
+        </div>
+        <div>
+        <nav class="footer_media">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook footer_icon"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube footer_icon"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter footer_icon"></i></a>
+        </nav>
+    </div>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    background-color:#B08BBB;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size:15px;
+    background-color:#D7E9B9;
+    padding: 20px;
+}
+header a{
+    text-decoration: none;
+    color: rgb(21, 20, 20);
+}
+/*.login {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}*/
+.signup{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    display: block;
+    background-color: #a573b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color:  #a708a9;
+}
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction:initial;
+        gap:1rem;
+        padding :1rem;
+    }
+}
