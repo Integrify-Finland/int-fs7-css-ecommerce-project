@@ -13,7 +13,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-header {
+header{
     position:sticky;
     top:0;
     display:flex;
@@ -76,7 +76,6 @@ h2{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,5);
   }
 .product {
-   /* flex: 1;*/
     margin: 10px;
     background-color: #fff;
     padding: 20px;
@@ -84,7 +83,6 @@ h2{
 }
 .product img {
     max-width: 100%;
-   /* height:30%;*/
 }
 
 section h1{
@@ -114,8 +112,8 @@ footer {
     padding:2px;
   }
   @media screen and (max-width: 500px) {
-    header {
-        flex-direction: column;
+     header{ 
+        flex-direction:initial;
         gap:1rem;
         padding :1rem;
     }
@@ -124,4 +122,9 @@ footer {
          grid-gap: 1rem;
          flex-wrap: wrap;
      }
+     .product {
+        margin:auto;
+        padding: 30px;
+    }
+      
   }
