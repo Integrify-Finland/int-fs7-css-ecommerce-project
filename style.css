@@ -1,0 +1,892 @@
+:root {
+    --text-color: white;
+    --items-border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(36, 37, 130);
+}
+
+.flex-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.header {
+    background-color: rgb(36, 37, 130);
+    padding: 1em 0;
+    justify-content: space-around;
+}
+
+.header a {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    transition: all 0.5s;
+}
+
+.header a:hover {
+    transform: scale(1.3);
+    color: gold;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 2.5rem;
+}
+
+.pages a {
+    font-size: 2rem;
+}
+
+.pages img {
+    width: 2rem;
+}
+
+.pages img:nth-child(6) {
+    display: none;
+}
+
+.navbar {
+    background-color: rgb(85, 61, 103);
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    gap: 3rem;
+}
+
+.logo {
+    background-image: url(/src/images/winter-symbol.jpeg);
+    background-size: 100% 100%;
+    border-radius: var(--items-border-radius);
+    padding: 0.4em;
+}
+
+.logo span {
+    background-color: rgba(36, 37, 130, 0.5);
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: var(--items-border-radius);
+    padding: 0.1em 0.4em 0.1em 0.3em;
+}
+
+.navbar a, .navbar i {
+    font-size: 2rem;
+    color: var(--text-color);
+    border-radius: var(--items-border-radius);
+    padding: 0.5em;
+    transition: all 0.5s;
+}
+
+i[class="fa-solid fa-cart-shopping"] {
+    padding: 0;
+}
+
+.navbar a:hover, .navbar i:hover {
+    background-color: rgb(36, 37, 130);
+    transform: scale(1.2);
+    padding: 0.25em;
+}
+
+.navbar > a {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.drop {
+    flex-grow: 3;
+}
+
+#nav-list-drop {
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-nav-drop {
+    gap: 0.6rem;
+}
+
+.fa-list {
+    display: none;
+    text-align: center;
+}
+
+.landing {
+    height: 85.3vh;
+    background-image: url(https://www.geico.com/living/wp-content/uploads/save-on-heating-bill.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#login {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    gap: 0.5rem;
+    display: none;
+}
+
+#login input {
+    height: 3rem;
+    width: 20rem;
+    border-radius: var(--items-border-radius);
+    padding-left: 0.5em;
+}
+
+#login-enter {
+    border-radius: var(--items-border-radius);
+    padding: 0.3em;
+    padding-bottom: 0.1em;
+}
+
+#login-enter:hover {
+    color: var(--text-color);
+    background-color: rgb(36, 37, 130);
+}
+
+.landing h1, .landing p {
+    position: absolute;
+    top: 48.5%;
+    left: 50%;
+    font-size: 3.5rem;
+    color: rgb(191, 104, 50);
+    box-shadow: 2px 4px 3px 5px black;
+    padding: 0.3em;
+}
+
+.landing p {
+    top: 65%;
+    font-size: 2.5rem;
+}
+
+.landing p:nth-child(4) {
+    top: 78%;
+}
+
+#clothes, #shoes, #domestic-heating {
+    background-image: url(/src/images/view-image.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 0.3em;
+    padding-top: 2em;
+    scroll-margin-top: 6rem;
+}
+
+.warming {
+    background-color: rgba(85, 61, 103, 0.7);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5em;
+    border-radius: var(--items-border-radius);
+}
+
+#clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
+    background-color: rgb(36, 37, 130);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    padding: 0.2em;
+    border-radius: var(--items-border-radius);
+    grid-column: 1 / -1;
+    margin: auto;
+}
+
+.warming__card {
+    background-color: var(--text-color);
+    height: 63vh;
+    transition: all 0.3s;
+}
+
+.warming__card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px 5px rgb(36, 37, 130);
+}
+
+.warming__card img {
+    width: 100%;
+    height: 50%;
+    border: 1px solid gray;
+}
+
+.warming__card-description {
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.4em;
+}
+
+.warming__card-description h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.warming__card-description p, .warming__card-description h5 {
+    font-size: 1.5rem;
+}
+
+.warming__card-description h5 a {
+    color: rgb(36, 37, 130);
+}
+
+.warming__card-description h5 a:active {
+    color: green;
+}
+
+marquee {
+    background: linear-gradient(rgba(85, 61, 103, 0.7), rgba(85, 61, 103, 0.7), rgb(36, 37, 130), rgba(85, 61, 103, 0.7), rgba(85, 61, 103, 0.7));
+    color: var(--text-color);
+    font-size: x-large;
+    padding: 1em 0;
+}
+
+#shoes {
+    background-image: url(/src/images/shoes.webp);
+}
+
+#domestic-heating {
+    background-image: url(/src/images/domestic-heating.jpeg);
+}
+
+#footer {
+    background-color: rgb(85, 61, 103);
+    color: var(--text-color);
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+#footer a {
+    color: var(--text-color);
+}
+
+.management {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.management ul li:nth-child(2) {
+    margin: 0.5rem 0;
+}
+
+.social-media {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 2.5rem;
+}
+
+.fa-brands {
+    font-size: x-large;
+}
+
+/* next step */
+
+.view {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 93.75vh;
+    background-image: url(/src/images/snow-fall.gif);
+    background-size: cover;
+    opacity: 0.2;
+}
+
+.container {
+    background-color: antiquewhite;
+    color: rgb(36, 37, 130);
+    width: 60%;
+    min-height: 75vh;
+    max-height: 80vh;
+    margin: 4.5rem auto 0.5rem auto;
+    padding: 1em;
+    border-radius: var(--items-border-radius);
+    text-align: center;
+    font-weight: bolder;
+    overflow: auto;
+}
+
+legend {
+    background-color: antiquewhite;
+    padding: 0.1em 0.3em;
+    font-size: 2.5rem;
+}
+
+.container p {
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+dl {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    text-align: left;
+    padding-left: 1em;
+}
+
+dd {
+    margin: 0.5rem 0 2.5rem 0;
+    color: rgb(85, 61, 103, 0.7);
+}
+
+dd li {
+    margin: 0.5rem 0;
+}
+
+form {
+    font-size: 2.25rem;
+}
+
+form input {
+    padding-left: 0.2em;
+}
+
+form button {
+    font-size: 2rem;
+    padding: 0.3em;
+    border-radius: var(--items-border-radius);
+}
+
+form button:hover {
+    color: var(--text-color);
+    background-color: rgb(36, 37, 130);
+}
+
+textarea {
+    margin-top: 0.2rem;
+}
+
+.cart {
+    background-image: url(/src/images/cart.png);
+    background-size: 100% 100%;
+    opacity: 0.7;
+    padding: 0.25em;
+}
+
+.cart legend, table {
+    background-color: rgba(85, 61, 103, 0.8);
+    color: var(--text-color);
+    border-radius: var(--items-border-radius);
+}
+
+table {
+    margin-bottom: 1rem;
+    min-height: 65vh;
+    font-size: 2rem;
+}
+
+th {
+    font-size: larger;
+    padding: 0.3em;
+}
+
+table button {
+    font-size: large;
+    color: rgb(58, 170, 50);
+    padding: 0.3em;
+    border-radius: var(--items-border-radius);
+}
+
+table button:hover, .fa-trash:hover {
+    opacity: 0.6;
+}
+
+.fa-trash {
+    font-size: 2.5rem;
+    color: rgb(223, 78, 78);
+}
+
+.payment {
+    background-color: rgb(58, 170, 50);
+    gap: 1rem;
+    font-size: 1.5rem;
+    border-radius: var(--items-border-radius);
+    padding: 0.4em 0;
+}
+
+.fa-ideal {
+    color: red;
+}
+
+.fa-cc-mastercard {
+    color: #F79E1B;
+}
+
+.fa-paypal {
+    color: #3b7bbf;
+}
+
+.fa-credit-card {
+    color: #04d484;
+}
+
+.fa-cc-visa {
+    color: #1A1F71;
+}
+
+.shopping-cart {
+    width: 9rem;
+    height: 9rem;
+    background-image: url(/src/images/shopping-cart.jpg);
+    background-size: cover;
+    border-radius: var(--items-border-radius);
+    position: absolute;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.shopping-cart1 {
+    top: 5rem;
+    left: 0.5rem;
+    animation-name: shopping-cart1;
+}
+
+.shopping-cart2 {
+    top: 20rem;
+    left: 0.5rem;
+    animation-name: shopping-cart2;
+}
+
+.shopping-cart3 {
+    top: 5rem;
+    right: 0.5rem;
+    animation-name: shopping-cart3;
+}
+
+.shopping-cart4 {
+    top: 20rem;
+    right: 0.5rem;
+    animation-name: shopping-cart4;
+}
+
+@keyframes shopping-cart1 {
+    to {
+        top: 9rem;
+        left: 6rem;}
+}
+
+@keyframes shopping-cart2 {
+    to {
+        top: 29rem;
+        left: 6rem;}
+}
+
+@keyframes shopping-cart3 {
+    to {
+        top: 9rem;
+        right: 6rem;}
+}
+
+@keyframes shopping-cart4 {
+    to {
+        top: 29rem;
+        right: 6rem;}
+}
+
+@media all and (min-width: 1201px) and (max-width: 1270px) {
+    #clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
+        font-size: 2.3rem;
+    }
+
+    .warming__card-description h5 {
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .logo span, .navbar a, .navbar i {
+        font-size: 1.7rem;
+    }
+
+    .landing h1, .landing p {
+        font-size: 3rem;
+        box-shadow: 1px 2px 1.5px 2.5px black;
+        padding: 0.1em;
+    }
+    
+    .landing p {
+        top: 65.5%;
+        font-size: 2rem;
+    }
+    
+    #clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
+        font-size: 2.1rem;
+    }
+       
+    .warming__card {
+        min-height: 75vh;
+        height: auto;
+    }
+
+    .warming__card-description h5 {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 70%;
+        margin: 3rem auto 0 auto;
+    }
+    
+    legend {
+        padding: 0.1em 0.2em;
+        font-size: 1.8rem;
+    }
+    
+    .container p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .logo span, .navbar a, .navbar i {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        padding: 0.3em;
+        padding-top: 0.1em;
+    }
+
+    .logo span {
+        padding: 0 0.3em 0.1em 0.2em;
+    }
+    
+    #clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
+        font-size: 1.9rem;
+    }
+
+    .warming__card-description h5 {
+        font-size: 1rem;
+    }
+    
+    dd li {
+        font-size: 1.6rem;
+    }
+    
+    form button {
+        padding: 0.2em;
+    }
+
+    .shopping-cart {
+        display: none;
+    }
+
+    table {
+        margin-bottom: 0.7rem;
+        font-size: 1.5rem;
+    }
+    
+    th {
+        font-size: large;
+        padding: 0.2em;
+    }
+    
+    table button {
+        font-size: medium;
+        padding: 0.2em;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .header {
+        padding: 0.6em;
+    }
+
+    .header a {
+        font-size: 2rem;
+    }
+
+    .header img {
+        width: 2rem;
+    }
+
+    .pages a {
+        font-size: 1.1rem;
+    }
+
+    .pages img {
+        width: 1.1rem;
+    }
+
+    .navbar {
+        gap: 1.5rem;
+    }
+
+    .logo span, .navbar a, .navbar i {
+        font-size: 1.3rem;
+    }
+
+    #clothes, #shoes, #domestic-heating {
+        grid-template-columns: 1fr;
+    }
+    
+    #clothes h2, .warming h3, #shoes h2, #domestic-heating h2 {
+        font-size: 2.1rem;
+    }
+
+    .warming__card-description h4, .warming__card-description p {
+        font-size: 2rem;
+    }
+
+    .warming__card-description h5 {
+        font-size: 1.8rem;
+    }
+
+    #footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        flex-direction: column;
+    }
+
+    .fa-list {
+        display: block;
+    }
+
+    .pages {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+        gap: 1.5rem;
+        width: 95%;
+        margin: auto;
+    }
+
+    .pages a {
+        text-align: center;
+    }
+
+    .pages img:nth-child(6) {
+        display: block;
+    }
+
+    .navbar a, .drop {
+        flex-grow: 0;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .drop {
+        order: 2;
+    }
+
+    .navbar > a {
+        order: 3;
+    }
+    
+    .drop2 {
+        order: 4;
+    }
+
+    #login {
+        flex-direction: column;
+    }
+
+    #login-enter {
+        align-self: flex-end;
+    }
+
+    .warming {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .warming__card-description h4, .warming__card-description p, .warming__card-description h5 {
+        font-size: 2.2rem;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer-border::before, #footer-border::after {
+        content: "--------------------------------------------------";
+    }
+
+    .container {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+    }
+    
+    legend {
+        padding: 0.1em;
+        border-bottom: 2px dashed rgb(85, 61, 103);
+    }
+    
+    .container p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    
+    dd li {
+        font-size: 1.2rem;
+    }
+
+    form, form button {
+        font-size: 1.5rem;
+    }
+
+    .payment {
+        font-size: 0.8rem;
+    }
+
+    .fa-credit-card {
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (max-width: 745px) {
+    .landing h1, .landing p {
+        left: 48.5%;
+        font-size: 2rem;
+        box-shadow: 1px 2px 1px 2px black;
+    }
+    
+    .landing p {
+        top: 65%;
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .warming {
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .warming__card-description h4 {
+        font-size: 2.4rem;
+    }
+
+    .warming__card-description p, .warming__card-description h5 {
+        font-size: 2.2rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .header a {
+        font-size: 1.5rem;
+    }
+
+    .header img {
+        width: 1.5rem;
+    }
+
+    .navbar {
+        gap: 1rem;
+    }
+
+    .logo span, .navbar a, .navbar i {
+        font-size: 1rem;
+    }
+
+    .landing h1 {
+        font-size: 1.3rem;
+    }
+
+    #login {
+        gap: 0.25rem;
+    }
+    
+    #login input {
+        height: 2.25rem;
+        width: 17.5rem;
+        padding-left: 0.25em;
+    }
+    
+    #login-enter {
+        padding: 0.1em;
+    }
+    
+    .warming__card-description h4 {
+        font-size: 2rem;
+    }
+
+    .warming__card-description p {
+        font-size: 1.8rem;
+    }
+
+    .warming__card-description h5 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+    
+    .container p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    dl {
+        margin-top: 1rem;
+        padding-left: 0.5em;
+    }
+    
+    dd {
+        margin: 0.3rem 0 2rem 0;
+    }
+
+    table {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    th {
+        font-size: small;
+        padding: 0.1em 0;
+    }
+
+    td img {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    table button {
+        font-size: 0.8rem;
+        padding: 0.5em 0.2em;
+    }
+
+    .fa-trash {
+        font-size: 1.2rem;
+    }
+
+    .payment {
+        font-size: 0.3rem;
+        gap: 0.2rem;
+        padding: 0.1em;
+    }
+}

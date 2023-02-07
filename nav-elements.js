@@ -1,0 +1,9 @@
+export const logInIcon = document.getElementById('login-icon');
+export const logIn = document.getElementById('login');
+export const logInEnter = document.getElementById('login-enter');
+export const NavList = document.getElementsByClassName('fa-list')[0];
+export const userNavList = document.getElementsByClassName('fa-list')[1];
+export const userNavDrop = document.getElementById('user-nav-drop');
+export const NavListDrop = document.getElementById('nav-list-drop');
+export const closeList1 = document.getElementsByClassName('close-list1');
+export const closeList2 = document.getElementsByClassName('close-list2');

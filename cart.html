@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header class="header flex-main">
+        <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
+        <a href="/index.html">Home</a>
+        <img class="header__image" src="/src/images/winter-symbol.jpeg" alt="winter symbol">
+    </header>
+
+    <div class="view"></div>
+    
+    <fieldset class="cart container">
+        <legend>Your Products</legend>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 18%;">Items</th>
+                    <th style="width: 25%;">Description</th>
+                    <th style="width: 16%;">Price</th>
+                    <th style="width: 25%;">Quantity</th>
+                    <th style="width: 16%;">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/src/images/men-jacket.webp" alt="Men's winter jacket" width="125px" height="120px"></td>
+                    <td style="padding: 0.5rem;">The versatile travel jacket is engineered with graphene,<br>to take on colder climates.</td>
+                    <td>€ 199.00</td>
+                    <td style="word-spacing: 0.6rem;">
+                        <button>+</button> <span>1</span> <button>-</button> <i class="fa-solid fa-trash"></i>
+                    </td>
+                    <td><span>€ 199.00</span></td>
+                </tr>
+                <tr>
+                    <td><img src="/src/images/women-jacket.webp" alt="Women's winter jacket" width="125px" height="120px"></td>
+                    <td style="padding: 0.5rem;">Puffer Jacket Winter Coat Comfort Street Loose Daily Casual</td>
+                    <td>€ 52.99</td>
+                    <td style="word-spacing: 0.6rem;">
+                        <button>+</button> <span>1</span> <button>-</button> <i class="fa-solid fa-trash"></i>
+                    </td>
+                    <td><span>€ 52.99</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td>SubTotal<br>
+                        Discount 15%<br>
+                        Shipping<br>
+                        Total :
+                    </td>
+                    <td>€ 251.99<br>
+                        € 37.79<br>
+                        € 2.99<br>
+                        € 217.19
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3">
+                        <hr>
+                        <br>
+                        <div class="flex-main payment">
+                            <button>Checkout</button>
+                            <i class="fa-brands fa-ideal"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-paypal"></i>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <div class="shopping-cart shopping-cart1"></div>
+    <div class="shopping-cart shopping-cart2"></div>
+    <div class="shopping-cart shopping-cart3"></div>
+    <div class="shopping-cart shopping-cart4"></div>
+</body>
+</html>
