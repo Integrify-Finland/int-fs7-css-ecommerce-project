@@ -21,7 +21,7 @@ body{
 
 html{
     font-size: 100%;
-    overflow: hidden;
+    /* soverflow: hidden; */
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
