@@ -44,11 +44,11 @@ html::-webkit-scrollbar-thumb{
 
 
 .site_header{
-    background: var(--bg);
+    background: rgb(103, 46, 34);;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: .5rem;
     /* border-bottom: var(--border); */
     position: fixed;
     top: 0;
@@ -67,11 +67,11 @@ html::-webkit-scrollbar-thumb{
     height: 100px;
 }
 
-main{
+/* main{
     width: 50%;
-    /* height: 30px; */
+     height: 30px; 
     margin: 100px auto;
-}
+} */
 
 /**.middle{
   margin: 100px;
@@ -87,8 +87,8 @@ main{
   /* padding-left: 100pc; */
 /* width: 50%;*/
 
-.middle.fika{
-  font-size: large;
+.fika{
+  font-size: 35px;
   font-family: cursive;
   position: static;
   justify-content: center;
@@ -155,12 +155,12 @@ main{
 }
 
 
-/* .icons div{
-    color: #fff;
+ .icons div{
+    color: black;
     cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-  } */
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  } 
 
 
 .icons div:hover{
@@ -237,13 +237,13 @@ main{
     cursor: pointer;
   }
 
-  .product{
+  /* .product{
     justify-content: center;
     margin: 200px;
-  }
+  } */
 
-  /* .menubtn{
+.menubutton{
     position: absolute;
     top: 45%;
     
-  } */
+  } 
