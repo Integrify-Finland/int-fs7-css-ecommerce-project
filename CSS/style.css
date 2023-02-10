@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 
+
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -10,7 +12,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    /* transition: .2s linear; */
+     transition: .2s linear;
 }
 
 body{
@@ -92,30 +94,30 @@ main{
   justify-content: center;
 }
 
-.navbar {
+.site_header.navbar {
     padding: 2px;
     margin: 2px;
     height: 80px;
   }
   
-  .navbar ul {
+.site_header.navbar ul {
     padding: 10px;
     display: flex;
     justify-content: center;
     list-style: none;
   }
   
-  .navbar ul li {
+.site_header.navbar ul li {
     padding: 10px 20px;
     font-size: 27px;
   }
   
-  .navbar ul li:hover {
+.site_header.navbar ul li:hover {
     background-color: rgba(249, 225, 225, 0.932);
     transition: 0.9s;
   }
 
-  .navbar ul li a{
+.site_header.navbar ul li a{
     color: black;
     font-family: 'Rancho', cursive;
   }
@@ -140,6 +142,24 @@ main{
     text-transform: none;
   }
 
+  .site_header.icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+
+
+  .site_header.icons div:hover{
+
+    color: var(--main-color);
+  }
+
+  #menu-btn{
+    display: none;
+  }
+
+
   .site_header.cart_item_container{
     position: absolute;
     top: 100%;
@@ -148,6 +168,60 @@ main{
     width: 700px;
     background: #fff;
     padding: 0 1.5rem;
+  }
+
+  .site_header.cart_item_container.cart_item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+  }
+
+
+  .site_header.cart_item_container.cart_item.fas fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+  }
+
+ .cart_item.fas fa-times:hover{
+    color: rgba(249, 225, 225, 0.932);
+  }
+
+  .cart_item img{
+    height: 7rem;
+  }
+
+ .cart_item h3{
+    font-size: 2rem;
+    color: black;
+    padding-bottom: .5rem;
+  }
+
+  .cart_item h5{
+    font-size: 2rem;
+    color: black;
+    padding-bottom: .5rem;
+  }
+
+
+.cart_item_price{
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+.cartbtn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .7rem 3rem;
+    font-size: 1.7rem;
+    color: #9b5151;
+    background: var(--main-color);
+    cursor: pointer;
   }
 
   .product{
