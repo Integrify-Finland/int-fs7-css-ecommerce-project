@@ -69,6 +69,7 @@ li>a:hover{
 .banner__btn{
 	align-self: center;
 	margin-top: 5rem;
+	transition: all 2s;
 }
 .banner__btn:hover{
 	background-color: #FC7300;
